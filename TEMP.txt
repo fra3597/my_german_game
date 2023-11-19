@@ -1,0 +1,111 @@
+TODO list:
+
+Create a new file containing only german verbs with their translation, using pandas and looking for german words which end with "-en"
+
+List of features to implement:
+
+1. New Welcome page:
+    1. The page shall contain two buttons: one for the translation game and the other for the paradigm game
+    2. According to the button clicked, a window shall open according to the selected mode
+2. New Window to be created for the Paradigm game
+    1. It shall contain 4 entries: one for the present, one for the präteritum, one for the perfekt 2, one for the translation of the word
+    2. The Window shall display only one of the four fields (chosen randomly) and the user will have to fill out the remaining one
+    3. The window need to have a button to check each entry
+    4. The score has to be updated accordingly, it will keep track of the score for each field
+3. New Window for the results related to the previous window shall be created
+    1. It shall display the results based on the total attempts that you did
+    2. It shall display the summary of each question with a table
+	3. In the table the wrong entries have to be highlighted in red, the one provided randomly by the game in white, and the correct ones in green
+	4. The table has to display also all the correct entries stored in the database
+	5. TBC: if the buttons "Play again" and "Quit" can fit in the same window or they need another one
+FATTO   4. The logic to pick more often the words that were guessed less times, you need to use the function numpy.random.choice(list_of_elements, list_of_choices, p=list_of_weights, replace=False)
+	1. Create a new list with list comprehension using the conosc values using the inverse function and reversing their value so that a less guessed word will hava a higher chance of getting picked 
+	2. Normalize the new list to 1 in order to make it meaningful
+	3. Use the function to pick ten rows
+FATTO   5. The function to connect to the give_me_a_hint button
+FATTO   6. Add the partial score and total score labels to the summary window
+7. Change the database from a csv to a SQLlite database
+FATTO   8 Hovering and pressed "animation" to the buttons:
+	1. QPushButton:hover {
+		background-color: lightblue;
+	}
+    2. QPushButton:pressed {
+		background-color: blue;
+	}
+9. Look for a nice color palette to use for my gui (Color hunt)
+10. Add animation and transition when changing window
+FATTO   11. Add a combobox to select the special character to add to the entry and an "Add" button to each mode so that you do not have to use a special combination of keys
+12. Fix the size, the shape, and so on of all the items included in the windows
+FATTO   13. Add the exception to handle the indexerror that occurs when it tries to access the wrong index in the questions vector
+FATTO   14. Turn off the label when the go to summary button is displayed and check if the number of times that the button is pressed is correct
+FATTO   15. Solve the issue related to the fact that the buttons now are white on the widget (the widgets are now uncoupled from the buttons)
+
+
+from PyQt5.uic import loadUi
+#Import only what yuo need, not everything
+from PyQt5 import QtWidgets
+from PyQt5.QtGui import QStandardItem, QStandardItemModel, QColor
+
+NUMBER_OF_COLUMNS = 4
+NUMBER_OF_ROWS = 2
+
+
+class ParadigmSummary(QtWidgets.QWidget):
+    def __init__(self):
+        super().__init__()
+        loadUi("game_view/frontend/paradigm_summary.ui", self)
+
+        self.model = QStandardItemModel(self)
+        self.init_model()
+        self.init_table()
+
+    def init_model(self):
+        self.model.setColumnCount(NUMBER_OF_COLUMNS)
+        #Think about setting the tenses list as an attribute
+        self.model.setHorizontalHeaderLabels(['Present', 'Präteritum', 'Perfekt', 'Italian'])
+        self.summary_table.setModel(self.model)
+
+    def init_table(self):
+        #self.summary_table.verticalHeader().setSectionResizeMode(QtWidgets.QHeaderView.ResizeToContents)
+        self.summary_table.verticalHeader().setMaximumWidth(100)
+        self.summary_table.horizontalHeader().setSectionResizeMode(QtWidgets.QHeaderView.ResizeToContents)
+
+    def connect_play_again_button(self, function):
+        self.play_again_button.clicked.connect(function)
+
+    def connect_quit_button(self, function):
+        self.quit_button.clicked.connect(function)
+
+    def append_row_to_summary_table(self, user_answer, current_paradigm, is_correct, given_entry_index):
+        user_answer_item = []
+        current_paradigm_item = []
+
+        for answer in user_answer:
+            user_answer_item.append(QStandardItem(answer))
+        for verb in current_paradigm:
+            current_paradigm_item.append(QStandardItem(verb))
+
+        for index, element in enumerate(is_correct):
+            if element and index != given_entry_index:
+                user_answer_item[index].setForeground(QColor("green"))
+            elif not element and index != given_entry_index:
+                user_answer_item[index].setForeground(QColor("red"))
+
+        new_row = current_paradigm_item
+        self.model.appendRow(new_row)
+        new_row = user_answer_item
+        self.model.appendRow(new_row)
+
+        self.model.setVerticalHeaderItem(self.model.rowCount() - 2, QStandardItem("Paradigm"))
+        self.model.setVerticalHeaderItem(self.model.rowCount() - 1, QStandardItem("User Answer"))
+
+        self.summary_table.resizeColumnsToContents()
+        self.summary_table.resizeRowsToContents()
+
+    def show_score(self, partial_score, total_score, number_of_matches):
+        text_to_show = f"Your Partial Score: {partial_score}/10\nYour Total Score: {total_score}/{10*number_of_matches}"
+        self.score_label.setText(text_to_show)
+
+
+    def quit_game(self):
+        QtWidgets.qApp.quit()
