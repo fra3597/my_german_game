@@ -50,6 +50,7 @@ class ParadigmController(Controller):
         self.update_question()
         if self.game_model.current_word == QUESTIONS_PER_GAME:
             self.ui_controller.verb_paradigm_window.enable_go_to_summary_button()
+            self.update_final_score()
 
     def update_question(self):
         self.game_model.update_current_word()
@@ -62,10 +63,25 @@ class ParadigmController(Controller):
         self.ui_controller.stacked_widget.setCurrentWidget(self.ui_controller.paradigm_summary_window)
         self.ui_controller.paradigm_summary_window.update_columns_width()
 
+    def update_final_score(self):
+        self.game_model.score.update_total_score()
+        self.game_model.score.update_total_counter()
+        present_score = f"Present: Partial Score: {self.game_model.score.present_partial_score}/{self.game_model.score.present_partial_counter}     Total Score: {self.game_model.score.present_total_score}/{self.game_model.score.present_total_counter}\n"
+        präteritum_score = f"Präteritum: Partial Score: {self.game_model.score.präteritum_partial_score}/{self.game_model.score.präteritum_partial_counter}     Total Score: {self.game_model.score.präteritum_total_score}/{self.game_model.score.präteritum_total_counter}\n"
+        perfekt_score = f"Perfekt: Partial Score: {self.game_model.score.perfekt_partial_score}/{self.game_model.score.perfekt_partial_counter}     Total Score: {self.game_model.score.perfekt_total_score}/{self.game_model.score.perfekt_total_counter}\n"
+
+        text_to_show = present_score + präteritum_score + perfekt_score
+        self.ui_controller.paradigm_summary_window.score_label.setText(text_to_show)
+
+    def play_again(self):
+        self.ui_controller.reset_paradigm_mode()
+        self.game_model.reset_game()
+        self.start_verb_paradigm_mode()
+
     def connect_buttons(self):
         self.ui_controller.select_game_mode_window.connect_paradigm_mode_button(self.start_verb_paradigm_mode)
         self.ui_controller.verb_paradigm_window.connect_check_button(self.check_answer)
         self.ui_controller.verb_paradigm_window.connect_go_to_summary_button(self.show_summary)
-        self.ui_controller.paradigm_summary_window.connect_play_again_button(self.show_summary)
+        self.ui_controller.paradigm_summary_window.connect_play_again_button(self.play_again)
         self.ui_controller.paradigm_summary_window.connect_quit_button(self.ui_controller.paradigm_summary_window.quit_game)
 

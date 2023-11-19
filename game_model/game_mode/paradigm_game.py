@@ -57,19 +57,25 @@ class ParadigmGame(Game):
     def check_entry(self, user_answer):
         is_correct = [False, False, False]
 
-        for entry in user_answer:
-            if entry == self.list_of_paradigms[self.current_word].present:
-                self.score.present_partial_score += 1
-                is_correct[0] = True
-            elif entry == self.list_of_paradigms[self.current_word].präteritum:
-                self.score.präteritum_partial_score += 1
-                is_correct[1] = True
-            elif entry == self.list_of_paradigms[self.current_word].perfekt:
-                self.score.perfekt_partial_score += 1
-                is_correct[2] = True
-        self.score.present_counter += 1
-        self.score.präteritum_counter += 1
-        self.score.perfekt_counter += 1
+        for index, entry in enumerate(user_answer):
+            # Da mettere a posto con una logica migliore
+            if index != self.given_entry_index:
+                if entry == self.list_of_paradigms[self.current_word].present:
+                    self.score.present_partial_score += 1
+                    is_correct[0] = True
+                elif entry == self.list_of_paradigms[self.current_word].präteritum :
+                    self.score.präteritum_partial_score += 1
+                    is_correct[1] = True
+                elif entry == self.list_of_paradigms[self.current_word].perfekt:
+                    self.score.perfekt_partial_score += 1
+                    is_correct[2] = True
+
+        if self.given_entry_index != 0:
+            self.score.present_partial_counter += 1
+        if self.given_entry_index != 1:
+            self.score.präteritum_partial_counter += 1
+        if self.given_entry_index != 2:
+            self.score.perfekt_partial_counter += 1
 
         return is_correct
 
@@ -80,3 +86,14 @@ class ParadigmGame(Game):
                             self.list_of_paradigms[self.current_word].italian]
 
         self.current_paradigm = current_paradigm
+
+    def reset_game(self):
+        self.list_of_paradigms = []
+        self.current_paradigm = []
+        self.given_entry_index = 0
+        self.update_number_of_matches()
+        self.reset_current_word()
+        self.score.reset_partial_score()
+        self.score.reset_counter()
+
+

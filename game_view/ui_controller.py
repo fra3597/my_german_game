@@ -56,6 +56,14 @@ class UIController(QMainWindow):
         self.translate_mode_window.go_to_summary_button.setVisible(False)
         self.summary_window.model.removeRows(0, self.summary_window.model.rowCount())
 
+    def reset_paradigm_mode(self):
+        self.stacked_widget.setCurrentWidget(self.verb_paradigm_window)
+        self.verb_paradigm_window.check_button.setVisible(True)
+        self.verb_paradigm_window.go_to_summary_button.setVisible(False)
+        self.verb_paradigm_window.comparison_result_label.setText("")
+        self.verb_paradigm_window.clear_entry_row()
+        self.paradigm_summary_window.model.removeRows(0, self.paradigm_summary_window.model.rowCount())
+
 
 
 
