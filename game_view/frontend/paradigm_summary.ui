@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Summary</string>
+   <string>ParadigmSummary</string>
   </property>
   <widget class="QWidget" name="widget" native="true">
    <property name="geometry">
@@ -63,6 +63,7 @@
 }
 
 QHeaderView::section {
+	font-size: 32px;
      color: white;     /* Set text color for header */
      background-color: #FFD28F; /* Set background color for header */
      border: 1px solid #555; /* Set border for header */
@@ -87,9 +88,9 @@ QHeaderView::section {
    <widget class="QLabel" name="score_label">
     <property name="geometry">
      <rect>
-      <x>84</x>
+      <x>34</x>
       <y>50</y>
-      <width>431</width>
+      <width>481</width>
       <height>161</height>
      </rect>
     </property>
@@ -116,7 +117,7 @@ border: none;
 </string>
     </property>
     <property name="text">
-     <string>Your Partial Score is:</string>
+     <string/>
     </property>
     <property name="wordWrap">
      <bool>true</bool>
