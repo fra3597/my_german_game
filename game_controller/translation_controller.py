@@ -1,14 +1,8 @@
 from game_controller.controller import Controller
 from game_model.game_mode.translation_game import TranslationGame
 
-# How do I handle constants? At the moment I have them in both match and here. Should I set attributes in match
-# instead?
-GERMAN_TO_ITALIAN = 1
-ITALIAN_TO_GERMAN = 2
-QUESTIONS_PER_GAME = 10
-
 CORRECT = True
-FALSE = False
+WRONG = False
 
 
 class TranslationController(Controller):
@@ -20,7 +14,7 @@ class TranslationController(Controller):
         
     def start_game(self):
         self.ui_controller.set_translate_mode_window()
-        self.game_model.set_mode(self.ui_controller.select_language_window.read_selected_language)
+        self.game_model.set_mode(self.ui_controller.select_language_window.read_selected_language())
 
         self.game_model.load_questions()
 
@@ -41,6 +35,7 @@ class TranslationController(Controller):
                 self.game_model.answers[self.game_model.current_word],
                 CORRECT
             )
+            self.game_model.guessed_entries.append(True)
         else:
             result = f"<html><font color='red'>Wrong!</font> The correct answer was <i><font color='green'>'{self.game_model.answers[self.game_model.current_word]}'</font></i></html>"
             self.ui_controller.translate_mode_window.solution_label.setText(result)
@@ -48,16 +43,18 @@ class TranslationController(Controller):
                 self.game_model.questions[self.game_model.current_word],
                 user_answer,
                 self.game_model.answers[self.game_model.current_word],
-                FALSE
+                WRONG
             )
+            self.game_model.guessed_entries.append(False)
         self.update_question()
-        if self.game_model.current_word == QUESTIONS_PER_GAME:
+        if self.game_model.current_word == self.game_model.QUESTIONS_PER_GAME:
             self.ui_controller.translate_mode_window.enable_go_to_summary_button()
             self.game_model.score.update_total_score()
+            self.game_model.update_score_in_database()
                 
     def update_question(self):
         self.game_model.update_current_word()
-        if self.game_model.current_word < QUESTIONS_PER_GAME:
+        if self.game_model.current_word < self.game_model.QUESTIONS_PER_GAME:
             text_to_show = f"<html>How do you translate <i>'{self.game_model.questions[self.game_model.current_word]}'</i> ? </html>"
             self.ui_controller.translate_mode_window.question_label.setText(text_to_show)
         self.ui_controller.translate_mode_window.input_line_edit.clear()

@@ -3,6 +3,7 @@ from game_view.backend.select_game_view import SelectGameMode
 from game_view.backend.select_language_view import SelectLanguage
 from game_view.backend.translate_mode import TranslateMode
 from game_view.backend.verb_paradigm_view import VerbParadigmMode
+from game_view.backend.article_mode_view import ArticleMode
 from game_view.backend.translation_summary_view import Summary
 from game_view.backend.paradigm_summary_view import ParadigmSummary
 
@@ -17,6 +18,7 @@ class UIController(QMainWindow):
         self.select_language_window = SelectLanguage()
         self.translate_mode_window = TranslateMode()
         self.verb_paradigm_window = VerbParadigmMode()
+        self.article_mode_window = ArticleMode()
         self.summary_window = Summary()
         self.paradigm_summary_window = ParadigmSummary()
 
@@ -32,6 +34,9 @@ class UIController(QMainWindow):
     def set_verb_paradigm_window(self):
         self.stacked_widget.setCurrentWidget(self.verb_paradigm_window)
 
+    def set_article_mode_window(self):
+        self.stacked_widget.setCurrentWidget(self.article_mode_window)
+
     def init_stacked_widget(self):
         self.setCentralWidget(self.stacked_widget)
         self.stacked_widget.setFixedHeight(800)
@@ -41,6 +46,7 @@ class UIController(QMainWindow):
         self.stacked_widget.addWidget(self.select_language_window)
         self.stacked_widget.addWidget(self.translate_mode_window)
         self.stacked_widget.addWidget(self.verb_paradigm_window)
+        self.stacked_widget.addWidget(self.article_mode_window)
         self.stacked_widget.addWidget(self.summary_window)
         self.stacked_widget.addWidget(self.paradigm_summary_window)
 
@@ -49,7 +55,7 @@ class UIController(QMainWindow):
 
     def reset_user_interfaces(self):
         self.select_game_mode_window.welcome_game_label.setVisible(False)
-        self.stacked_widget.setCurrentWidget(self.select_game_mode_window)
+        self.stacked_widget.setCurrentWidget(self.select_language_window)
         self.translate_mode_window.solution_label.setText("")
         self.translate_mode_window.check_button.setVisible(True)
         self.translate_mode_window.give_me_a_hint_button.setVisible(True)

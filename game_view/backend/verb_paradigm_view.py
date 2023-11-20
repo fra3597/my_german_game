@@ -33,6 +33,14 @@ class VerbParadigmMode(QWidget):
 
         return given_entry_index
 
+    def add_character(self):
+        current_item = self.paradigm_table.currentItem()
+        if current_item is not None:
+            current_text = current_item.text()
+            character_to_add = self.character_combo_box.currentText()
+            new_text = current_text + f"{character_to_add}"
+            current_item.setText(new_text)
+
     def read_entries_in_table(self):
         row_data = []
 
@@ -57,6 +65,9 @@ class VerbParadigmMode(QWidget):
             item = self.paradigm_table.takeItem(ROW_INDEX, col)
             if item:
                 del item
+
+    def connect_add_character_button(self, function):
+        self.add_character_button.clicked.connect(function)
 
     def connect_check_button(self, function):
         self.check_button.clicked.connect(function)

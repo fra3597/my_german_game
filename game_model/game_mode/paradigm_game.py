@@ -4,9 +4,6 @@ from game_model.game_mode.game import Game
 from game_model.score_system.paradigm_score import ParadigmScore
 from game_model.question.verb_paradigm import VerbParadigm
 
-
-QUESTIONS_PER_GAME = 10
-
 paradigm_database = pandas.read_csv("database/verb_paradigm_database.csv")
 paradigm_database_dict = paradigm_database.to_dict(orient="records")
 
@@ -17,6 +14,7 @@ class ParadigmGame(Game):
         self.list_of_paradigms = []
         self.current_paradigm = []
         self.given_entry_index = 0
+        self.guessed_entries = []
         self.score = ParadigmScore()
 
     def load_questions_paradigm(self):
@@ -38,14 +36,14 @@ class ParadigmGame(Game):
         try:
             verbs_list = choice(
                 paradigm_database_dict,
-                QUESTIONS_PER_GAME,
+                self.QUESTIONS_PER_GAME,
                 replace=False,
                 p=normalized_guessed_counter_list
             )
         except ValueError:
             verbs_list = choice(
                 paradigm_database_dict,
-                QUESTIONS_PER_GAME,
+                self.QUESTIONS_PER_GAME,
                 replace=True,
                 p=normalized_guessed_counter_list
             )
@@ -87,9 +85,25 @@ class ParadigmGame(Game):
 
         self.current_paradigm = current_paradigm
 
+    def update_score_in_database(self):
+        for index, paradigm in enumerate(self.guessed_entries):
+            for inner_index, verb in enumerate(paradigm):
+                if self.guessed_entries[index][inner_index] and inner_index == 0:
+                    mask = paradigm_database["Present"] == self.list_of_paradigms[index].present
+                    paradigm_database.loc[mask, "PresentScore"] += 1
+                elif self.guessed_entries[index][inner_index] and inner_index == 1:
+                    mask = paradigm_database["Präteritum"] == self.list_of_paradigms[index].präteritum
+                    paradigm_database.loc[mask, "PräteritumScore"] += 1
+                elif self.guessed_entries[index][inner_index] and inner_index == 2:
+                    mask = paradigm_database["Perfekt"] == self.list_of_paradigms[index].perfekt
+                    paradigm_database.loc[mask, "PerfektScore"] += 1
+
+        paradigm_database.to_csv("database/verb_paradigm_database.csv", index=False)
+
     def reset_game(self):
         self.list_of_paradigms = []
         self.current_paradigm = []
+        self.guessed_entries = []
         self.given_entry_index = 0
         self.update_number_of_matches()
         self.reset_current_word()

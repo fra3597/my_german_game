@@ -1,7 +1,7 @@
 from PyQt5.uic import loadUi
 # Import only what yuo need, not everything
 from PyQt5 import QtWidgets
-from PyQt5.QtGui import QStandardItem, QStandardItemModel, QColor
+from PyQt5.QtGui import QStandardItem, QStandardItemModel, QColor, QFont
 
 NUMBER_OF_COLUMNS = 4
 NUMBER_OF_ROWS = 2
@@ -65,10 +65,6 @@ class ParadigmSummary(QtWidgets.QWidget):
                     max_width = len(item.text())
 
             self.summary_table.setColumnWidth(col, max_width)
-
-    def show_score(self, partial_score, total_score, number_of_matches):
-        text_to_show = f"Your Partial Score: {partial_score}/10\nYour Total Score: {total_score}/{10*number_of_matches}"
-        self.score_label.setText(text_to_show)
 
     def quit_game(self):
         QtWidgets.qApp.quit()
