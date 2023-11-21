@@ -21,6 +21,9 @@ class ArticleMode(QtWidgets.QWidget):
     def connect_go_to_summary_button(self, function):
         self.go_to_summary_button.clicked.connect(function)
 
+    def connect_open_database_button(self, function):
+        self.open_database_button.clicked.connect(function)
+
     def read_user_answer(self):
         button_pressed = self.sender()
 

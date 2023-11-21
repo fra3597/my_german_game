@@ -725,6 +725,38 @@ QPushButton:pressed {
      <string>Add</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="open_database_button">
+    <property name="geometry">
+     <rect>
+      <x>169</x>
+      <y>580</y>
+      <width>241</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	border-radius: 20px; /* Adjust the radius as needed */
+	background-color: #FFE3BB;
+}
+QPushButton:hover {
+	background-color: #FFD28F;
+	}
+QPushButton:pressed {
+	background-color: #B4BDFF;
+}</string>
+    </property>
+    <property name="text">
+     <string>Open Database</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources/>

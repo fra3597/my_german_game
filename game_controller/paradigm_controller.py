@@ -87,6 +87,11 @@ class ParadigmController(Controller):
         text_to_show = present_total_score + präteritum_total_score + perfekt_total_score
         self.ui_controller.paradigm_summary_window.total_score_label.setText(text_to_show)
 
+    def open_database(self):
+        self.ui_controller.set_previous_index(self.ui_controller.stacked_widget.currentIndex())
+        self.ui_controller.database_window.show_paradigm_database()
+        self.ui_controller.stacked_widget.setCurrentWidget(self.ui_controller.database_window)
+
     def play_again(self):
         self.ui_controller.reset_paradigm_mode_view()
         self.game_model.reset_game()
@@ -98,6 +103,7 @@ class ParadigmController(Controller):
         self.ui_controller.verb_paradigm_window.connect_add_character_button(self.add_character)
         self.ui_controller.verb_paradigm_window.connect_check_button(self.check_answer)
         self.ui_controller.verb_paradigm_window.connect_go_to_summary_button(self.show_summary)
+        self.ui_controller.verb_paradigm_window.connect_open_database_button(self.open_database)
 
         self.ui_controller.paradigm_summary_window.connect_play_again_button(self.play_again)
         self.ui_controller.paradigm_summary_window.connect_quit_button(self.ui_controller.paradigm_summary_window.quit_game)

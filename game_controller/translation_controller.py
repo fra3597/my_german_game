@@ -78,7 +78,12 @@ class TranslationController(Controller):
         
     def add_character(self):
         self.ui_controller.translate_mode_window.add_character()
-        
+
+    def open_database(self):
+        self.ui_controller.set_previous_index(self.ui_controller.stacked_widget.currentIndex())
+        self.ui_controller.database_window.show_translation_database()
+        self.ui_controller.stacked_widget.setCurrentWidget(self.ui_controller.database_window)
+
     def connect_buttons(self):
         self.ui_controller.select_language_window.connect_german_to_italian_button(self.start_game)
         self.ui_controller.select_language_window.connect_italian_to_german_button(self.start_game)
@@ -87,6 +92,7 @@ class TranslationController(Controller):
         self.ui_controller.translate_mode_window.connect_check_button(self.check_answer)
         self.ui_controller.translate_mode_window.connect_give_me_a_hint_button(self.show_hint)
         self.ui_controller.translate_mode_window.connect_go_to_summary_button(self.show_summary)
+        self.ui_controller.translate_mode_window.connect_open_database_button(self.open_database)
 
         self.ui_controller.summary_window.connect_play_again_button(self.play_again)
         self.ui_controller.summary_window.connect_quit_button(self.ui_controller.summary_window.quit_game)

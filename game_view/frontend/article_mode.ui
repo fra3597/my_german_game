@@ -237,12 +237,44 @@ QPushButton:pressed {
      <string>Go to Summary</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="open_database_button">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>290</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	border-radius: 20px; /* Adjust the radius as needed */
+	background-color: #FFE3BB;
+}
+QPushButton:hover {
+	background-color: #FFD28F;
+	}
+QPushButton:pressed {
+	background-color: #B4BDFF;
+}</string>
+    </property>
+    <property name="text">
+     <string>Open Database</string>
+    </property>
+   </widget>
    <zorder>go_to_summary_button</zorder>
    <zorder>title_label</zorder>
    <zorder>die_button</zorder>
    <zorder>comparison_result_label</zorder>
    <zorder>der_button</zorder>
    <zorder>das_button</zorder>
+   <zorder>open_database_button</zorder>
   </widget>
  </widget>
  <resources/>

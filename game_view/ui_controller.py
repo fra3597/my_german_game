@@ -4,6 +4,7 @@ from game_view.backend.select_language_view import SelectLanguage
 from game_view.backend.translate_mode import TranslateMode
 from game_view.backend.verb_paradigm_view import VerbParadigmMode
 from game_view.backend.article_mode_view import ArticleMode
+from game_view.backend.database_view import DatabaseView
 from game_view.backend.translation_summary_view import Summary
 from game_view.backend.paradigm_summary_view import ParadigmSummary
 from game_view.backend.article_summary_view import ArticleSummary
@@ -20,12 +21,15 @@ class UIController(QMainWindow):
         self.translate_mode_window = TranslateMode()
         self.verb_paradigm_window = VerbParadigmMode()
         self.article_mode_window = ArticleMode()
+        self.database_window = DatabaseView()
         self.summary_window = Summary()
         self.paradigm_summary_window = ParadigmSummary()
         self.article_summary_window = ArticleSummary()
+        self.previous_index = None
 
         self.init_stacked_widget()
         self.init_select_game_mode_window_buttons()
+        self.connect_go_back_button_database()
 
     def set_translate_mode_window(self):
         self.stacked_widget.setCurrentWidget(self.translate_mode_window)
@@ -49,6 +53,7 @@ class UIController(QMainWindow):
         self.stacked_widget.addWidget(self.translate_mode_window)
         self.stacked_widget.addWidget(self.verb_paradigm_window)
         self.stacked_widget.addWidget(self.article_mode_window)
+        self.stacked_widget.addWidget(self.database_window)
         self.stacked_widget.addWidget(self.summary_window)
         self.stacked_widget.addWidget(self.paradigm_summary_window)
         self.stacked_widget.addWidget(self.article_summary_window)
@@ -81,6 +86,17 @@ class UIController(QMainWindow):
         self.article_mode_window.go_to_summary_button.setVisible(False)
         self.article_mode_window.comparison_result_label.setText("")
         self.article_summary_window.model.removeRows(0, self.article_summary_window.model.rowCount())
+
+    def set_previous_index(self, previous_index):
+        self.previous_index = previous_index
+
+    def set_previous_window(self):
+        current_index = self.stacked_widget.currentIndex()
+        if current_index > 0:
+            self.stacked_widget.setCurrentIndex(self.previous_index)
+
+    def connect_go_back_button_database(self):
+        self.database_window.connect_go_back_button(self.set_previous_window)
 
 
 

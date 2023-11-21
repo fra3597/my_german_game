@@ -66,6 +66,11 @@ class ArticleController(Controller):
             self.game_model.number_of_matches
         )
 
+    def open_database(self):
+        self.ui_controller.set_previous_index(self.ui_controller.stacked_widget.currentIndex())
+        self.ui_controller.database_window.show_article_database()
+        self.ui_controller.stacked_widget.setCurrentWidget(self.ui_controller.database_window)
+
     def play_again(self):
         self.ui_controller.reset_article_mode_view()
         self.game_model.reset_game()
@@ -78,6 +83,7 @@ class ArticleController(Controller):
         self.ui_controller.article_mode_window.connect_die_button(self.check_answer)
         self.ui_controller.article_mode_window.connect_das_button(self.check_answer)
         self.ui_controller.article_mode_window.connect_go_to_summary_button(self.show_summary)
+        self.ui_controller.article_mode_window.connect_open_database_button(self.open_database)
 
         self.ui_controller.article_summary_window.connect_play_again_button(self.play_again)
         self.ui_controller.article_summary_window.connect_quit_button(self.ui_controller.summary_window.quit_game)
