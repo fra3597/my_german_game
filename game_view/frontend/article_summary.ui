@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>ParadigmSummary</class>
- <widget class="QWidget" name="ParadigmSummary">
+ <class>ArticleSummary</class>
+ <widget class="QWidget" name="ArticleSummary">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>ParadigmSummary</string>
+   <string>ArticleSummary</string>
   </property>
   <widget class="QWidget" name="widget" native="true">
    <property name="geometry">
@@ -31,9 +31,9 @@
    <widget class="QTableView" name="summary_table">
     <property name="geometry">
      <rect>
-      <x>19</x>
+      <x>100</x>
       <y>240</y>
-      <width>961</width>
+      <width>780</width>
       <height>510</height>
      </rect>
     </property>
@@ -52,8 +52,8 @@
     </property>
     <property name="styleSheet">
      <string notr="true">QTableView {
-	font-size: 24px;  /* Set font size for cells */
-	color: white;     /* Set text color for cells */
+     font-size: 24px;  /* Set font size for cells */
+     color: white;     /* Set text color for cells */
 	border: 2px solid #000000; /* Border color and width */
 	padding: 10px; /* Adjust padding as needed */
 	background-color: #FFE3BB;
@@ -63,37 +63,24 @@
 }
 
 QHeaderView::section {
-	font-size: 32px;
-	color: white;     /* Set text color for header */
-	background-color: #FFD28F; /* Set background color for header */
-	border: 1px solid #555; /* Set border for header */
+     color: white;     /* Set text color for header */
+     background-color: #FFD28F; /* Set background color for header */
+     border: 1px solid #555; /* Set border for header */
 	height: 36px;     /* Set height for each header */
 	width: 260px;
 	font-weight: bold;
-}
-QHeaderView::section:vertical {
-	font-size: 12px;
 }</string>
-    </property>
-    <property name="alternatingRowColors">
-     <bool>true</bool>
     </property>
     <property name="cornerButtonEnabled">
      <bool>false</bool>
     </property>
-    <attribute name="verticalHeaderDefaultSectionSize">
-     <number>22</number>
-    </attribute>
-    <attribute name="verticalHeaderStretchLastSection">
-     <bool>false</bool>
-    </attribute>
    </widget>
-   <widget class="QLabel" name="partial_score_label">
+   <widget class="QLabel" name="score_label">
     <property name="geometry">
      <rect>
-      <x>34</x>
+      <x>84</x>
       <y>50</y>
-      <width>391</width>
+      <width>251</width>
       <height>161</height>
      </rect>
     </property>
@@ -120,7 +107,7 @@ border: none;
 </string>
     </property>
     <property name="text">
-     <string/>
+     <string>Your Partial Score is:</string>
     </property>
     <property name="wordWrap">
      <bool>true</bool>
@@ -129,8 +116,8 @@ border: none;
    <widget class="QPushButton" name="play_again_button">
     <property name="geometry">
      <rect>
-      <x>840</x>
-      <y>50</y>
+      <x>550</x>
+      <y>100</y>
       <width>120</width>
       <height>60</height>
      </rect>
@@ -160,8 +147,8 @@ QPushButton:pressed {
    <widget class="QPushButton" name="quit_button">
     <property name="geometry">
      <rect>
-      <x>840</x>
-      <y>140</y>
+      <x>710</x>
+      <y>100</y>
       <width>120</width>
       <height>60</height>
      </rect>
@@ -186,44 +173,6 @@ QPushButton:pressed {
     </property>
     <property name="text">
      <string>Quit</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="total_score_label">
-    <property name="geometry">
-     <rect>
-      <x>430</x>
-      <y>50</y>
-      <width>361</width>
-      <height>161</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>12</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius: 50%; /* Makes the label circular */
-border: 2px solid #000000; /* Border color and width */
-padding: 10px; /* Adjust padding as needed */
-background-color: #83A2FF;
-color: #FFD28F;
-border: none;
-</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="wordWrap">
-     <bool>true</bool>
     </property>
    </widget>
   </widget>

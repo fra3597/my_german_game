@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Summary</class>
- <widget class="QWidget" name="Summary">
+ <class>ArticleMode</class>
+ <widget class="QWidget" name="ArticleMode">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Verb Paradigm Mode</string>
+   <string>Article Mode</string>
   </property>
   <widget class="QWidget" name="widget" native="true">
    <property name="geometry">
@@ -37,9 +37,9 @@
    <widget class="QLabel" name="title_label">
     <property name="geometry">
      <rect>
-      <x>160</x>
+      <x>0</x>
       <y>40</y>
-      <width>701</width>
+      <width>991</width>
       <height>161</height>
      </rect>
     </property>
@@ -66,7 +66,7 @@ border: none;
 </string>
     </property>
     <property name="text">
-     <string>Complete the Verb Paradigm to win the Game</string>
+     <string>The word is:</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -75,13 +75,13 @@ border: none;
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QPushButton" name="check_button">
+   <widget class="QPushButton" name="die_button">
     <property name="geometry">
      <rect>
-      <x>610</x>
-      <y>350</y>
+      <x>420</x>
+      <y>260</y>
       <width>141</width>
-      <height>81</height>
+      <height>111</height>
      </rect>
     </property>
     <property name="font">
@@ -103,100 +103,16 @@ QPushButton:pressed {
 }</string>
     </property>
     <property name="text">
-     <string>Check!</string>
+     <string>Die</string>
     </property>
-   </widget>
-   <widget class="QTableWidget" name="paradigm_table">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>230</y>
-      <width>901</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QTableWidget {
-	font-size: 24px;  /* Set font size for cells */
-	color: white;     /* Set text color for cells */
-	border: 2px solid #000000; /* Border color and width */
-	padding: 10px; /* Adjust padding as needed */
-	background-color: #FFE3BB;
-	color: black;
-	font-weight: bold;
-	border: none;
-}
-
-QHeaderView::section {
-	font-size: 28px;
-	color: white;     /* Set text color for header */
-	background-color: #FFD28F; /* Set background color for header */
-	border: 1px solid #555; /* Set border for header */
-	height: 36px;     /* Set height for each header */
-	width: 260px;
-	font-weight: bold;
-}</string>
-    </property>
-    <property name="rowCount">
-     <number>1</number>
-    </property>
-    <property name="columnCount">
-     <number>4</number>
-    </property>
-    <attribute name="horizontalHeaderVisible">
-     <bool>true</bool>
-    </attribute>
-    <attribute name="horizontalHeaderDefaultSectionSize">
-     <number>220</number>
-    </attribute>
-    <attribute name="horizontalHeaderMinimumSectionSize">
-     <number>24</number>
-    </attribute>
-    <attribute name="verticalHeaderVisible">
-     <bool>false</bool>
-    </attribute>
-    <attribute name="verticalHeaderCascadingSectionResizes">
-     <bool>false</bool>
-    </attribute>
-    <attribute name="verticalHeaderShowSortIndicator" stdset="0">
-     <bool>false</bool>
-    </attribute>
-    <attribute name="verticalHeaderStretchLastSection">
-     <bool>false</bool>
-    </attribute>
-    <row>
-     <property name="text">
-      <string>Word to Guess</string>
-     </property>
-    </row>
-    <column>
-     <property name="text">
-      <string>Present</string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
-      <string>Präteritum</string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
-      <string>Perfekt</string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
-      <string>Italian</string>
-     </property>
-    </column>
    </widget>
    <widget class="QLabel" name="comparison_result_label">
     <property name="geometry">
      <rect>
-      <x>70</x>
+      <x>0</x>
       <y>470</y>
-      <width>861</width>
-      <height>271</height>
+      <width>991</width>
+      <height>171</height>
      </rect>
     </property>
     <property name="font">
@@ -222,16 +138,81 @@ border: none;
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
+   <widget class="QPushButton" name="der_button">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>260</y>
+      <width>141</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	border-radius: 20px; /* Adjust the radius as needed */
+	background-color: #FFE3BB;
+}
+QPushButton:hover {
+	background-color: #FFD28F;
+	}
+QPushButton:pressed {
+	background-color: #B4BDFF;
+}</string>
+    </property>
+    <property name="text">
+     <string>Der</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="das_button">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>260</y>
+      <width>141</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	border-radius: 20px; /* Adjust the radius as needed */
+	background-color: #FFE3BB;
+}
+QPushButton:hover {
+	background-color: #FFD28F;
+	}
+QPushButton:pressed {
+	background-color: #B4BDFF;
+}</string>
+    </property>
+    <property name="text">
+     <string>Das</string>
+    </property>
+   </widget>
    <widget class="QPushButton" name="go_to_summary_button">
     <property name="enabled">
      <bool>true</bool>
     </property>
     <property name="geometry">
      <rect>
-      <x>610</x>
-      <y>350</y>
-      <width>141</width>
-      <height>81</height>
+      <x>330</x>
+      <y>260</y>
+      <width>321</width>
+      <height>111</height>
      </rect>
     </property>
     <property name="font">
@@ -253,84 +234,15 @@ QPushButton:pressed {
 }</string>
     </property>
     <property name="text">
-     <string>Go to Summary!</string>
+     <string>Go to Summary</string>
     </property>
    </widget>
-   <widget class="QComboBox" name="character_combo_box">
-    <property name="geometry">
-     <rect>
-      <x>190</x>
-      <y>380</y>
-      <width>71</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>10</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">text-align: center;</string>
-    </property>
-    <property name="maxVisibleItems">
-     <number>7</number>
-    </property>
-    <item>
-     <property name="text">
-      <string>ä</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>ü</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>ö</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>ß</string>
-     </property>
-    </item>
-   </widget>
-   <widget class="QPushButton" name="add_character_button">
-    <property name="geometry">
-     <rect>
-      <x>300</x>
-      <y>380</y>
-      <width>71</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>12</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton {
-	border-radius: 20px; /* Adjust the radius as needed */
-	background-color: #FFE3BB;
-}
-QPushButton:hover {
-	background-color: #FFD28F;
-	}
-QPushButton:pressed {
-	background-color: #B4BDFF;
-}</string>
-    </property>
-    <property name="text">
-     <string>Add</string>
-    </property>
-   </widget>
+   <zorder>go_to_summary_button</zorder>
+   <zorder>title_label</zorder>
+   <zorder>die_button</zorder>
+   <zorder>comparison_result_label</zorder>
+   <zorder>der_button</zorder>
+   <zorder>das_button</zorder>
   </widget>
  </widget>
  <resources/>

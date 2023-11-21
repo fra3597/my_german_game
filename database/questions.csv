@@ -4,7 +4,7 @@ zu,troppo,3
 Bar,contanti,2
 anprobieren,provare,1
 passen,andare bene,3
-auch,anche,3
+auch,anche,4
 leider,piuttosto,2
 nur,solo,1
 hell + colore,colore chiaro,3
@@ -21,7 +21,7 @@ mögen/wollen,volere,1
 kaufen,comprare,0
 der Mantel,il cappotto,1
 dunkel + colore,colore scuro,2
-der Hut,il cappello,2
+der Hut,il cappello,3
 teuer,costoso,5
 können,potere,2
 sehen,vedere,1
@@ -34,7 +34,7 @@ schön,bello,2
 gross,grande,0
 klein,piccolo,1
 für + accusativo,per,1
-der Urlaub,la vacanza,2
+der Urlaub,la vacanza,3
 die Hochzeit,le nozze,2
 das Hemd,la camicia,3
 weiss,bianco,2
@@ -65,7 +65,7 @@ es tut mir leid,mi dispiace,2
 Mist!,Accidenti!,3
 das nächste Mal,la prossima volta,0
 trotzdem,comunque,2
-müssen,dovere,3
+müssen,dovere,4
 vorsichting,attento,1
 entspannt,rilassato,1
 müde,stanco,2
@@ -79,7 +79,7 @@ die Arbeit,il lavoro,3
 zur Zeit,al momento,1
 Warum?,Perché?,1
 fähren,andare (con mezzo di trasporto),0
-werden,diventare,2
+werden,diventare,3
 heiraten,sposare,2
 verlobt,fidanzato,1
 bald,presto,1
@@ -95,7 +95,7 @@ wiederholen,ripetere,2
 Herzlichen Glückwunsch,Congratulazioni,1
 verstehen,capire,1
 langsam,lento,1
-die Fleischtheke,il banco macelleria,1
+die Fleischtheke,il banco macelleria,2
 das Hähnchen,il pollo,1
 überqueren,attraversare,2
 aussteigen,uscire,0
@@ -107,7 +107,7 @@ anrufen,chiamare,2
 die Beziehung,la relazione,1
 in der Nähe von,nelle vicinanze di,0
 dürfen,potere,2
-geradeaus,dritto,2
+geradeaus,dritto,3
 jetz,ora,1
 anfangen,iniziare,2
 die Ahnung,l'idea,1
@@ -402,7 +402,7 @@ fallen,cadere,2
 halten,tenere (hold),1
 dort,lì/là,1
 die Stadtrundfahrt,il giro della città,1
-das Tier,l'animale,2
+das Tier,l'animale,3
 die Wanderung,la camminata,0
 drinnen,dentro,1
 rausgehen,uscire,0
