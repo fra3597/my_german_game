@@ -88,7 +88,7 @@ class ParadigmController(Controller):
         self.ui_controller.paradigm_summary_window.total_score_label.setText(text_to_show)
 
     def play_again(self):
-        self.ui_controller.reset_paradigm_mode()
+        self.ui_controller.reset_paradigm_mode_view()
         self.game_model.reset_game()
         self.start_verb_paradigm_mode()
 

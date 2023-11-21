@@ -6,6 +6,7 @@ from game_view.backend.verb_paradigm_view import VerbParadigmMode
 from game_view.backend.article_mode_view import ArticleMode
 from game_view.backend.translation_summary_view import Summary
 from game_view.backend.paradigm_summary_view import ParadigmSummary
+from game_view.backend.article_summary_view import ArticleSummary
 
 
 class UIController(QMainWindow):
@@ -21,6 +22,7 @@ class UIController(QMainWindow):
         self.article_mode_window = ArticleMode()
         self.summary_window = Summary()
         self.paradigm_summary_window = ParadigmSummary()
+        self.article_summary_window = ArticleSummary()
 
         self.init_stacked_widget()
         self.init_select_game_mode_window_buttons()
@@ -49,6 +51,7 @@ class UIController(QMainWindow):
         self.stacked_widget.addWidget(self.article_mode_window)
         self.stacked_widget.addWidget(self.summary_window)
         self.stacked_widget.addWidget(self.paradigm_summary_window)
+        self.stacked_widget.addWidget(self.article_summary_window)
 
     def init_select_game_mode_window_buttons(self):
         self.select_game_mode_window.connect_translate_mode_button(self.set_select_language_window)
@@ -62,13 +65,23 @@ class UIController(QMainWindow):
         self.translate_mode_window.go_to_summary_button.setVisible(False)
         self.summary_window.model.removeRows(0, self.summary_window.model.rowCount())
 
-    def reset_paradigm_mode(self):
+    def reset_paradigm_mode_view(self):
         self.stacked_widget.setCurrentWidget(self.verb_paradigm_window)
         self.verb_paradigm_window.check_button.setVisible(True)
         self.verb_paradigm_window.go_to_summary_button.setVisible(False)
         self.verb_paradigm_window.comparison_result_label.setText("")
         self.verb_paradigm_window.clear_entry_row()
         self.paradigm_summary_window.model.removeRows(0, self.paradigm_summary_window.model.rowCount())
+
+    def reset_article_mode_view(self):
+        self.stacked_widget.setCurrentWidget(self.article_mode_window)
+        self.article_mode_window.der_button.setVisible(True)
+        self.article_mode_window.die_button.setVisible(True)
+        self.article_mode_window.das_button.setVisible(True)
+        self.article_mode_window.go_to_summary_button.setVisible(False)
+        self.article_mode_window.comparison_result_label.setText("")
+        self.article_summary_window.model.removeRows(0, self.article_summary_window.model.rowCount())
+
 
 
 

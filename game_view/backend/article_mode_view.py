@@ -18,6 +18,9 @@ class ArticleMode(QtWidgets.QWidget):
     def connect_das_button(self, function):
         self.das_button.clicked.connect(function)
 
+    def connect_go_to_summary_button(self, function):
+        self.go_to_summary_button.clicked.connect(function)
+
     def read_user_answer(self):
         button_pressed = self.sender()
 

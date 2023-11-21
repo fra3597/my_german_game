@@ -56,6 +56,7 @@ class ParadigmSummary(QtWidgets.QWidget):
         self.model.setVerticalHeaderItem(self.model.rowCount() - 2, QStandardItem("Paradigm"))
         self.model.setVerticalHeaderItem(self.model.rowCount() - 1, QStandardItem("User Answer"))
 
+    #Is it working?
     def update_columns_width(self):
         for col in range(NUMBER_OF_COLUMNS):
             max_width = 0
