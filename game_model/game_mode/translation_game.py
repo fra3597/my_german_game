@@ -43,12 +43,14 @@ class TranslationGame(Game):
                 self.answers.append(word.italian_word)
 
     def update_score_in_database(self):
+        mask = []
+
         for index, word in enumerate(self.guessed_entries):
-            if self.guessed_entries[index] and self.language_mode == self.ITALIAN_TO_GERMAN:
-                mask = database["Italian"] == self.questions[index]
-                database.loc[mask, "Score"] += 1
-            elif self.guessed_entries[index] and self.language_mode == self.GERMAN_TO_ITALIAN:
-                mask = database["German"] == self.questions[index]
+            if self.guessed_entries[index]:
+                if self.language_mode == self.ITALIAN_TO_GERMAN:
+                    mask = database["Italian"] == self.questions[index]
+                elif self.language_mode == self.GERMAN_TO_ITALIAN:
+                    mask = database["German"] == self.questions[index]
                 database.loc[mask, "Score"] += 1
 
         database.to_csv("database/questions.csv", index=False)
@@ -57,5 +59,6 @@ class TranslationGame(Game):
         self.update_number_of_matches()
         self.score.reset_partial_score()
         self.reset_current_word()
+        self.guessed_entries = []
         self.questions = []
         self.answers = []

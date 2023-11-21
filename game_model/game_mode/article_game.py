@@ -41,4 +41,5 @@ class ArticleGame(Game):
         self.update_number_of_matches()
         self.score.reset_partial_score()
         self.reset_current_word()
+        self.guessed_entries = []
         self.list_of_words = []

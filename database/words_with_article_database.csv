@@ -13,7 +13,7 @@ das, Hemd,la camicia,1
 das, Paar,il paio,1
 die, Sache,la cosa,1
 die, Frage,la domanda,1
-das, Spiel,il gioco,1
+das, Spiel,il gioco,2
 das, nächste Mal,la prossima volta,1
 die, Arbeit,il lavoro,1
 der, Freund,l'amico/il ragazzo,1
@@ -42,7 +42,7 @@ die, Knospe,il bocciolo,1
 die, Arbeitpause,la pausa al lavoro,1
 das, Schuljahr,l'anno scolastico,1
 die, Prüfung,l'esame,1
-das, Zeugnis,la pagella,1
+das, Zeugnis,la pagella,2
 die, Note,il voto,1
 das, Gymnasium,il liceo,1
 die, Hausaufgaben,i compiti a casa,1
@@ -61,7 +61,7 @@ die, Bedingung,la condizione,1
 das, Bett,il letto,1
 der, Fernsehe,la televisione,1
 der, Geldbeutel,il borsellino,1
-das, Geld,il denaro/i soldi,1
+das, Geld,il denaro/i soldi,2
 die, Kopfschmerzen,il mal di testa,1
 die, Redewendung,i modi di dire,1
 das, Fell,la pelliccia/il pelo,1
@@ -103,7 +103,7 @@ die, Gepäck,i bagagli,1
 der, Wäschekorb,cesto per la biancheria,1
 die, Schublade,il cassetto,1
 der, Schrank,l'armadio,1
-das, Regal,lo scaffale,1
+das, Regal,lo scaffale,2
 die, Kommode,il comò,2
 der, Nattisch,il comodino,1
 das, Kopfkissen,il cuscino,1
@@ -113,8 +113,8 @@ die, Waschemaschine,la lavatrice,1
 die, Flasche,la bottiglia,1
 die, Schultasche,lo zaino di scuola,1
 die, Küche,la cucina,1
-das, Heft,il quaderno,1
-der, Keller,la cantina,3
+das, Heft,il quaderno,2
+der, Keller,la cantina,4
 die, Turnschuhe,le scarpe da ginnastica,1
 das, Schuregal,la scarpiera,1
 der, Küchenschrank,la credenza,1
@@ -128,7 +128,7 @@ das, Schiff,la nave,1
 die, Bahn,il treno,1
 die, Insel,l'isola,1
 der, Berg,la montagna,1
-das, Meer,il mare,1
+das, Meer,il mare,2
 der, Fluss,il fiume,2
 der, See,il lago,1
 der, Bauernhof,la fattoria,1
@@ -158,7 +158,7 @@ der, Friseur,il parrucchiere,1
 der, Rechner,la calcolatrice,1
 das, Fenster,la finestra,1
 die, Uhr,l'orologio,1
-das, Regal,lo scaffale,1
+das, Regal,lo scaffale,2
 die, Regel,la regola,1
 der, Schrank,l'armadio,1
 die, Ablage,l'archivio,1
@@ -172,7 +172,7 @@ der, Sender,emittente/trasmettitore,1
 der, Spielfilm,il lungometraggio,1
 die, Komodie,la commedia,1
 der, Stau,ingorgo/traffico,1
-die, Verkehrsnachrichten,le notizie sul traffico,1
+die, Verkehrsnachrichten,le notizie sul traffico,2
 die, Verfügung,la disposizione,1
 der, Internetanschluss,l'accesso a internet,1
 der, Internetanbieter,il provider internet,2
@@ -190,14 +190,14 @@ die, Oma,la nonna,1
 die, Grosseltern,i nonni,1
 die, Eltern,i genitori,1
 die, Geschwister,i fratelli,1
-das, Viertel,il quarto (d'ora),1
+das, Viertel,il quarto (d'ora),2
 der, Hof,il giardino,1
 der, Nachbar,il vicino,1
 die, Wohnung,l'appartamento,1
 der, Name,il nome,1
 der, Tag,il giorno,2
 das, Enkelkind,il nipote,1
-das, Wetter,il tempo/meteo,2
+das, Wetter,il tempo/meteo,3
 das, Gemüse,la verdura,1
 der, Kopf,la testa,1
 das, Mitglied,il membro,1
@@ -206,7 +206,7 @@ der, Schlager,la canzone,1
 die, Weltmeisterschaft,il campionato mondiale,1
 das,s,che,1
 die, Lachen,le risate,1
-der, Keller,la cantina,3
+der, Keller,la cantina,4
 der, Erfolg,il successo,1
 die, Mannschaft,la squadra,1
 die, Endrunde,il girone finale,1
@@ -233,7 +233,7 @@ die, Anzeige,la denuncia/l'annuncio,1
 das, Gelingen,la riuscita,1
 der, Weg,la strada/via,2
 die, Medaille,la medaglia,1
-der, Mietvertrag,il contratto d'affitto,1
+der, Mietvertrag,il contratto d'affitto,2
 der, Maler,il pittore,1
 der, Herd,la cucina/i fornelli,1
 die, Waschmaschine,la lavatrice,1
@@ -308,9 +308,9 @@ der, Rentner,il pensionato,1
 der, Gärtner,il giardiniere,1
 der, Sänger,il cantante,1
 der, Studierende,lo studente,1
-das, Einwohnermeldeamt,l'ufficio anagrafe,1
+das, Einwohnermeldeamt,l'ufficio anagrafe,2
 das, Standesamt,l'ufficio anagrafe,1
-das, Fundbüro,l'ufficio oggetti smarriti,1
+das, Fundbüro,l'ufficio oggetti smarriti,2
 das, Binde,la fasciatura,1
 die, Geheimzahl,il codice segreto,1
 der, Kontoauszug,l'estratto conto,1
@@ -320,7 +320,7 @@ der, Absender,il mittente,1
 der, Empfänger,il ricevente,1
 das, Gebirge,le montagne,1
 die, Hauptstadt,la capitale,1
-das, Meer,il mare,1
+das, Meer,il mare,2
 der, Bauer,il contadino,1
 die, Milch,il latte,1
 das, Fell,la pelle,1
