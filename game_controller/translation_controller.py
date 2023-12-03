@@ -29,7 +29,7 @@ class TranslationController(Controller):
             result = "<html><font color='green'>Genau!</font></html>"
             self.ui_controller.translate_mode_window.solution_label.setText(result)
             self.game_model.score.update_partial_score()
-            self.ui_controller.summary_window.append_row_to_summary_table(
+            self.ui_controller.translation_summary_window.append_row_to_summary_table(
                 self.game_model.questions[self.game_model.current_word],
                 user_answer,
                 self.game_model.answers[self.game_model.current_word],
@@ -39,7 +39,7 @@ class TranslationController(Controller):
         else:
             result = f"<html><font color='red'>Wrong!</font> The correct answer was <i><font color='green'>'{self.game_model.answers[self.game_model.current_word]}'</font></i></html>"
             self.ui_controller.translate_mode_window.solution_label.setText(result)
-            self.ui_controller.summary_window.append_row_to_summary_table(
+            self.ui_controller.translation_summary_window.append_row_to_summary_table(
                 self.game_model.questions[self.game_model.current_word],
                 user_answer,
                 self.game_model.answers[self.game_model.current_word],
@@ -64,9 +64,9 @@ class TranslationController(Controller):
         self.ui_controller.translate_mode_window.give_me_a_hint(current_word)
 
     def show_summary(self):
-        self.ui_controller.stacked_widget.setCurrentWidget(self.ui_controller.summary_window)
+        self.ui_controller.stacked_widget.setCurrentWidget(self.ui_controller.translation_summary_window)
         #I don't like a lot the previous function, should it be higher level?
-        self.ui_controller.summary_window.show_score(
+        self.ui_controller.translation_summary_window.show_score(
             self.game_model.score.partial_score,
             self.game_model.score.total_score,
             self.game_model.number_of_matches
@@ -94,6 +94,6 @@ class TranslationController(Controller):
         self.ui_controller.translate_mode_window.connect_go_to_summary_button(self.show_summary)
         self.ui_controller.translate_mode_window.connect_open_database_button(self.open_database)
 
-        self.ui_controller.summary_window.connect_play_again_button(self.play_again)
-        self.ui_controller.summary_window.connect_quit_button(self.ui_controller.summary_window.quit_game)
+        self.ui_controller.translation_summary_window.connect_play_again_button(self.play_again)
+        self.ui_controller.translation_summary_window.connect_quit_button(self.ui_controller.quit_game)
         

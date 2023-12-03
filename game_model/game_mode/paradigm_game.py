@@ -19,7 +19,7 @@ class ParadigmGame(Game):
 
     def load_questions_paradigm(self):
         guessed_counter_list = []
-        scores = ["PresentScore", "PräteritumScore", "PerfektScore"]
+        scores = ["PresentScore", "PraeteritumScore", "PerfektScore"]
 
         total_score = 0
 
@@ -61,8 +61,8 @@ class ParadigmGame(Game):
                 if entry == self.list_of_paradigms[self.current_word].present:
                     self.score.present_partial_score += 1
                     is_correct[0] = True
-                elif entry == self.list_of_paradigms[self.current_word].präteritum :
-                    self.score.präteritum_partial_score += 1
+                elif entry == self.list_of_paradigms[self.current_word].praeteritum :
+                    self.score.praeteritum_partial_score += 1
                     is_correct[1] = True
                 elif entry == self.list_of_paradigms[self.current_word].perfekt:
                     self.score.perfekt_partial_score += 1
@@ -71,7 +71,7 @@ class ParadigmGame(Game):
         if self.given_entry_index != 0:
             self.score.present_partial_counter += 1
         if self.given_entry_index != 1:
-            self.score.präteritum_partial_counter += 1
+            self.score.praeteritum_partial_counter += 1
         if self.given_entry_index != 2:
             self.score.perfekt_partial_counter += 1
 
@@ -79,7 +79,7 @@ class ParadigmGame(Game):
 
     def set_current_paradigm(self):
         current_paradigm = [self.list_of_paradigms[self.current_word].present,
-                            self.list_of_paradigms[self.current_word].präteritum,
+                            self.list_of_paradigms[self.current_word].praeteritum,
                             self.list_of_paradigms[self.current_word].perfekt,
                             self.list_of_paradigms[self.current_word].italian]
 
@@ -92,8 +92,8 @@ class ParadigmGame(Game):
                     mask = paradigm_database["Present"] == self.list_of_paradigms[index].present
                     paradigm_database.loc[mask, "PresentScore"] += 1
                 elif self.guessed_entries[index][inner_index] and inner_index == 1:
-                    mask = paradigm_database["Präteritum"] == self.list_of_paradigms[index].präteritum
-                    paradigm_database.loc[mask, "PräteritumScore"] += 1
+                    mask = paradigm_database["Praeteritum"] == self.list_of_paradigms[index].praeteritum
+                    paradigm_database.loc[mask, "PraeteritumScore"] += 1
                 elif self.guessed_entries[index][inner_index] and inner_index == 2:
                     mask = paradigm_database["Perfekt"] == self.list_of_paradigms[index].perfekt
                     paradigm_database.loc[mask, "PerfektScore"] += 1

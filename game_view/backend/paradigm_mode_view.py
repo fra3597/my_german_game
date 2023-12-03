@@ -7,16 +7,28 @@ NUMBER_OF_ROWS = 1
 ROW_INDEX = 0
 
 PRESENT = 0
-PRÄTERITUM = 1
+PRAETERITUM = 1
 PERFEKT = 2
 ITALIAN = 3
 
 
-class VerbParadigmMode(QWidget):
+class ParadigmMode(QWidget):
     def __init__(self):
         super().__init__()
         loadUi("game_view/frontend/verb_paradigm_mode.ui", self)
         self.go_to_summary_button.setVisible(False)
+
+    def connect_add_character_button(self, function):
+        self.add_character_button.clicked.connect(function)
+
+    def connect_check_button(self, function):
+        self.check_button.clicked.connect(function)
+
+    def connect_go_to_summary_button(self, function):
+        self.go_to_summary_button.clicked.connect(function)
+
+    def connect_open_database_button(self, function):
+        self.open_database_button.clicked.connect(function)
 
     def set_row_in_table(self, current_paradigm):
         given_entry_index = randint(0, 2)
@@ -25,7 +37,7 @@ class VerbParadigmMode(QWidget):
         if given_entry_index == 0:
             self.paradigm_table.setItem(0, 0, QTableWidgetItem(current_paradigm[PRESENT]))
         elif given_entry_index == 1:
-            self.paradigm_table.setItem(0, 1, QTableWidgetItem(current_paradigm[PRÄTERITUM]))
+            self.paradigm_table.setItem(0, 1, QTableWidgetItem(current_paradigm[PRAETERITUM]))
         else:
             self.paradigm_table.setItem(0, 2, QTableWidgetItem(current_paradigm[PERFEKT]))
 
@@ -65,15 +77,3 @@ class VerbParadigmMode(QWidget):
             item = self.paradigm_table.takeItem(ROW_INDEX, col)
             if item:
                 del item
-
-    def connect_add_character_button(self, function):
-        self.add_character_button.clicked.connect(function)
-
-    def connect_check_button(self, function):
-        self.check_button.clicked.connect(function)
-
-    def connect_go_to_summary_button(self, function):
-        self.go_to_summary_button.clicked.connect(function)
-
-    def connect_open_database_button(self,function):
-        self.open_database_button.clicked.connect(function)

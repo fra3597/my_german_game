@@ -4,6 +4,7 @@ from game_model.game_mode.article_game import ArticleGame
 CORRECT = True
 WRONG = False
 
+
 class ArticleController(Controller):
     def __init__(self, ui_controller):
         super().__init__(ui_controller)
@@ -86,4 +87,4 @@ class ArticleController(Controller):
         self.ui_controller.article_mode_window.connect_open_database_button(self.open_database)
 
         self.ui_controller.article_summary_window.connect_play_again_button(self.play_again)
-        self.ui_controller.article_summary_window.connect_quit_button(self.ui_controller.summary_window.quit_game)
+        self.ui_controller.article_summary_window.connect_quit_button(self.ui_controller.quit_game)

@@ -21,7 +21,6 @@ class ArticleSummary(QtWidgets.QWidget):
         self.summary_table.setModel(self.model)
 
     def init_table(self):
-        #self.summary_table.verticalHeader().setSectionResizeMode(QtWidgets.QHeaderView.ResizeToContents)
         self.summary_table.horizontalHeader().setSectionResizeMode(QtWidgets.QHeaderView.Stretch)
         self.summary_table.verticalHeader().hide()
 
@@ -48,6 +47,3 @@ class ArticleSummary(QtWidgets.QWidget):
     def show_score(self, partial_score, total_score, number_of_matches):
         text_to_show = f"Your Partial Score: {partial_score}/10\nYour Total Score: {total_score}/{10*number_of_matches}"
         self.score_label.setText(text_to_show)
-
-    def quit_game(self):
-        QtWidgets.qApp.quit()

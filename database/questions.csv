@@ -9,16 +9,16 @@ leider,piuttosto,2
 nur,solo,1
 hell + colore,colore chiaro,3
 gefallen + dativo,piacere a,1
-die Farbe,il colore,0
-nehmen,prendere,0
+die Farbe,il colore,1
+nehmen,prendere,1
 machen,fare,1
-zahlen,pagare,0
+zahlen,pagare,1
 der Kassenzettel,lo scontrino,1
 stehen,stare bene a me,1
 suchen,cercare,1
-trägen,indossare,0
+trägen,indossare,1
 mögen/wollen,volere,1
-kaufen,comprare,0
+kaufen,comprare,1
 der Mantel,il cappotto,1
 dunkel + colore,colore scuro,2
 der Hut,il cappello,3
@@ -31,15 +31,15 @@ die Schuhe,le scarpe,2
 die Hose,i pantaloni,2
 der Rock,la gonna,1
 schön,bello,2
-gross,grande,0
+gross,grande,1
 klein,piccolo,1
 für + accusativo,per,1
 der Urlaub,la vacanza,3
 die Hochzeit,le nozze,2
 das Hemd,la camicia,3
 weiss,bianco,2
-grau,grigio,0
-blau,blu,1
+grau,grigio,1
+blau,blu,2
 gelb,giallo,1
 braun,marrone,2
 schwarz,nero,2
@@ -63,7 +63,7 @@ tatsälich,in effetti,2
 aber,ma,1
 es tut mir leid,mi dispiace,2
 Mist!,Accidenti!,3
-das nächste Mal,la prossima volta,0
+das nächste Mal,la prossima volta,1
 trotzdem,comunque,2
 müssen,dovere,4
 vorsichting,attento,1
@@ -78,7 +78,7 @@ immer,sempre,1
 die Arbeit,il lavoro,3
 zur Zeit,al momento,1
 Warum?,Perché?,1
-fähren,andare (con mezzo di trasporto),0
+fähren,andare (con mezzo di trasporto),1
 werden,diventare,3
 heiraten,sposare,2
 verlobt,fidanzato,1
@@ -87,9 +87,9 @@ vielleicht,forse,1
 wirklich,veramente,2
 bleiben,rimanere,1
 der Freund,l'amico/il ragazzo,1
-die Freundin,l'amica/la ragazza,0
+die Freundin,l'amica/la ragazza,1
 nach,dopo,1
-in letzer Zeit,ultimamente,0
+in letzer Zeit,ultimamente,1
 die Jacke,la giacca,3
 wiederholen,ripetere,2
 Herzlichen Glückwunsch,Congratulazioni,1
@@ -98,38 +98,38 @@ langsam,lento,1
 die Fleischtheke,il banco macelleria,2
 das Hähnchen,il pollo,1
 überqueren,attraversare,2
-aussteigen,uscire,0
+aussteigen,uscire,1
 einsteigen,entrare,1
 backen,fare al forno,1
 das Päckchen,la bustina,2
 das Backpulver,il lievito in polvere,2
 anrufen,chiamare,2
 die Beziehung,la relazione,1
-in der Nähe von,nelle vicinanze di,0
+in der Nähe von,nelle vicinanze di,1
 dürfen,potere,2
 geradeaus,dritto,3
 jetz,ora,1
 anfangen,iniziare,2
 die Ahnung,l'idea,1
 Wo?,Dove?,1
-Wohin?,Dove?,0
+Wohin?,Dove?,1
 Woher?,Da dove?,1
 warten,aspettare,3
-die Kneipe,il Pub,0
+die Kneipe,il Pub,1
 dann,allora,1
 also,quindi/allora,1
-holen,ottenere/prendere,0
-endlich,ultimamente,0
+holen,ottenere/prendere,1
+endlich,ultimamente,1
 der Kühlschrank,il frigorifero,1
 einkaufen,fare la spesa,2
 kaufen,comprare,2
 absagen,disdire,1
 aussehen,sembrare/apparire,2
 Natürlich!,Naturalmente!,2
-sich wiedersehen,rivedersi,0
-das Zimmer,la camera,0
+sich wiedersehen,rivedersi,1
+das Zimmer,la camera,1
 reservieren,prenotare,2
-der Geburtstag,il compleanno,0
+der Geburtstag,il compleanno,1
 regelmässig,regolarmente,2
 selten,raramente,2
 nie,mai,2
@@ -141,8 +141,8 @@ essen,mangiare,1
 früh,presto,1
 haben Lust zu + accusativo,avere voglia di,1
 waschen + accusativo,lavarsi,2
-treffen + accusativo,incontrarsi,0
-man + verbo alla terza persona singolare,si + verbo impersonale,0
+treffen + accusativo,incontrarsi,1
+man + verbo alla terza persona singolare,si + verbo impersonale,1
 der Eingang,l'entrata,3
 der Ausgang,l'uscita,2
 wieder,di nuovo/nuovamente,1
@@ -151,7 +151,7 @@ Englisch,Inglese,3
 Deutsch,Tedesco,2
 Kunst,Arte,1
 Musik,Musica,2
-Sport,Sport,0
+Sport,Sport,1
 Geografie,Geografia,1
 Mathematik,Matematica,2
 Natur und Technik,Scienze,2
@@ -164,22 +164,22 @@ intelligent,intelligente,3
 interessant,interessante,2
 glücklich,felice,1
 traurig,triste,1
-der Unterricht,la lezione,0
+der Unterricht,la lezione,1
 die Zutat,l'ingrediente,1
 gleich,a breve/lo stesso,1
 einfach,facile/semplice/semplicemente,2
-bezaubernd,incantevole,2
+bezaubernd,incantevole,3
 oft,spesso,1
 irgendetwas,qualcosa,1
-Mein Beleid!,Le mie condoglianze!,0
+Mein Beleid!,Le mie condoglianze!,1
 tun,fare,1
 gehen,andare (a piedi),3
 die Oper,l'opera,2
 die Vorstellung,lo spettacolo,3
 sprechen,parlare,1
 sich entspannen,rilassarsi,1
-Spanien,Spagna,0
-Fussballspiel,partita di calcio,0
+Spanien,Spagna,1
+Fussballspiel,partita di calcio,1
 die Wespe,la vespa,1
 die Knospe,il bocciolo,1
 lispeln,sussurrare,1
@@ -190,18 +190,18 @@ Wann?,Quando?,2
 das Schuljahr,l'anno scolastico,2
 die Prüfung,l'esame,2
 schreiben,scrivere,2
-das Zeugnis,la pagella,0
+das Zeugnis,la pagella,1
 die Note,il voto,3
-schlecht,cattivo/brutto,0
+schlecht,cattivo/brutto,1
 das Gymnasium,il liceo,1
-rechnen,calcolare,0
+rechnen,calcolare,1
 bekommen,ottenere,1
 singen,cantare,1
-die Hausaufgaben,i compiti a casa,0
+die Hausaufgaben,i compiti a casa,1
 kommen,venire,2
 die Grundschule,la scuola elementare,1
 trinken,bere,3
-Richtig,vero,0
+Richtig,vero,1
 Falsch,Falso,1
 abschalten,spegnere,1
 das Licht,la luce,3
@@ -217,42 +217,42 @@ abgebrochen,interrotto,1
 abbrechen,rompere/interrompere,1
 beginnen,cominciare,1
 erlernen,imparare,1
-das Handwerksberuf,il lavoro artigianale,0
+das Handwerksberuf,il lavoro artigianale,1
 duale Ausbildung,formazione duale,2
-dazu,a questo,0
-die Berufschule,la scuola professionale,0
+dazu,a questo,1
+die Berufschule,la scuola professionale,1
 Lehre,apprendistato,1
-der Beruf,la professione,0
-die Entwicklung,lo sviluppo,0
+der Beruf,la professione,1
+die Entwicklung,lo sviluppo,1
 das Interesse,l'interesse,1
 interessieren,interessare,1
 der Satz,la frase,1
 die Bedingung,la condizione,1
 bestehen,esistere/superare,3
-absolvieren,superare/completare,0
-lezte,scorso,0
-schaffen,completare/creare/costruire,0
+absolvieren,superare/completare,1
+lezte,scorso,1
+schaffen,completare/creare/costruire,1
 das Bett,il letto,1
 aufhängen,appendere/stendere,1
 wegwerfen,buttare via,1
 verloren,perso,1
 verlieren,perdere,2
-erklären,spiegare,0
-begrüssen,dare il benvenuto/raccomandare,0
+erklären,spiegare,1
+begrüssen,dare il benvenuto/raccomandare,1
 vorbereiten,preparare,2
 helfen,assistere/aiutare,1
-Das reicht nicht!,Non è abbastanza/sufficiente,0
-witzig,divertente,0
-genug,abbastanza,0
+Das reicht nicht!,Non è abbastanza/sufficiente,1
+witzig,divertente,1
+genug,abbastanza,1
 schnell,veloce,1
 stark,forte,2
 kurz,corto,2
 hoch,alto,2
 einschalten,accendere,3
 legen,mettere,1
-der Fernsehe,la televisione,0
+der Fernsehe,la televisione,1
 ausschalten,spegnere,1
-schauen,guardare,0
+schauen,guardare,1
 verschieden,diverso/differente,1
 informativ,informativo,1
 romantisch,romantico,1
@@ -262,60 +262,60 @@ unterhaltsam,divertente/piacevole,1
 surfen,navigare,1
 verpassen,perdere (miss),1
 schlafen,dormire,1
-der Geldbeutel,il borsellino,0
+der Geldbeutel,il borsellino,1
 aufwachen,svegliarsi,2
-verlassen,lasciare/abbandonare,0
+verlassen,lasciare/abbandonare,1
 verkaufen,vendere,3
 das Geld,il denaro/i soldi,2
 die Kopfschmerzen,il mal di testa,1
 billig,economico,2
-ein gemeinsames Bad,un bagno in comune,0
+ein gemeinsames Bad,un bagno in comune,1
 eigen,proprio,1
 die Redewendung,i modi di dire,2
-überreden,convincere/persuadere,0
-ehrlich,schietto/onesto,0
+überreden,convincere/persuadere,1
+ehrlich,schietto/onesto,1
 das Fell,la pelliccia/il pelo,1
 dick,grosso/spesso,1
-ich halte das aus,posso sopportarlo,0
+ich halte das aus,posso sopportarlo,1
 blind,cieco,2
 der König,il re,1
 die Metapher,la metafora,3
 vorschlagen,proporre,1
 der Anrufbeantworten,la segreteria telefonica,1
 beantworten,rispondere,2
-der Beantworter,la persona che risponde,0
+der Beantworter,la persona che risponde,1
 züruck,indietro,1
 eine Nachricht hinterlassen,lasciare un messaggio,1
 schicken,mandare,1
 bestellen,ordinare,3
-erhalten,ricevere,0
-Ich versuche es später noch mal,Riproverò più tardi,0
+erhalten,ricevere,1
+Ich versuche es später noch mal,Riproverò più tardi,1
 So weit klar?,Chiaro finora?,1
-die Leitung,guida/direzione/linea telefonica,0
-besetz,occupato,2
-der Prospekt,l'opuscolo,0
+die Leitung,guida/direzione/linea telefonica,1
+besetz,occupato,3
+der Prospekt,l'opuscolo,1
 die Besprechung,la discussione,2
-der Anhalt,il punto di appoggio/sostegno,0
+der Anhalt,il punto di appoggio/sostegno,1
 der Anhang,l'appendice/l'allegato,1
-erreichen,raggiungere (achieve),0
+erreichen,raggiungere (achieve),1
 auf Wiederhören,a risentirci,1
-ausrichten,riferire/allinearsi/schierarsi,0
-gerade,pari/diritto,0
-nachfragen,informarsi,0
+ausrichten,riferire/allinearsi/schierarsi,1
+gerade,pari/diritto,1
+nachfragen,informarsi,1
 noch nicht,non ancora,1
-vereinbaren,concordare/stabilire,0
+vereinbaren,concordare/stabilire,1
 der Termin,l'appuntamento,1
 geschäftlich,d'affari/commerciale,1
-verreisen,partire per un viaggio,0
+verreisen,partire per un viaggio,1
 der Terminplaner,l'agenda,1
 aufschreiben,prendere nota,2
-der Katalog,il catalogo,0
-die Büromobel,i mobili per l'ufficio,0
+der Katalog,il catalogo,1
+die Büromobel,i mobili per l'ufficio,1
 der Tisch,il tavolo,1
 der Stuhl,la sedia,2
 sondern,ma/bensì,1
-nicht nur... sondern auch...,non solo... ma anche...,0
-zeigen,mostrare,0
+nicht nur... sondern auch...,non solo... ma anche...,1
+zeigen,mostrare,1
 der Kunde,il cliente,1
 der Produkt,il prodotto,1
 der Kopierer,la fotocopiatrice,1
@@ -327,60 +327,60 @@ der Computer,il computer,1
 die Sonnenbrille,gli occhiali da sole,2
 die Handtasche,la borsa,1
 modern,moderno,1
-das Handtuch,l'asciugamano,0
-die Reisetasche,la borsa da viaggio,0
+das Handtuch,l'asciugamano,1
+die Reisetasche,la borsa da viaggio,1
 das Abendkleid,l'abito da sera,2
-der Rollerkoffer,il trolley,0
-die Kosmetiktasche,il beauty case,0
+der Rollerkoffer,il trolley,1
+die Kosmetiktasche,il beauty case,1
 die Sonnencreme,la crema solare,2
 der Regenschirm,l'ombrello,2
 die Plastiktüte,la borsa di plastica,2
-pink,rosa/fucsia,0
+pink,rosa/fucsia,1
 der Rucksack,lo zaino,1
-die Regenjacke,l'impermeabile,0
+die Regenjacke,l'impermeabile,1
 die Gepäck,i bagagli,1
 belegt,imbottito/occupato,1
 besichtigen,visitare,1
 abfliegen,decollare,2
 füttern,foraggiare (feed),2
-gehören,appartenere,0
-anschauen,guardare/vedersi la città,0
-der Wäschekorb,cesto per la biancheria,0
+gehören,appartenere,1
+anschauen,guardare/vedersi la città,1
+der Wäschekorb,cesto per la biancheria,1
 schmutzig,sporco,2
 rund,rotondo/tondo,1
-die Schublade,il cassetto,0
+die Schublade,il cassetto,1
 gestreift,a righe,2
 der Schrank,l'armadio,1
 das Regal,lo scaffale,2
 die Kommode,il comò,2
 der Nattisch,il comodino,1
 das Kopfkissen,il cuscino,1
-die Decke,la coperta,0
-der Pyjama,il pigiama,0
-die Waschemaschine,la lavatrice,0
+die Decke,la coperta,1
+der Pyjama,il pigiama,1
+die Waschemaschine,la lavatrice,1
 die Flasche,la bottiglia,1
 die Schultasche,lo zaino di scuola,1
 die Küche,la cucina,1
 das Heft,il quaderno,2
 der Keller,la cantina,1
-die Turnschuhe,le scarpe da ginnastica,2
+die Turnschuhe,le scarpe da ginnastica,4
 das Schuregal,la scarpiera,1
 der Küchenschrank,la credenza,2
 der Teller,il piatto,1
-der Abfalleimer,la pattumiera,0
+der Abfalleimer,la pattumiera,1
 die Pflanze,la pianta,2
 der Kugelschreiber,la biro,1
 nass,bagnato,1
 alt,vecchio,3
 weich,morbido,1
-kariert,a quadri,0
+kariert,a quadri,1
 leer,vuoto,1
-sauber,pulito,0
+sauber,pulito,1
 dick,spesso/grosso,1
-trocken,asciutto,0
+trocken,asciutto,1
 die Übernachtung,il pernottamento,1
 erleben,passare (to experience),2
-alles erleben,sperimentare tutto,0
+alles erleben,sperimentare tutto,1
 das Fahrrad,la bicicletta,3
 das Schiff,la nave,2
 die Bahn,il treno,2
@@ -392,32 +392,32 @@ der Fluss,il fiume,1
 der See,il lago,2
 der Bauernhof,la fattoria,3
 eine Rundreise machen,fare un giro,1
-verbringen,trascorrere/passare,0
-sich erholen,riprendersi,0
-die Jugendherberge,l'ostello,2
+verbringen,trascorrere/passare,1
+sich erholen,riprendersi,1
+die Jugendherberge,l'ostello,3
 das Wohnmobil,il camper,1
-meistens,per lo più,0
-liegen,stare sdraiato/esserci/stare,0
+meistens,per lo più,1
+liegen,stare sdraiato/esserci/stare,1
 fallen,cadere,2
 halten,tenere (hold),1
 dort,lì/là,1
 die Stadtrundfahrt,il giro della città,1
-das Tier,l'animale,3
-die Wanderung,la camminata,0
+das Tier,l'animale,4
+die Wanderung,la camminata,1
 drinnen,dentro,1
-rausgehen,uscire,0
+rausgehen,uscire,1
 eingehen,entrare,1
 die Überraschung,la sorpresa,1
 die Kleidung,l'abbigliamento,1
 öffentlich,pubblico,2
-die Unterwäsche,la biancheria intima,0
-das Reisepass,il passaporto,0
+die Unterwäsche,la biancheria intima,1
+das Reisepass,il passaporto,1
 der Stadtplan,la mappa della città,1
-das Bargeld,il contante,0
-der Badeanzug,il costume da bagno,0
-die Badehose,il costume da bagno maschile,0
+das Bargeld,il contante,1
+der Badeanzug,il costume da bagno,1
+die Badehose,il costume da bagno maschile,1
 die Sandale,il sandalo,1
-die Flipflops,le infradito,0
+die Flipflops,le infradito,1
 die Wanderschuhe,le scarpe da trekking,1
 die Karte,la mappa,2
 der Bildschirm/Monitor,il monitor,1
@@ -430,65 +430,65 @@ erreichbar,raggiungibile,1
 hinterlassen/lassen,lasciare,1
 täglich,giornaliero/quotidiano,1
 das Telefonbuch,la rubrica,3
-verschieben,spostare,0
-gegenteilig,contrario/opposto,0
+verschieben,spostare,1
+gegenteilig,contrario/opposto,1
 das Handy,il cellulare,3
 verbinden,collegare,1
-der Friseur,il parrucchiere,0
+der Friseur,il parrucchiere,1
 Was soll gemacht werden?,Cosa vuole fare?,1
 schneiden,tagliare,2
-anbieten,offrire/proporre,0
+anbieten,offrire/proporre,1
 am Montag,lunedì (on Monday),2
 um 7 Uhr,alle 7 (at seven),2
 Um wie viel Uhr?,A che ora?,1
 der Rechner,la calcolatrice,2
 Ja das geht/passt/ist möglich,Si va bene,1
-das Fenster,la finestra,0
+das Fenster,la finestra,1
 die Uhr,l'orologio,1
 regal,reale,1
 das Regal,lo scaffale,3
 die Regel,la regola,1
 voll,pieno,1
-leer,vuoto,0
-praktisch,pratico,2
+leer,vuoto,1
+praktisch,pratico,3
 der Schrank,l'armadio,2
-die Ablage,l'archivio,0
+die Ablage,l'archivio,1
 der Teppich,il tappeto,1
-Wessen... ist das? Das ist...,Di chi è... ? è di...,0
-laufen/rennen,correre,0
+Wessen... ist das? Das ist...,Di chi è... ? è di...,1
+laufen/rennen,correre,1
 spazieren,passeggiare,1
-die Zeitschrift,la rivista,0
-die Nachricht,la notizia,0
+die Zeitschrift,la rivista,1
+die Nachricht,la notizia,1
 danach,dopo/poi,1
 der Krimi,il giallo poliziesco,1
-bestimmen,stabilire/determinare,0
-Der ist bestimmt...,Sono sicuro che...,0
+bestimmen,stabilire/determinare,1
+Der ist bestimmt...,Sono sicuro che...,1
 wissen,sapere,1
 die Reportage,il reportage,2
-die Sportsendung,la trasmissione sportiva,0
+die Sportsendung,la trasmissione sportiva,1
 der Sender,emittente/trasmettitore,2
-der Spielfilm,il lungometraggio,0
+der Spielfilm,il lungometraggio,1
 die Komodie,la commedia,2
 doch,certo/sicuro,1
 der Stau,ingorgo/traffico,1
-die Verkehrsnachrichten,le notizie sul traffico,0
-entscheiden,decidere,0
+die Verkehrsnachrichten,le notizie sul traffico,1
+entscheiden,decidere,1
 monatlich,mensilmente,2
 die Verfügung,la disposizione,2
 Verfügung haben,avere a disposizione,1
 der Internetanschluss,l'accesso a internet,1
 der Internetanbieter,il provider internet,1
-der Preisvorteil,il prezzo più conveniente/vantaggioso,0
-der Ansprechpartner,la persona a cui rivolgersi,0
+der Preisvorteil,il prezzo più conveniente/vantaggioso,1
+der Ansprechpartner,la persona a cui rivolgersi,1
 nutzen,sfruttare a proprio vantaggio,2
-der Dienst,il servizio,0
+der Dienst,il servizio,1
 besonders,particolarmente/specialmente,1
 wichtig,importante,1
 hilfreich,utile,1
-aufnehmen,avviare/prendere contatto,0
+aufnehmen,avviare/prendere contatto,1
 hässlich,brutto,2
 die Umkleidekbine,lo spogliatoio,1
-die Grösse,la taglia/grandezza,0
+die Grösse,la taglia/grandezza,1
 brauchen,avere bisogno di,1
 toll,stupendo,1
 der Sohn,il figlio,3
@@ -503,7 +503,7 @@ die Geschwister,i fratelli,2
 langweilig,noioso,1
 das Viertel,il quarto (d'ora),1
 der Hof,il giardino,1
-nett,simpatico,0
+nett,simpatico,1
 der Nachbar,il vicino,1
 die Wohnung,l'appartamento,2
 Wer?,Chi?,2
@@ -512,10 +512,10 @@ der Name,il nome,2
 der Tag,il giorno,1
 Wie geht es Ihnen?,Come sta?,2
 obwohl,sebbene,2
-weil,perché,0
+weil,perché,1
 damit,affinché,2
 das Enkelkind,il nipote,2
-das Wetter,il tempo/meteo,0
+das Wetter,il tempo/meteo,1
 regnen,piovere,2
 das Gemüse,la verdura,1
 rechts,destra,2
@@ -525,225 +525,225 @@ kalt,freddo,1
 Wie ist das Wetter?,Com'è il tempo?,1
 rauchen,fumare,1
 schmecken,piacere (cibo),1
-freuen + accusativo,essere contento (di qn/qc),0
+freuen + accusativo,essere contento (di qn/qc),1
 einladen,invitare,1
 abholen,andare a prendere qualcuno,2
-anstrengend,faticoso,0
-Das macht den Kopf frei,Questo schiarisce le idee,0
+anstrengend,faticoso,1
+Das macht den Kopf frei,Questo schiarisce le idee,1
 der Kopf,la testa,2
 das Mitglied,il membro,2
-die Leute,la gente/le persone,0
+die Leute,la gente/le persone,1
 verbessern,migliorare,1
 denken,pensare,2
-der Schlager,la canzone,0
+der Schlager,la canzone,1
 die Weltmeisterschaft,il campionato mondiale,1
 gar,cotto/pronto/affatto,1
 feiern,festeggiare,2
-sogar,perfino/addirittura,0
+sogar,perfino/addirittura,1
 dass,che,1
-die Lachen,le risate,0
+die Lachen,le risate,1
 der Keller,la cantina,2
-ansehen,guardare/osservare,0
-der Erfolg,il successo,0
+ansehen,guardare/osservare,1
+der Erfolg,il successo,1
 die Mannschaft,la squadra,1
 wiedererkennen,riconoscere,1
 zuerst,prima,1
-die Endrunde,il girone finale,0
-dabei,accanto/vicino,0
+die Endrunde,il girone finale,1
+dabei,accanto/vicino,1
 der Balkon,il balcone,2
-die Fahne,la bandiera,0
+die Fahne,la bandiera,1
 gewinnen/besiegen,vincere,2
-hupen + haben,suonare il clacson,0
+hupen + haben,suonare il clacson,1
 vorher,prima,1
-enttäuscht,sono deluso del tuo comportamento,0
+enttäuscht,sono deluso del tuo comportamento,1
 aggressiv,aggressivo,2
 der Titel,il titolo,1
 der Weltmeister,il campione del mondo,2
 das Herz,il cuore,1
-das Märchen,la fiaba,0
+das Märchen,la fiaba,1
 der Fan,il fan,1
-schon,già,0
-der Immobiliemakler,l'agente immobiliare,0
-geschickt,abile/mandato,0
+schon,già,1
+der Immobiliemakler,l'agente immobiliare,1
+geschickt,abile/mandato,1
 der Neubau,(nuova) costruzione,2
-der Zustand,lo stato/la condizione,0
-dass heisst doch,ciò significa che,0
+der Zustand,lo stato/la condizione,1
+dass heisst doch,ciò significa che,1
 der Stellplatz,il posto auto,3
 eigentlich,vero,1
 die Tiefgarage,il garage sotterraneo,1
 hoffen,sperare,1
 die Nebenkosten,le spese accessorie,2
-In Ordnung!,In ordine,0
+In Ordnung!,In ordine,1
 gleich,subito,2
 das Erstbezug,la prima occupazione,1
 die Renovierung,il restauro,1
-die Immobilienfirma,l'agenzia immobiliare,0
+die Immobilienfirma,l'agenzia immobiliare,1
 die Kaution,la cauzione,2
 die Provision,la provvigione,2
-die Anzeige,la denuncia/l'annuncio,0
-erinnnern,ricordare,0
+die Anzeige,la denuncia/l'annuncio,1
+erinnnern,ricordare,1
 erzählen,raccontare,1
-erledigen,eseguire/fare,0
+erledigen,eseguire/fare,1
 gelingen,riuscire,1
 das Gelingen,la riuscita,1
 beschreiben,descrivere/sovrascrivere,1
 besiegen,vincere,2
-versuchen,provare,0
-verschreiben,prescrivere,2
-schiessen,sparare/tirare,0
+versuchen,provare,1
+verschreiben,prescrivere,3
+schiessen,sparare/tirare,1
 passieren,succedere/capitare/passare,1
 der Weg,la strada/via,1
-sicher,sicuro,1
+sicher,sicuro,2
 niemand,nessuno,2
-lauter,puro/sincero,0
-beeilen,affrettarsi/muoversi,0
+lauter,puro/sincero,1
+beeilen,affrettarsi/muoversi,1
 die Medaille,la medaglia,1
-verlegen,spostare/trasferire,0
+verlegen,spostare/trasferire,1
 der Mietvertrag,il contratto d'affitto,1
 in drei Wochen,fra tre settimane,1
-einziehen,entrare/arrivare,0
-ausziehen,andare/partire,0
+einziehen,entrare/arrivare,1
+ausziehen,andare/partire,1
 der Maler,il pittore,2
 malern,pitturare,2
-streichen,verniciare,0
-der Herd,la cucina/i fornelli,0
-die Waschmaschine,la lavatrice,0
+streichen,verniciare,1
+der Herd,la cucina/i fornelli,1
+die Waschmaschine,la lavatrice,1
 anschliessen,collegare/attaccare,1
 die Fläche,la superficie,1
-fliesen,piastrellare,0
+fliesen,piastrellare,1
 der Holzboden/das Parkett,il parquet,1
-der Schaden,il danno/lo svantaggio,0
-beschödigen,danneggiare,0
-zuzüglich,escluso,0
-das Kellergeschoss,lo scantinato,0
+der Schaden,il danno/lo svantaggio,1
+beschödigen,danneggiare,1
+zuzüglich,escluso,1
+das Kellergeschoss,lo scantinato,1
 das Erdgeschoss,il piano terra,2
 das Verkehrsmittel,il mezzo di comunicazione,1
 die Apotheke,la farmacia,2
-das Hochhaus,il palazzo,0
+das Hochhaus,il palazzo,1
 das Gebäude,l'edificio,2
-sollte auch nicht weit weg sein,non dovrebbe essere lontano,0
-gönstig,vantaggioso,0
-bezahlbar,pagabile,0
+sollte auch nicht weit weg sein,non dovrebbe essere lontano,1
+gönstig,vantaggioso,1
+bezahlbar,pagabile,1
 das Sozialleben,la vita sociale,1
 das Leben,la vita,2
 der Verkehr,il traffico,1
-der Aufzug,l'ascensore,0
+der Aufzug,l'ascensore,1
 der Dübel,il tassello,1
 das Werkzeug,lo strumento,2
 der Hammer,il martello,2
 das Bild,l'immagine/il quadro,1
-das Messer,il coltello,0
+das Messer,il coltello,1
 das Steak,la bistecca,1
 die Schere,le forbici,1
-die Zange,le pinze,0
+die Zange,le pinze,1
 der Lappen,lo straccio,2
-der Kochtopf,la pentola,0
+der Kochtopf,la pentola,1
 die Pfanne,la padella,1
 der Kochlöffel,il cucchiaio di legno,2
 die Gabel,la forchetta,1
-herausziehen,tirare fuori/staccare,0
-das Subjekt,il soggetto,0
+herausziehen,tirare fuori/staccare,1
+das Subjekt,il soggetto,1
 putzen,pulire,1
-die Zähne,i denti,0
-die Seife,il sapone,0
-untersuchen,esaminare/farsi visitare dal medico,0
+die Zähne,i denti,1
+die Seife,il sapone,1
+untersuchen,esaminare/farsi visitare dal medico,1
 der Elektriker,l'elettricista,1
-der Maler,l'imbianchino,0
+der Maler,l'imbianchino,1
 der Arzt,il medico curante,1
 schwierig,difficile,1
-braten,cuocere in padella,0
-grillen,grigliare,0
+braten,cuocere in padella,1
+grillen,grigliare,1
 frittieren,friggere,2
-rühren,mescolare (qualcosa di liquido),0
+rühren,mescolare (qualcosa di liquido),1
 mischen,mescolare degli ingredienti,2
 schrauben,avvitare,1
-kneten,impastare/massaggiare,0
-drehen,girare,0
-der Stöpsel,il tappo,0
+kneten,impastare/massaggiare,1
+drehen,girare,1
+der Stöpsel,il tappo,1
 glauben,credere,1
 furchtbar,terribile,3
-der Strom,la corrente elettrica,0
-die Wand,la parete,0
+der Strom,la corrente elettrica,1
+die Wand,la parete,1
 mindestens,almeno,1
 der Pinsel,il pennello,2
-die Schale,la buccia,0
-der Eimer,il secchio,0
+die Schale,la buccia,1
+der Eimer,il secchio,1
 der Nagel,il chiodo,2
-die Leiter,la scala,0
-der Schraubenzieher,il cacciavite,0
+die Leiter,la scala,1
+der Schraubenzieher,il cacciavite,1
 der Schwamm,la spugna,2
 messen,misurare,1
-die Bohrmaschine,il trapano,0
+die Bohrmaschine,il trapano,1
 bohren,perforare/trapanare,1
-der Baumarkt,il ferramenta,0
+der Baumarkt,il ferramenta,1
 die Halsschmerzen,il mal di gola,1
-der Schal,la sciarpa,0
-der Staubsauger,l'aspirapolvere,0
+der Schal,la sciarpa,1
+der Staubsauger,l'aspirapolvere,1
 die Schössel,la scodella,1
-schälen,sbucciare,0
-der Gegenstand,l'oggetto,0
-einschlagen,conficcare,0
-das Loch,il buco/foro,0
-der Kamm,il pettine,0
+schälen,sbucciare,1
+der Gegenstand,l'oggetto,1
+einschlagen,conficcare,1
+das Loch,il buco/foro,1
+der Kamm,il pettine,1
 sauber machen,fare le pulizie,1
-der Personalausweis,il documento di identità,0
+der Personalausweis,il documento di identità,1
 der Schlüssel,la chiave,1
-die Geburtsukunde,il certificato di nascita,0
-der Strafzettel,la multa,0
-zustellen,recapitare,0
+die Geburtsukunde,il certificato di nascita,1
+der Strafzettel,la multa,1
+zustellen,recapitare,1
 einwerfen,imbucare,1
 freimachen,affrancare,2
-versenden,spedire,0
-das Einschreiben,la lettera raccomandata,0
+versenden,spedire,1
+das Einschreiben,la lettera raccomandata,1
 die Postbote,il postino,1
-der Briefumschlag,la busta,0
+der Briefumschlag,la busta,1
 der Brief,la lettera,1
-übergeben,consegnare,0
-die Postkarte,la cartolina,0
-die Briefmarke,il francobollo,0
-der Postschalter,lo sportello dell'ufficio postale,0
+übergeben,consegnare,1
+die Postkarte,la cartolina,1
+die Briefmarke,il francobollo,1
+der Postschalter,lo sportello dell'ufficio postale,1
 das Paket,il pacco,1
-der Standesbeamte,l'impiegato dell'anagrafe,0
+der Standesbeamte,l'impiegato dell'anagrafe,1
 der Kontostand,il saldo,1
-etwas beantragen,fare domanda per qualcosa,0
+etwas beantragen,fare domanda per qualcosa,1
 der Stock, il bastone,1
-das Stockwerk,il piano,0
-der Rentner,il pensionato,0
-der Gärtner,il giardiniere,0
+das Stockwerk,il piano,1
+der Rentner,il pensionato,1
+der Gärtner,il giardiniere,1
 der Sänger,il cantante,1
 arbeitslos,disoccupato,1
 der Studierende,lo studente,3
-das Einwohnermeldeamt,l'ufficio anagrafe,0
-das Standesamt,l'ufficio anagrafe,0
-das Fundbüro,l'ufficio oggetti smarriti,0
+das Einwohnermeldeamt,l'ufficio anagrafe,1
+das Standesamt,l'ufficio anagrafe,1
+das Fundbüro,l'ufficio oggetti smarriti,1
 ummelden,comunicare il cambio di residenza,1
-eröffnen,aprire,0
-das Binde,la fasciatura,0
+eröffnen,aprire,1
+das Binde,la fasciatura,1
 weiter,ulteriore/altro,1
-abheben,sollevare/prelevare,0
-die Geheimzahl,il codice segreto,0
-sperren,bloccare,0
-der Kontoauszug,l'estratto conto,0
+abheben,sollevare/prelevare,1
+die Geheimzahl,il codice segreto,1
+sperren,bloccare,1
+der Kontoauszug,l'estratto conto,1
 einrichten,arredare,1
 die Überweisung,il bonifico,1
-der Dauerauftrag,l' ordine di pagamento,0
-erteilen,dare/trasmettere,0
+der Dauerauftrag,l' ordine di pagamento,1
+erteilen,dare/trasmettere,1
 zuschicken,spedire,1
 weltweit,worldwide,1
-der Absender,il mittente,0
+der Absender,il mittente,1
 der Empfänger,il ricevente,1
 stammen,provenire/derivare,2
 das Gebirge,le montagne,1
-fliessen,scorrere,0
+fliessen,scorrere,1
 durch,attraverso,2
 die Hauptstadt,la capitale,1
-das Meer,il mare,0
-der Bauer,il contadino,0
-heutzutage,al giorno d'oggi,0
-selbstverständlich,ovvio/naturale,0
+das Meer,il mare,1
+der Bauer,il contadino,1
+heutzutage,al giorno d'oggi,1
+selbstverständlich,ovvio/naturale,1
 die Milch,il latte,2
-das Fell,la pelle,0
-anbauen,coltivare,0
+das Fell,la pelle,1
+anbauen,coltivare,1
 der Geschmack,il gusto/sapore,1
 herstellen,produrre/fabbricare,2
-ankommen,arrivare,0
+ankommen,arrivare,1
