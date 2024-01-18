@@ -1,13 +1,13 @@
-from PyQt5.QtWidgets import QMainWindow, QStackedWidget
+from PyQt5.QtWidgets import QMainWindow, QStackedWidget, qApp
 from game_view.backend.select_game_view import SelectGameMode
-from game_view.backend.select_language_view import SelectLanguage
-from game_view.backend.translate_mode import TranslateMode
-from game_view.backend.verb_paradigm_view import VerbParadigmMode
-from game_view.backend.article_mode_view import ArticleMode
+from game_view.backend.mode_views.select_language_view import SelectLanguage
+from game_view.backend.mode_views.translate_mode_view import TranslateMode
+from game_view.backend.mode_views.paradigm_mode_view import VerbParadigmMode
+from game_view.backend.mode_views.article_mode_view import ArticleMode
 from game_view.backend.database_view import DatabaseView
-from game_view.backend.translation_summary_view import Summary
-from game_view.backend.paradigm_summary_view import ParadigmSummary
-from game_view.backend.article_summary_view import ArticleSummary
+from game_view.backend.summary_views.translation_summary_view import TranslationSummary
+from game_view.backend.summary_views.paradigm_summary_view import ParadigmSummary
+from game_view.backend.summary_views.article_summary_view import ArticleSummary
 
 MINIMUM_WIDTH = 1600
 MINIMUM_HEIGHT = 1000
@@ -19,13 +19,15 @@ class UIController(QMainWindow):
 
         self.stacked_widget = QStackedWidget(self)
 
+        #TODO: instantiate the objects only related to the chosen game mode
+
         self.select_game_mode_window = SelectGameMode()
         self.select_language_window = SelectLanguage()
         self.translate_mode_window = TranslateMode()
         self.verb_paradigm_window = VerbParadigmMode()
         self.article_mode_window = ArticleMode()
         self.database_window = DatabaseView()
-        self.summary_window = Summary()
+        self.translation_summary_window = TranslationSummary()
         self.paradigm_summary_window = ParadigmSummary()
         self.article_summary_window = ArticleSummary()
         self.previous_index = None
@@ -55,7 +57,7 @@ class UIController(QMainWindow):
         self.stacked_widget.addWidget(self.verb_paradigm_window)
         self.stacked_widget.addWidget(self.article_mode_window)
         self.stacked_widget.addWidget(self.database_window)
-        self.stacked_widget.addWidget(self.summary_window)
+        self.stacked_widget.addWidget(self.translation_summary_window)
         self.stacked_widget.addWidget(self.paradigm_summary_window)
         self.stacked_widget.addWidget(self.article_summary_window)
 
@@ -69,7 +71,7 @@ class UIController(QMainWindow):
         self.stacked_widget.setCurrentWidget(self.select_language_window)
         self.translate_mode_window.solution_label.setText("")
         self.translate_mode_window.stacked_buttons.setCurrentWidget(self.translate_mode_window.check_page)
-        self.summary_window.model.removeRows(0, self.summary_window.model.rowCount())
+        self.translation_summary_window.model.removeRows(0, self.summary_window.model.rowCount())
 
     def reset_paradigm_mode_view(self):
         self.stacked_widget.setCurrentWidget(self.verb_paradigm_window)
@@ -95,7 +97,6 @@ class UIController(QMainWindow):
     def connect_go_back_button_database(self):
         self.database_window.connect_go_back_button(self.set_previous_window)
 
-
-
-
-
+    @staticmethod
+    def quit_game():
+        qApp.quit()

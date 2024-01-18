@@ -4,10 +4,19 @@ import pandas
 from game_model.question.translate_word import TranslationWord
 from game_model.question.verb_paradigm import VerbParadigm
 from game_model.question.article_word import ArticleWord
+from database.database_handler import DatabaseHandler
 
 NUMBER_OF_COLUMNS_TRANSLATION = 3
 NUMBER_OF_COLUMNS_PARADIGM = 4
 NUMBER_OF_COLUMNS_ARTICLE = 4
+
+TRANSLATION_DATABASE_PATH = "database/questions.db"
+PARADIGM_DATABASE_PATH = "database/verb_paradigms.db"
+ARTICLE_DATABASE_PATH = "database/words_with_articles.db"
+
+TRANSLATION_TABLE_NAME = "Questions"
+PARADIGM_TABLE_NAME = "VerbParadigms"
+ARTICLE_TABLE_NAME = "WordsWithArticles"
 
 
 class DatabaseView(QtWidgets.QWidget):
@@ -23,15 +32,14 @@ class DatabaseView(QtWidgets.QWidget):
         headers = ['German Word', 'Italian Word', 'Score']
         self.set_up_table(NUMBER_OF_COLUMNS_TRANSLATION, headers)
 
-        translation_database = pandas.read_csv("database/questions.csv")
-        translation_database_dict = translation_database.to_dict(orient="records")
+        database = DatabaseHandler(db_path=TRANSLATION_DATABASE_PATH, table_name=TRANSLATION_TABLE_NAME)
+        all_rows = database.get_all_rows()
 
-        for row in translation_database_dict:
+        for row in all_rows:
             word = TranslationWord(row)
 
             german_item = QtGui.QStandardItem(word.german_word)
             italian_item = QtGui.QStandardItem(word.italian_word)
-
             score_item = QtGui.QStandardItem()
             score_item.setData(self.set_score_color(word.num_of_correct_guesses), QtCore.Qt.BackgroundRole)
 
@@ -44,10 +52,10 @@ class DatabaseView(QtWidgets.QWidget):
         headers = ['Present', 'Präteritum', 'Perfekt', 'Italian']
         self.set_up_table(NUMBER_OF_COLUMNS_PARADIGM, headers)
 
-        paradigm_database = pandas.read_csv("database/verb_paradigm_database.csv")
-        paradigm_database_dict = paradigm_database.to_dict(orient="records")
+        database = DatabaseHandler(db_path=PARADIGM_DATABASE_PATH, table_name=PARADIGM_TABLE_NAME)
+        all_rows = database.get_all_rows()
 
-        for row in paradigm_database_dict:
+        for row in all_rows:
             paradigm = VerbParadigm(row)
 
             present_item = QtGui.QStandardItem(paradigm.present)
@@ -67,10 +75,10 @@ class DatabaseView(QtWidgets.QWidget):
         headers = ['Article', 'German Noun', 'Italian', 'Score']
         self.set_up_table(NUMBER_OF_COLUMNS_ARTICLE, headers)
 
-        article_database = pandas.read_csv("database/words_with_article_database.csv")
-        article_database_dict = article_database.to_dict(orient="records")
+        database = DatabaseHandler(db_path=ARTICLE_DATABASE_PATH, table_name=ARTICLE_TABLE_NAME)
+        all_rows = database.get_all_rows()
 
-        for row in article_database_dict:
+        for row in all_rows:
             word = ArticleWord(row)
 
             article_item = QtGui.QStandardItem(word.article)

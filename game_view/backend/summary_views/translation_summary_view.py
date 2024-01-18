@@ -3,12 +3,13 @@ from PyQt5 import QtWidgets, QtGui
 from PyQt5.QtWidgets import QPushButton
 from math import floor
 
+
 NUMBER_OF_COLUMNS = 3
 BUTTON_FONT_SIZE_TO_WIDTH_RATIO = 0.00875
 TABLE_FONT_SIZE_TO_WIDTH_RATIO = 0.004375
 
 
-class Summary(QtWidgets.QWidget):
+class TranslationSummary(QtWidgets.QWidget):
     def __init__(self, ):
         super().__init__()
         loadUi("game_view/frontend/summary.ui", self)
@@ -104,8 +105,4 @@ class Summary(QtWidgets.QWidget):
         header.setFont(header_font)
 
         self.adjust_table_height()
-
-
-    def quit_game(self):
-        QtWidgets.qApp.quit()
 

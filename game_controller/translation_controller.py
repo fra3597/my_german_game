@@ -72,7 +72,7 @@ class TranslationController(Controller):
             self.game_model.score.total_score,
             self.game_model.number_of_matches
         )
-        self.ui_controller.summary_window.adjust_table_height()
+        self.ui_controller.translation_summary_window.adjust_table_height()
 
     def play_again(self):
         self.ui_controller.reset_user_interfaces()
