@@ -13,46 +13,125 @@
   <property name="windowTitle">
    <string>Database</string>
   </property>
-  <widget class="QWidget" name="widget" native="true">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>1000</width>
-     <height>800</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QWidget#widget {
+  <property name="styleSheet">
+   <string notr="true">QWidget {
 	background-color: #83A2FF;
 	color: #FFFFFF;
 }</string>
-   </property>
-   <widget class="QTableView" name="summary_table">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>240</y>
-      <width>780</width>
-      <height>510</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-      <horstretch>0</horstretch>
-      <verstretch>1</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>-1</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QTableView {
-     font-size: 24px;  /* Set font size for cells */
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout" stretch="1,5">
+     <property name="leftMargin">
+      <number>50</number>
+     </property>
+     <property name="rightMargin">
+      <number>50</number>
+     </property>
+     <property name="bottomMargin">
+      <number>50</number>
+     </property>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout" stretch="3,2">
+       <item>
+        <widget class="QLabel" name="title_label">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>1</horstretch>
+           <verstretch>1</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-radius: 50%; /* Makes the label circular */
+border: 2px solid #000000; /* Border color and width */
+padding: 10px; /* Adjust padding as needed */
+background-color: #83A2FF;
+color: #FFD28F;
+border: none;
+</string>
+         </property>
+         <property name="text">
+          <string>Database</string>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="leftMargin">
+          <number>100</number>
+         </property>
+         <property name="topMargin">
+          <number>30</number>
+         </property>
+         <property name="rightMargin">
+          <number>100</number>
+         </property>
+         <property name="bottomMargin">
+          <number>30</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="go_back_button">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>1</horstretch>
+             <verstretch>1</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+	border-radius: 20px; /* Adjust the radius as needed */
+	background-color: #FFE3BB;
+}
+QPushButton:hover {
+	background-color: #FFD28F;
+	}
+QPushButton:pressed {
+	background-color: #B4BDFF;
+}</string>
+           </property>
+           <property name="text">
+            <string>Go back</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QTableView" name="summary_table">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>1</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QTableView {
      color: white;     /* Set text color for cells */
 	border: 2px solid #000000; /* Border color and width */
 	padding: 10px; /* Adjust padding as needed */
@@ -63,7 +142,6 @@
 }
 
 QHeaderView::section {
-	font-size: 30px;
      color: white;     /* Set text color for header */
      background-color: #FFD28F; /* Set background color for header */
      border: 1px solid #555; /* Set border for header */
@@ -71,246 +149,15 @@ QHeaderView::section {
 	width: 260px;
 	font-weight: bold;
 }</string>
-    </property>
-    <property name="cornerButtonEnabled">
-     <bool>false</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="title_label">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>40</y>
-      <width>341</width>
-      <height>161</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>12</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius: 50%; /* Makes the label circular */
-border: 2px solid #000000; /* Border color and width */
-padding: 10px; /* Adjust padding as needed */
-background-color: #83A2FF;
-color: #FFD28F;
-border: none;
-</string>
-    </property>
-    <property name="text">
-     <string>Database</string>
-    </property>
-    <property name="wordWrap">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="go_back_button">
-    <property name="geometry">
-     <rect>
-      <x>760</x>
-      <y>80</y>
-      <width>120</width>
-      <height>60</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton {
-	border-radius: 20px; /* Adjust the radius as needed */
-	background-color: #FFE3BB;
-}
-QPushButton:hover {
-	background-color: #FFD28F;
-	}
-QPushButton:pressed {
-	background-color: #B4BDFF;
-}</string>
-    </property>
-    <property name="text">
-     <string>Go back</string>
-    </property>
-   </widget>
-   <widget class="QTableWidget" name="legend_table">
-    <property name="geometry">
-     <rect>
-      <x>360</x>
-      <y>50</y>
-      <width>171</width>
-      <height>131</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">/* Stretch all sections in the horizontal header */
-QHeaderView::section:horizontal {
-    stretch: 1;
-}
-
-/* Stretch all sections in the vertical header */
-QHeaderView::section:vertical {
-    stretch: 1;
-}
-
-/* Stretch all cells */
-QTableWidget QHeaderView {
-    /* Ensure the horizontal header is as wide as the sum of its section widths */
-    width: QTableWidget::horizontalHeaderLength;
-}
-
-
-/* Stretch all sections in the vertical header */
-QTableWidget QHeaderView::section:vertical {
-    stretch: 1;
-}
-</string>
-    </property>
-    <property name="cornerButtonEnabled">
-     <bool>false</bool>
-    </property>
-    <property name="rowCount">
-     <number>5</number>
-    </property>
-    <attribute name="horizontalHeaderCascadingSectionResizes">
-     <bool>false</bool>
-    </attribute>
-    <attribute name="horizontalHeaderDefaultSectionSize">
-     <number>80</number>
-    </attribute>
-    <attribute name="horizontalHeaderHighlightSections">
-     <bool>true</bool>
-    </attribute>
-    <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
-     <bool>false</bool>
-    </attribute>
-    <attribute name="horizontalHeaderStretchLastSection">
-     <bool>false</bool>
-    </attribute>
-    <attribute name="verticalHeaderVisible">
-     <bool>false</bool>
-    </attribute>
-    <attribute name="verticalHeaderDefaultSectionSize">
-     <number>20</number>
-    </attribute>
-    <attribute name="verticalHeaderMinimumSectionSize">
-     <number>20</number>
-    </attribute>
-    <attribute name="verticalHeaderStretchLastSection">
-     <bool>false</bool>
-    </attribute>
-    <row/>
-    <row/>
-    <row/>
-    <row/>
-    <row/>
-    <column>
-     <property name="text">
-      <string>Level</string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
-      <string>Color</string>
-     </property>
-    </column>
-    <item row="0" column="0">
-     <property name="text">
-      <string>Newbie</string>
-     </property>
-    </item>
-    <item row="0" column="1">
-     <property name="text">
-      <string/>
-     </property>
-     <property name="background">
-      <brush brushstyle="SolidPattern">
-       <color alpha="255">
-        <red>255</red>
-        <green>0</green>
-        <blue>0</blue>
-       </color>
-      </brush>
-     </property>
-    </item>
-    <item row="1" column="0">
-     <property name="text">
-      <string>Beginner</string>
-     </property>
-    </item>
-    <item row="1" column="1">
-     <property name="background">
-      <brush brushstyle="SolidPattern">
-       <color alpha="255">
-        <red>255</red>
-        <green>165</green>
-        <blue>0</blue>
-       </color>
-      </brush>
-     </property>
-    </item>
-    <item row="2" column="0">
-     <property name="text">
-      <string>Intermediate</string>
-     </property>
-    </item>
-    <item row="2" column="1">
-     <property name="background">
-      <brush brushstyle="SolidPattern">
-       <color alpha="255">
-        <red>255</red>
-        <green>255</green>
-        <blue>0</blue>
-       </color>
-      </brush>
-     </property>
-    </item>
-    <item row="3" column="0">
-     <property name="text">
-      <string>Expert</string>
-     </property>
-    </item>
-    <item row="3" column="1">
-     <property name="background">
-      <brush brushstyle="SolidPattern">
-       <color alpha="255">
-        <red>144</red>
-        <green>238</green>
-        <blue>144</blue>
-       </color>
-      </brush>
-     </property>
-    </item>
-    <item row="4" column="0">
-     <property name="text">
-      <string>Master</string>
-     </property>
-    </item>
-    <item row="4" column="1">
-     <property name="background">
-      <brush brushstyle="SolidPattern">
-       <color alpha="255">
-        <red>0</red>
-        <green>128</green>
-        <blue>0</blue>
-       </color>
-      </brush>
-     </property>
-    </item>
-   </widget>
-  </widget>
+       </property>
+       <property name="cornerButtonEnabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
  </widget>
  <resources/>
  <connections/>

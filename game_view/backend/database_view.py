@@ -85,7 +85,7 @@ class DatabaseView(QtWidgets.QWidget):
 
         self.title_label.setText("Article Game Database")
 
-    def set_up_table(self, num_of_columns, headers):
+    def set_up_table(self, num_of_columns: int, headers: list[str]):
         self.model.setColumnCount(num_of_columns)
         self.model.setHorizontalHeaderLabels(headers)
         self.summary_table.setModel(self.model)

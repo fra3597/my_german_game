@@ -8,12 +8,13 @@ WRONG = False
 class TranslationController(Controller):
     def __init__(self, ui_controller):
         super().__init__(ui_controller)
-        self.game_model = TranslationGame()
+        self.game_model: TranslationGame = TranslationGame()
 
         self.connect_buttons()
         
     def start_game(self):
         self.ui_controller.set_translate_mode_window()
+        self.ui_controller.translate_mode_window.stacked_buttons.setCurrentWidget(self.ui_controller.translate_mode_window.check_page)
         self.game_model.set_mode(self.ui_controller.select_language_window.read_selected_language())
 
         self.game_model.load_questions()
@@ -71,6 +72,7 @@ class TranslationController(Controller):
             self.game_model.score.total_score,
             self.game_model.number_of_matches
         )
+        self.ui_controller.summary_window.adjust_table_height()
 
     def play_again(self):
         self.ui_controller.reset_user_interfaces()

@@ -1,34 +1,24 @@
 from PyQt5.uic import loadUi
 from PyQt5.QtWidgets import QWidget, QTableWidget, QTableWidgetItem
 from random import randint
+from PyQt5.QtCore import Qt
 
 NUMBER_OF_COLUMNS = 4
 NUMBER_OF_ROWS = 1
 ROW_INDEX = 0
 
 PRESENT = 0
-PRAETERITUM = 1
+PRÄTERITUM = 1
 PERFEKT = 2
 ITALIAN = 3
 
 
-class ParadigmMode(QWidget):
+class VerbParadigmMode(QWidget):
     def __init__(self):
         super().__init__()
         loadUi("game_view/frontend/verb_paradigm_mode.ui", self)
-        self.go_to_summary_button.setVisible(False)
 
-    def connect_add_character_button(self, function):
-        self.add_character_button.clicked.connect(function)
-
-    def connect_check_button(self, function):
-        self.check_button.clicked.connect(function)
-
-    def connect_go_to_summary_button(self, function):
-        self.go_to_summary_button.clicked.connect(function)
-
-    def connect_open_database_button(self, function):
-        self.open_database_button.clicked.connect(function)
+        self.check_page_index = self.stacked_buttons.currentIndex()
 
     def set_row_in_table(self, current_paradigm):
         given_entry_index = randint(0, 2)
@@ -37,7 +27,7 @@ class ParadigmMode(QWidget):
         if given_entry_index == 0:
             self.paradigm_table.setItem(0, 0, QTableWidgetItem(current_paradigm[PRESENT]))
         elif given_entry_index == 1:
-            self.paradigm_table.setItem(0, 1, QTableWidgetItem(current_paradigm[PRAETERITUM]))
+            self.paradigm_table.setItem(0, 1, QTableWidgetItem(current_paradigm[PRÄTERITUM]))
         else:
             self.paradigm_table.setItem(0, 2, QTableWidgetItem(current_paradigm[PERFEKT]))
 
@@ -69,11 +59,30 @@ class ParadigmMode(QWidget):
 
     def enable_go_to_summary_button(self):
         self.clear_entry_row()
-        self.check_button.setVisible(False)
-        self.go_to_summary_button.setVisible(True)
+        self.stacked_buttons.setCurrentWidget(self.summary_page)
 
     def clear_entry_row(self):
         for col in range(self.paradigm_table.columnCount()):
             item = self.paradigm_table.takeItem(ROW_INDEX, col)
             if item:
                 del item
+
+    def connect_add_character_button(self, function):
+        self.add_character_button_3.clicked.connect(function)
+
+    def connect_check_button(self, function):
+        self.check_button.clicked.connect(function)
+
+    def connect_go_to_summary_button(self, function):
+        self.go_to_summary_button.clicked.connect(function)
+
+    def connect_open_database_button(self,function):
+        self.open_database_button.clicked.connect(function)
+
+    #TO DO: this function has to be fixed. The currentIndex set at the init depends on th efirst page available when you save the .ui file
+    def keyPressEvent(self, event):
+        if event.key() in [Qt.Key_Return, Qt.Key_Enter]:
+            if self.stacked_buttons.currentIndex() == self.check_page_index:
+                self.check_button.click()
+            else:
+                self.go_to_summary_button.click()

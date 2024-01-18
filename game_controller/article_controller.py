@@ -8,12 +8,13 @@ WRONG = False
 class ArticleController(Controller):
     def __init__(self, ui_controller):
         super().__init__(ui_controller)
-        self.game_model = ArticleGame()
+        self.game_model: ArticleGame = ArticleGame()
 
         self.connect_buttons()
 
     def start_game(self):
         self.ui_controller.set_article_mode_window()
+        self.ui_controller.article_mode_window.stacked_buttons.setCurrentWidget(self.ui_controller.article_mode_window.article_page)
 
         self.game_model.load_questions()
 
@@ -28,8 +29,8 @@ class ArticleController(Controller):
             self.ui_controller.article_mode_window.comparison_result_label.setText(result)
             self.game_model.score.update_partial_score()
             self.ui_controller.article_summary_window.append_row_to_summary_table(
-                self.game_model.list_of_words[self.game_model.current_word].article,
                 user_answer,
+                self.game_model.list_of_words[self.game_model.current_word].article,
                 self.game_model.list_of_words[self.game_model.current_word].german_word,
                 self.game_model.list_of_words[self.game_model.current_word].italian_word,
                 CORRECT
@@ -39,8 +40,8 @@ class ArticleController(Controller):
             result = f"<html><font color='red'>Wrong!</font> The word was <i><font color='green'>'{self.game_model.list_of_words[self.game_model.current_word].article}'</font></i> {self.game_model.list_of_words[self.game_model.current_word].german_word}</html>"
             self.ui_controller.article_mode_window.comparison_result_label.setText(result)
             self.ui_controller.article_summary_window.append_row_to_summary_table(
-                self.game_model.list_of_words[self.game_model.current_word].article,
                 user_answer,
+                self.game_model.list_of_words[self.game_model.current_word].article,
                 self.game_model.list_of_words[self.game_model.current_word].german_word,
                 self.game_model.list_of_words[self.game_model.current_word].italian_word,
                 WRONG
@@ -66,6 +67,7 @@ class ArticleController(Controller):
             self.game_model.score.total_score,
             self.game_model.number_of_matches
         )
+        self.ui_controller.article_summary_window.adjust_table_height()
 
     def open_database(self):
         self.ui_controller.set_previous_index(self.ui_controller.stacked_widget.currentIndex())

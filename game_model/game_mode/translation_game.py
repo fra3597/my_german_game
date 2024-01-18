@@ -1,35 +1,36 @@
-from numpy.random import choice
-import pandas
+from random import choices
 from game_model.score_system.translation_score import TranslationScore
 from game_model.game_mode.game import Game
 from game_model.question.translate_word import TranslationWord
+from database.database_handler import DatabaseHandler
 
-database = pandas.read_csv("database/questions.csv")
-database_dict = database.to_dict(orient="records")
+OCCURRENCE_FACTOR = 5
+TABLE_NAME = "Questions"
+FILENAME_DB = "database/questions.db"
+SCORE_COLUMN = "Score"
+
+CORRECT = True
 
 
 class TranslationGame(Game):
     def __init__(self) -> None:
         super().__init__()
-        self.score = TranslationScore()
+        self.score: TranslationScore = TranslationScore()
         self.language_mode = None
-        self.questions = []
-        self.answers = []
+        self.questions: list[str] = []
+        self.answers: list[str] = []
         self.GERMAN_TO_ITALIAN = 1
         self.ITALIAN_TO_GERMAN = 2
+        self.db_handler = DatabaseHandler(db_path=FILENAME_DB, table_name=TABLE_NAME)
 
     def set_mode(self, mode_to_set):
         self.language_mode = mode_to_set
 
     def load_questions(self):
-        guessed_counter_list = [inner_dict.get("Score", None) for inner_dict in database_dict]
-        sum_of_values = sum(guessed_counter_list)
-        normalized_guessed_counter_list = [value / sum_of_values for value in guessed_counter_list]
+        weights_list = self.db_handler.get_weights_list()
+        all_rows = self.db_handler.get_all_rows()
 
-        try:
-            words_list = choice(database_dict, self.QUESTIONS_PER_GAME, replace=False, p=normalized_guessed_counter_list)
-        except ValueError:
-            words_list = choice(database_dict, self.QUESTIONS_PER_GAME, replace=True, p=normalized_guessed_counter_list)
+        words_list = choices(all_rows, weights=weights_list, k=self.QUESTIONS_PER_GAME)
 
         if self.language_mode == self.ITALIAN_TO_GERMAN:
             for row in words_list:
@@ -43,17 +44,15 @@ class TranslationGame(Game):
                 self.answers.append(word.italian_word)
 
     def update_score_in_database(self):
-        mask = []
+        german_word = ""
 
         for index, word in enumerate(self.guessed_entries):
             if self.guessed_entries[index]:
                 if self.language_mode == self.ITALIAN_TO_GERMAN:
-                    mask = database["Italian"] == self.questions[index]
+                    german_word = self.answers[index]
                 elif self.language_mode == self.GERMAN_TO_ITALIAN:
-                    mask = database["German"] == self.questions[index]
-                database.loc[mask, "Score"] += 1
-
-        database.to_csv("database/questions.csv", index=False)
+                    german_word = self.questions[index]
+                self.db_handler.update_score(word=german_word, score_to_update=SCORE_COLUMN)
 
     def reset_game(self):
         self.update_number_of_matches()
