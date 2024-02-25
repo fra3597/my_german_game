@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>994</width>
-    <height>784</height>
+    <width>1033</width>
+    <height>816</height>
    </rect>
   </property>
   <property name="palette">
@@ -16,17 +16,17 @@
      <colorrole role="WindowText">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>0</red>
-        <green>0</green>
-        <blue>0</blue>
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Button">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>255</red>
-        <green>255</green>
+        <red>131</red>
+        <green>162</green>
         <blue>255</blue>
        </color>
       </brush>
@@ -70,9 +70,9 @@
      <colorrole role="Text">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>0</red>
-        <green>0</green>
-        <blue>0</blue>
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
        </color>
       </brush>
      </colorrole>
@@ -88,17 +88,17 @@
      <colorrole role="ButtonText">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>0</red>
-        <green>0</green>
-        <blue>0</blue>
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Base">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>255</red>
-        <green>255</green>
+        <red>131</red>
+        <green>162</green>
         <blue>255</blue>
        </color>
       </brush>
@@ -106,8 +106,8 @@
      <colorrole role="Window">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>255</red>
-        <green>255</green>
+        <red>131</red>
+        <green>162</green>
         <blue>255</blue>
        </color>
       </brush>
@@ -153,17 +153,17 @@
      <colorrole role="WindowText">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>0</red>
-        <green>0</green>
-        <blue>0</blue>
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Button">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>255</red>
-        <green>255</green>
+        <red>131</red>
+        <green>162</green>
         <blue>255</blue>
        </color>
       </brush>
@@ -207,9 +207,9 @@
      <colorrole role="Text">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>0</red>
-        <green>0</green>
-        <blue>0</blue>
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
        </color>
       </brush>
      </colorrole>
@@ -225,17 +225,17 @@
      <colorrole role="ButtonText">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>0</red>
-        <green>0</green>
-        <blue>0</blue>
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Base">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>255</red>
-        <green>255</green>
+        <red>131</red>
+        <green>162</green>
         <blue>255</blue>
        </color>
       </brush>
@@ -243,8 +243,8 @@
      <colorrole role="Window">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>255</red>
-        <green>255</green>
+        <red>131</red>
+        <green>162</green>
         <blue>255</blue>
        </color>
       </brush>
@@ -290,17 +290,17 @@
      <colorrole role="WindowText">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>127</red>
-        <green>127</green>
-        <blue>127</blue>
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Button">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>255</red>
-        <green>255</green>
+        <red>131</red>
+        <green>162</green>
         <blue>255</blue>
        </color>
       </brush>
@@ -344,9 +344,9 @@
      <colorrole role="Text">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>127</red>
-        <green>127</green>
-        <blue>127</blue>
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
        </color>
       </brush>
      </colorrole>
@@ -362,17 +362,17 @@
      <colorrole role="ButtonText">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>127</red>
-        <green>127</green>
-        <blue>127</blue>
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Base">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>255</red>
-        <green>255</green>
+        <red>131</red>
+        <green>162</green>
         <blue>255</blue>
        </color>
       </brush>
@@ -380,8 +380,8 @@
      <colorrole role="Window">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>255</red>
-        <green>255</green>
+        <red>131</red>
+        <green>162</green>
         <blue>255</blue>
        </color>
       </brush>
@@ -428,199 +428,136 @@
   <property name="windowTitle">
    <string>Play Mode</string>
   </property>
-  <widget class="QWidget" name="widget" native="true">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>1000</width>
-     <height>800</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QWidget#widget {
+  <property name="styleSheet">
+   <string notr="true">QWidget {
 	background-color: #83A2FF;
 	color: #FFFFFF;
 }</string>
-   </property>
-   <widget class="QLabel" name="solution_label">
-    <property name="geometry">
-     <rect>
-      <x>460</x>
-      <y>330</y>
-      <width>461</width>
-      <height>161</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>16</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius: 50%; /* Makes the label circular */
-border: 2px solid #000000; /* Border color and width */
-padding: 10px; /* Adjust padding as needed */
-background-color: #83A2FF;
-color: #FFFD28F;
-border: none;
-</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="wordWrap">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="question_label">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>180</y>
-      <width>1001</width>
-      <height>131</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>20</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius: 50%; /* Makes the label circular */
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_4">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_3" stretch="3,4">
+     <item>
+      <widget class="QLabel" name="question_label">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>1</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 50%; /* Makes the label circular */
 border: 2px solid #000000; /* Border color and width */
 padding: 10px; /* Adjust padding as needed */
 background-color: #83A2FF;
 color: #FFD28F;
 border: none;
 </string>
-    </property>
-    <property name="text">
-     <string>The word to be translated is: </string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="wordWrap">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="go_to_summary_button">
-    <property name="geometry">
-     <rect>
-      <x>139</x>
-      <y>410</y>
-      <width>291</width>
-      <height>81</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>11</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton {
-	border-radius: 20px; /* Adjust the radius as needed */
-	background-color: #FFE3BB;
-}
-QPushButton:hover {
-	background-color: #FFD28F;
-	}
-QPushButton:pressed {
-	background-color: #B4BDFF;
-}</string>
-    </property>
-    <property name="text">
-     <string>Go to Summary</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="give_me_a_hint_button">
-    <property name="geometry">
-     <rect>
-      <x>299</x>
-      <y>410</y>
-      <width>130</width>
-      <height>81</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>10</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton {
-	border-radius: 20px; /* Adjust the radius as needed */
-	background-color: #FFE3BB;
-}
-QPushButton:hover {
-	background-color: #FFD28F;
-	}
-QPushButton:pressed {
-	background-color: #B4BDFF;
-}</string>
-    </property>
-    <property name="text">
-     <string>Give me 
-a hint</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="input_line_edit">
-    <property name="geometry">
-     <rect>
-      <x>139</x>
-      <y>340</y>
-      <width>291</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>10</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius: 20px; /* Makes the label circular */
+       </property>
+       <property name="text">
+        <string>The word to be translated is: </string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="1,1">
+       <property name="leftMargin">
+        <number>50</number>
+       </property>
+       <property name="rightMargin">
+        <number>50</number>
+       </property>
+       <property name="bottomMargin">
+        <number>150</number>
+       </property>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,2,1,2">
+         <property name="spacing">
+          <number>10</number>
+         </property>
+         <property name="leftMargin">
+          <number>50</number>
+         </property>
+         <property name="rightMargin">
+          <number>50</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLineEdit" name="input_line_edit">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>1</horstretch>
+             <verstretch>1</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border-radius: 20px; /* Makes the label circular */
 border: 2px solid #000000; /* Border color and width */
 padding: 10px; /* Adjust padding as needed */
 background-color: #2E2E2E;
 color: #FFD28F;
 border: none;</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="check_button">
-    <property name="geometry">
-     <rect>
-      <x>140</x>
-      <y>410</y>
-      <width>130</width>
-      <height>81</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>12</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton {
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QStackedWidget" name="stacked_buttons">
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <property name="lineWidth">
+            <number>0</number>
+           </property>
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           <widget class="QWidget" name="check_page">
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <widget class="QPushButton" name="check_button">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>1</horstretch>
+                 <verstretch>1</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
 	border-radius: 20px; /* Adjust the radius as needed */
 	background-color: #FFE3BB;
 }
@@ -630,87 +567,29 @@ QPushButton:hover {
 QPushButton:pressed {
 	background-color: #B4BDFF;
 }</string>
-    </property>
-    <property name="text">
-     <string>Check!</string>
-    </property>
-   </widget>
-   <widget class="QComboBox" name="character_combo_box">
-    <property name="geometry">
-     <rect>
-      <x>210</x>
-      <y>510</y>
-      <width>71</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>10</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">text-align: center;</string>
-    </property>
-    <property name="maxVisibleItems">
-     <number>7</number>
-    </property>
-    <item>
-     <property name="text">
-      <string>ä</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Ä</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>ü</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Ü</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>ö</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Ö</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>ß</string>
-     </property>
-    </item>
-   </widget>
-   <widget class="QPushButton" name="add_character_button">
-    <property name="geometry">
-     <rect>
-      <x>290</x>
-      <y>510</y>
-      <width>71</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>12</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton {
+               </property>
+               <property name="text">
+                <string>Check!</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="give_me_a_hint_button">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>1</horstretch>
+                 <verstretch>1</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
 	border-radius: 20px; /* Adjust the radius as needed */
 	background-color: #FFE3BB;
 }
@@ -720,12 +599,231 @@ QPushButton:hover {
 QPushButton:pressed {
 	background-color: #B4BDFF;
 }</string>
-    </property>
-    <property name="text">
-     <string>Add</string>
-    </property>
-   </widget>
-  </widget>
+               </property>
+               <property name="text">
+                <string>Give me 
+a hint</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="summary_page">
+            <layout class="QVBoxLayout" name="verticalLayout">
+             <item>
+              <widget class="QPushButton" name="go_to_summary_button">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>1</horstretch>
+                 <verstretch>1</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+	border-radius: 20px; /* Adjust the radius as needed */
+	background-color: #FFE3BB;
+}
+QPushButton:hover {
+	background-color: #FFD28F;
+	}
+QPushButton:pressed {
+	background-color: #B4BDFF;
+}</string>
+               </property>
+               <property name="text">
+                <string>Go to Summary</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,1">
+           <property name="spacing">
+            <number>50</number>
+           </property>
+           <property name="leftMargin">
+            <number>50</number>
+           </property>
+           <property name="rightMargin">
+            <number>50</number>
+           </property>
+           <item>
+            <widget class="QComboBox" name="character_combo_box">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>1</horstretch>
+               <verstretch>1</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">text-align: center;
+background-color: #2E2E2E;</string>
+             </property>
+             <property name="maxVisibleItems">
+              <number>7</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>ä</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Ä</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>ü</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Ü</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>ö</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Ö</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>ß</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="add_character_button">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>1</horstretch>
+               <verstretch>1</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+	border-radius: 20px; /* Adjust the radius as needed */
+	background-color: #FFE3BB;
+}
+QPushButton:hover {
+	background-color: #FFD28F;
+	}
+QPushButton:pressed {
+	background-color: #B4BDFF;
+}</string>
+             </property>
+             <property name="text">
+              <string>Add</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QPushButton" name="open_database_button">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>1</horstretch>
+             <verstretch>1</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+	border-radius: 20px; /* Adjust the radius as needed */
+	background-color: #FFE3BB;
+}
+QPushButton:hover {
+	background-color: #FFD28F;
+	}
+QPushButton:pressed {
+	background-color: #B4BDFF;
+}</string>
+           </property>
+           <property name="text">
+            <string>Open Database</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="solution_label">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>1</horstretch>
+           <verstretch>1</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-radius: 50%; /* Makes the label circular */
+border: 2px solid #000000; /* Border color and width */
+padding: 10px; /* Adjust padding as needed */
+background-color: #83A2FF;
+color: #FFD28F;
+border: none;
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
  </widget>
  <resources/>
  <connections/>

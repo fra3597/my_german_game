@@ -7,8 +7,6 @@ class ArticleMode(QtWidgets.QWidget):
         super().__init__()
         loadUi("game_view/frontend/article_mode.ui", self)
 
-        self.go_to_summary_button.setVisible(False)
-
     def connect_der_button(self, function):
         self.der_button.clicked.connect(function)
 
@@ -21,7 +19,10 @@ class ArticleMode(QtWidgets.QWidget):
     def connect_go_to_summary_button(self, function):
         self.go_to_summary_button.clicked.connect(function)
 
-    def read_user_answer(self):
+    def connect_open_database_button(self, function):
+        self.open_database_button.clicked.connect(function)
+
+    def read_user_answer(self) -> str:
         button_pressed = self.sender()
 
         if button_pressed == self.der_button:
@@ -33,7 +34,5 @@ class ArticleMode(QtWidgets.QWidget):
 
     def enable_go_to_summary_button(self):
         self.title_label.setText("")
-        self.der_button.setVisible(False)
-        self.die_button.setVisible(False)
-        self.das_button.setVisible(False)
-        self.go_to_summary_button.setVisible(True)
+        self.stacked_buttons.setCurrentWidget(self.summary_page)
+

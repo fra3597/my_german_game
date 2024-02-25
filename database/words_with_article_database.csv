@@ -1,327 +1,320 @@
 Article,German,Italian,Score
-die, Farbe,il colore,1
-der, Kassenzettel,lo scontrino,1
-der, Mantel,il cappotto,1
-der, Hut,il cappello,1
-das, Kleid,il vestito,1
-die, Schuhe,le scarpe,1
-die, Hose,i pantaloni,1
-der, Rock,la gonna,1
-der, Urlaub,la vacanza,1
-die, Hochzeit,le nozze,1
-das, Hemd,la camicia,1
-das, Paar,il paio,1
-die, Sache,la cosa,1
-die, Frage,la domanda,1
-das, Spiel,il gioco,2
-das, nächste Mal,la prossima volta,1
-die, Arbeit,il lavoro,1
-der, Freund,l'amico/il ragazzo,1
-die, Freundin,l'amica/la ragazza,1
-die, Jacke,la giacca,1
-die, Fleischtheke,il banco macelleria,1
-das, Hähnchen,il pollo,1
-das, Päckchen,la bustina,1
-das, Backpulver,il lievito in polvere,1
-die, Beziehung,la relazione,1
-die, Ahnung,l'idea,1
-die, Kneipe,il Pub,1
-der, Kühlschrank,il frigorifero,1
-das, Zimmer,la camera,1
-der, Geburtstag,il compleanno,1
-die, Badewanne,la vasca da bagno,1
-das, Kino,il cinema,1
-der, Eingang,l'entrata,1
-der, Ausgang,l'uscita,1
-der, Unterricht,la lezione,3
-die, Zutat,l'ingrediente,1
-die, Oper,l'opera,1
-die, Vorstellung,lo spettacolo,1
-die, Wespe,la vespa,1
-die, Knospe,il bocciolo,1
-die, Arbeitpause,la pausa al lavoro,1
-das, Schuljahr,l'anno scolastico,1
-die, Prüfung,l'esame,1
-das, Zeugnis,la pagella,2
-die, Note,il voto,1
-das, Gymnasium,il liceo,1
-die, Hausaufgaben,i compiti a casa,1
-die, Grundschule,la scuola elementare,1
-das, Licht,la luce,1
-der, Kurs,il corso,1
-der, Zug,il treno,1
-der, Kindergarten,l'asilo nido,1
-das, Handwerksberuf,il lavoro artigianale,1
-die, Berufschule,la scuola professionale,1
-der, Beruf,la professione,1
-die, Entwicklung,lo sviluppo,1
-das, Interesse,l'interesse,1
-der, Satz,la frase,1
-die, Bedingung,la condizione,1
-das, Bett,il letto,1
-der, Fernsehe,la televisione,1
-der, Geldbeutel,il borsellino,1
-das, Geld,il denaro/i soldi,2
-die, Kopfschmerzen,il mal di testa,1
-die, Redewendung,i modi di dire,1
-das, Fell,la pelliccia/il pelo,1
-der, König,il re,1
-die, Metapher,la metafora,2
-der, Anrufbeantworten,la segreteria telefonica,1
-der, Beantworter,la persona che risponde,1
-die, Leitung,guida/direzione/linea telefonica,1
-der, Prospekt,l'opuscolo,1
-die, Besprechung,la discussione,1
-der, Anhalt,il punto di appoggio/sostegno,1
-der, Anhang,l'appendice/l'allegato,1
-der, Termin,l'appuntamento,3
-der, Terminplaner,l'agenda,2
-der, Katalog,il catalogo,1
-die, Büromobel,i mobili per l'ufficio,1
-der, Tisch,il tavolo,1
-der, Stuhl,la sedia,1
-der, Kunde,il cliente,1
-der, Produkt,il prodotto,1
-der, Kopierer,la fotocopiatrice,1
-der, Drucker,la stampante,1
-die, Sekretärin,la segretaria,1
-der, Chef,il capo,1
-der, Computer,il computer,2
-die, Sonnenbrille,gli occhiali da sole,1
-die, Handtasche,la borsa,1
-das, Handtuch,l'asciugamano,1
-die, Reisetasche,la borsa da viaggio,1
-das, Abendkleid,l'abito da sera,1
-der, Rollerkoffer,il trolley,1
-die, Kosmetiktasche,il beauty case,1
-die, Sonnencreme,la crema solare,1
-der, Regenschirm,l'ombrello,1
-die, Plastiktüte,la borsa di plastica,1
-der, Rucksack,lo zaino,1
-die, Regenjacke,l'impermeabile,1
-die, Gepäck,i bagagli,1
-der, Wäschekorb,cesto per la biancheria,1
-die, Schublade,il cassetto,1
-der, Schrank,l'armadio,1
-das, Regal,lo scaffale,2
-die, Kommode,il comò,2
-der, Nattisch,il comodino,1
-das, Kopfkissen,il cuscino,1
-die, Decke,la coperta,1
-der, Pyjama,il pigiama,1
-die, Waschemaschine,la lavatrice,1
-die, Flasche,la bottiglia,1
-die, Schultasche,lo zaino di scuola,1
-die, Küche,la cucina,1
-das, Heft,il quaderno,2
-der, Keller,la cantina,4
-die, Turnschuhe,le scarpe da ginnastica,1
-das, Schuregal,la scarpiera,1
-der, Küchenschrank,la credenza,1
-der, Teller,il piatto,1
-der, Abfalleimer,la pattumiera,1
-die, Pflanze,la pianta,1
-der, Kugelschreiber,la biro,1
-die, Übernachtung,il pernottamento,1
-das, Fahrrad,la bicicletta,1
-das, Schiff,la nave,1
-die, Bahn,il treno,1
-die, Insel,l'isola,1
-der, Berg,la montagna,1
-das, Meer,il mare,2
-der, Fluss,il fiume,2
-der, See,il lago,1
-der, Bauernhof,la fattoria,1
-die, Jugendherberge,l'ostello,1
-das, Wohnmobil,il camper,1
-die, Stadtrundfahrt,il giro della città,1
-das, Tier,l'animale,1
-die, Wanderung,la camminata,1
-die, Überraschung,la sorpresa,1
-die, Kleidung,l'abbigliamento,1
-die, Unterwäsche,la biancheria intima,1
-das, Reisepass,il passaporto,1
-der, Stadtplan,la mappa della città,1
-das, Bargeld,il contante,1
-der, Badeanzug,il costume da bagno,1
-die, Badehose,il costume da bagno maschile,1
-die, Sandale,il sandalo,1
-die, Flipflops,le infradito,1
-die, Wanderschuhe,le scarpe da trekking,1
-die, Karte,la mappa,1
-der, Bildschirm/Monitor,il monitor,1
-die, Tastatur,la tastiera,1
-die, Maus,il mouse,1
-das, Telefonbuch,la rubrica,1
-das, Handy,il cellulare,1
-der, Friseur,il parrucchiere,1
-der, Rechner,la calcolatrice,1
-das, Fenster,la finestra,1
-die, Uhr,l'orologio,1
-das, Regal,lo scaffale,2
-die, Regel,la regola,1
-der, Schrank,l'armadio,1
-die, Ablage,l'archivio,1
-der, Teppich,il tappeto,1
-die, Zeitschrift,la rivista,1
-die, Nachricht,la notizia,1
-der, Krimi,il giallo poliziesco,1
-die, Reportage,il reportage,1
-die, Sportsendung,la trasmissione sportiva,1
-der, Sender,emittente/trasmettitore,1
-der, Spielfilm,il lungometraggio,1
-die, Komodie,la commedia,1
-der, Stau,ingorgo/traffico,1
-die, Verkehrsnachrichten,le notizie sul traffico,2
-die, Verfügung,la disposizione,1
-der, Internetanschluss,l'accesso a internet,1
-der, Internetanbieter,il provider internet,2
-der, Preisvorteil,il prezzo più conveniente/vantaggioso,1
-der, Ansprechpartner,la persona a cui rivolgersi,2
-der, Dienst,il servizio,1
-die, Umkleidekbine,lo spogliatoio,1
-die, Grösse,la taglia/grandezza,2
-der, Sohn,il figlio,1
-die, Tochter,la figlia,1
-der, Onkel,lo zio,1
-der, Opa,il nonno,1
-die, Tante,la zia,2
-die, Oma,la nonna,1
-die, Grosseltern,i nonni,1
-die, Eltern,i genitori,1
-die, Geschwister,i fratelli,1
-das, Viertel,il quarto (d'ora),2
-der, Hof,il giardino,1
-der, Nachbar,il vicino,1
-die, Wohnung,l'appartamento,1
-der, Name,il nome,1
-der, Tag,il giorno,2
-das, Enkelkind,il nipote,1
-das, Wetter,il tempo/meteo,3
-das, Gemüse,la verdura,1
-der, Kopf,la testa,1
-das, Mitglied,il membro,1
-die, Leute,la gente/le persone,1
-der, Schlager,la canzone,1
-die, Weltmeisterschaft,il campionato mondiale,1
-das,s,che,1
-die, Lachen,le risate,1
-der, Keller,la cantina,4
-der, Erfolg,il successo,1
-die, Mannschaft,la squadra,1
-die, Endrunde,il girone finale,1
-der, Balkon,il balcone,1
-die, Fahne,la bandiera,1
-der, Titel,il titolo,1
-der, Weltmeister,il campione del mondo,2
-das, Herz,il cuore,1
-das, Märchen,la fiaba,1
-der, Fan,il fan,1
-der, Immobiliemakler,l'agente immobiliare,1
-der, Neubau,(nuova) costruzione,1
-der, Zustand,lo stato/la condizione,2
-das,s heisst doch,ciò significa che,1
-der, Stellplatz,il posto auto,1
-die, Tiefgarage,il garage sotterraneo,1
-die, Nebenkosten,le spese accessorie,1
-das, Erstbezug,la prima occupazione,1
-die, Renovierung,il restauro,1
-die, Immobilienfirma,l'agenzia immobiliare,1
-die, Kaution,la cauzione,1
-die, Provision,la provvigione,1
-die, Anzeige,la denuncia/l'annuncio,1
-das, Gelingen,la riuscita,1
-der, Weg,la strada/via,2
-die, Medaille,la medaglia,1
-der, Mietvertrag,il contratto d'affitto,2
-der, Maler,il pittore,1
-der, Herd,la cucina/i fornelli,1
-die, Waschmaschine,la lavatrice,1
-die, Fläche,la superficie,1
-der, Holzboden/das Parkett,il parquet,1
-der, Schaden,il danno/lo svantaggio,1
-das, Kellergeschoss,lo scantinato,1
-das, Erdgeschoss,il piano terra,1
-das, Verkehrsmittel,il mezzo di comunicazione,1
-die, Apotheke,la farmacia,1
-das, Hochhaus,il palazzo,1
-das, Gebäude,l'edificio,1
-das, Sozialleben,la vita sociale,1
-das, Leben,la vita,1
-der, Verkehr,il traffico,1
-der, Aufzug,l'ascensore,3
-der, Dübel,il tassello,1
-das, Werkzeug,lo strumento,1
-der, Hammer,il martello,1
-das, Bild,l'immagine/il quadro,1
-das, Messer,il coltello,1
-das, Steak,la bistecca,1
-die, Schere,le forbici,1
-die, Zange,le pinze,1
-der, Lappen,lo straccio,1
-der, Kochtopf,la pentola,1
-die, Pfanne,la padella,1
-der, Kochlöffel,il cucchiaio di legno,1
-die, Gabel,la forchetta,1
-das, Subjekt,il soggetto,1
-die, Zähne,i denti,1
-die, Seife,il sapone,1
-der, Elektriker,l'elettricista,2
-der, Maler,l'imbianchino,1
-der, Arzt,il medico curante,1
-der, Stöpsel,il tappo,1
-der, Strom,la corrente elettrica,2
-die, Wand,la parete,1
-der, Pinsel,il pennello,1
-die, Schale,la buccia,1
-der, Eimer,il secchio,1
-der, Nagel,il chiodo,1
-die, Leiter,la scala,1
-der, Schraubenzieher,il cacciavite,1
-der, Schwamm,la spugna,1
-die, Bohrmaschine,il trapano,1
-der, Baumarkt,il ferramenta,1
-die, Halsschmerzen,il mal di gola,1
-der, Schal,la sciarpa,1
-der, Staubsauger,l'aspirapolvere,1
-die, Schössel,la scodella,1
-der, Gegenstand,l'oggetto,2
-das, Loch,il buco/foro,1
-der, Kamm,il pettine,1
-der, Personalausweis,il documento di identità,1
-der, Schlüssel,la chiave,1
-die, Geburtsukunde,il certificato di nascita,1
-der, Strafzettel,la multa,1
-das, Einschreiben,la lettera raccomandata,1
-die, Postbote,il postino,1
-der, Briefumschlag,la busta,1
-der, Brief,la lettera,1
-die, Postkarte,la cartolina,1
-die, Briefmarke,il francobollo,1
-der, Postschalter,lo sportello dell'ufficio postale,1
-das, Paket,il pacco,1
-der, Standesbeamte,l'impiegato dell'anagrafe,1
-der, Kontostand,il saldo,1
-der, Stock, il bastone,1
-das, Stockwerk,il piano,1
-der, Rentner,il pensionato,1
-der, Gärtner,il giardiniere,1
-der, Sänger,il cantante,1
-der, Studierende,lo studente,1
-das, Einwohnermeldeamt,l'ufficio anagrafe,2
-das, Standesamt,l'ufficio anagrafe,1
-das, Fundbüro,l'ufficio oggetti smarriti,2
-das, Binde,la fasciatura,1
-die, Geheimzahl,il codice segreto,1
-der, Kontoauszug,l'estratto conto,1
-die, Überweisung,il bonifico,1
-der, Dauerauftrag,l' ordine di pagamento,1
-der, Absender,il mittente,1
-der, Empfänger,il ricevente,1
-das, Gebirge,le montagne,1
-die, Hauptstadt,la capitale,1
-das, Meer,il mare,2
-der, Bauer,il contadino,1
-die, Milch,il latte,1
-das, Fell,la pelle,1
-der, Geschmack,il gusto/sapore,1
+die,Farbe,il colore,2
+der,Kassenzettel,lo scontrino,2
+der,Mantel,il cappotto,2
+der,Hut,il cappello,2
+das,Kleid,il vestito,1
+die,Schuhe,le scarpe,2
+die,Hose,i pantaloni,4
+der,Rock,la gonna,2
+der,Urlaub,la vacanza,2
+die,Hochzeit,le nozze,3
+das,Hemd,la camicia,3
+das,Paar,il paio,2
+die,Sache,la cosa,2
+die,Frage,la domanda,2
+das,Spiel,il gioco,4
+das,nächste Mal,la prossima volta,2
+die,Arbeit,il lavoro,3
+der,Freund,l'amico/il ragazzo,1
+die,Freundin,l'amica/la ragazza,2
+die,Jacke,la giacca,2
+die,Fleischtheke,il banco macelleria,1
+das,Hähnchen,il pollo,2
+das,Päckchen,la bustina,2
+das,Backpulver,il lievito in polvere,2
+die,Beziehung,la relazione,3
+die,Ahnung,l'idea,2
+die,Kneipe,il Pub,3
+der,Kühlschrank,il frigorifero,1
+das,Zimmer,la camera,2
+der,Geburtstag,il compleanno,2
+die,Badewanne,la vasca da bagno,3
+das,Kino,il cinema,2
+der,Eingang,l'entrata,2
+der,Ausgang,l'uscita,1
+der,Unterricht,la lezione,3
+die,Zutat,l'ingrediente,2
+die,Oper,l'opera,1
+die,Vorstellung,lo spettacolo,2
+die,Wespe,la vespa,2
+die,Knospe,il bocciolo,3
+die,Arbeitpause,la pausa al lavoro,2
+das,Schuljahr,l'anno scolastico,2
+die,Prüfung,l'esame,2
+das,Zeugnis,la pagella,5
+die,Note,il voto,3
+das,Gymnasium,il liceo,3
+die,Hausaufgaben,i compiti a casa,2
+die,Grundschule,la scuola elementare,1
+das,Licht,la luce,3
+der,Kurs,il corso,2
+der,Zug,il treno,2
+der,Kindergarten,l'asilo nido,2
+das,Handwerksberuf,il lavoro artigianale,4
+die,Berufschule,la scuola professionale,1
+der,Beruf,la professione,1
+die,Entwicklung,lo sviluppo,2
+das,Interesse,l'interesse,2
+der,Satz,la frase,3
+die,Bedingung,la condizione,2
+das,Bett,il letto,2
+der,Fernseher,la televisione,3
+der,Geldbeutel,il borsellino,2
+das,Geld,il denaro/i soldi,3
+die,Kopfschmerzen,il mal di testa,1
+die,Redewendung,i modi di dire,2
+der,König,il re,2
+die,Metapher,la metafora,4
+der,Anrufbeantworten,la segreteria telefonica,2
+der,Beantworter,la persona che risponde,2
+die,Leitung,guida/direzione/linea telefonica,3
+der,Prospekt,l'opuscolo,2
+die,Besprechung,la discussione,2
+der,Anhalt,il punto di appoggio/sostegno,3
+der,Anhang,l'appendice/l'allegato,2
+der,Termin,l'appuntamento,4
+der,Terminplaner,l'agenda,2
+der,Katalog,il catalogo,1
+die,Büromobel,i mobili per l'ufficio,3
+der,Tisch,il tavolo,2
+der,Stuhl,la sedia,2
+der,Kunde,il cliente,2
+der,Produkt,il prodotto,2
+der,Kopierer,la fotocopiatrice,2
+der,Drucker,la stampante,2
+die,Sekretärin,la segretaria,2
+der,Chef,il capo,2
+der,Computer,il computer,2
+die,Sonnenbrille,gli occhiali da sole,2
+die,Handtasche,la borsa,3
+das,Handtuch,l'asciugamano,2
+die,Reisetasche,la borsa da viaggio,2
+das,Abendkleid,l'abito da sera,1
+der,Rollerkoffer,il trolley,2
+die,Kosmetiktasche,il beauty case,3
+die,Sonnencreme,la crema solare,3
+der,Regenschirm,l'ombrello,2
+die,Plastiktüte,la borsa di plastica,2
+der,Rucksack,lo zaino,2
+die,Regenjacke,l'impermeabile,2
+das,Gepäck,i bagagli,2
+der,Wäschekorb,cesto per la biancheria,2
+die,Schublade,il cassetto,2
+der,Schrank,l'armadio,2
+die,Kommode,il comò,2
+der,Nattisch,il comodino,1
+das,Kopfkissen,il cuscino,2
+die,Decke,la coperta,2
+der,Pyjama,il pigiama,1
+die,Waschemaschine,la lavatrice,3
+die,Flasche,la bottiglia,2
+die,Schultasche,lo zaino di scuola,2
+die,Küche,la cucina,2
+das,Heft,il quaderno,3
+die,Turnschuhe,le scarpe da ginnastica,2
+das,Schuregal,la scarpiera,1
+der,Küchenschrank,la credenza,1
+der,Teller,il piatto,3
+der,Abfalleimer,la pattumiera,3
+die,Pflanze,la pianta,2
+der,Kugelschreiber,la biro,1
+die,Übernachtung,il pernottamento,2
+das,Fahrrad,la bicicletta,2
+das,Schiff,la nave,2
+die,Bahn,il treno,2
+die,Insel,l'isola,1
+der,Berg,la montagna,1
+das,Meer,il mare,3
+der,Fluss,il fiume,2
+der,See,il lago,1
+der,Bauernhof,la fattoria,2
+die,Jugendherberge,l'ostello,2
+das,Wohnmobil,il camper,3
+die,Stadtrundfahrt,il giro della città,1
+das,Tier,l'animale,3
+die,Wanderung,la camminata,2
+die,Überraschung,la sorpresa,3
+die,Kleidung,l'abbigliamento,2
+die,Unterwäsche,la biancheria intima,1
+das,Reisepass,il passaporto,2
+der,Stadtplan,la mappa della città,3
+das,Bargeld,il contante,2
+der,Badeanzug,il costume da bagno,2
+die,Badehose,il costume da bagno maschile,1
+die,Sandale,il sandalo,2
+die,Flipflops,le infradito,2
+die,Wanderschuhe,le scarpe da trekking,2
+die,Karte,la mappa,2
+der,Bildschirm/Monitor,il monitor,2
+die,Tastatur,la tastiera,2
+die,Maus,il mouse,1
+das,Telefonbuch,la rubrica,3
+das,Handy,il cellulare,2
+der,Friseur,il parrucchiere,1
+der,Rechner,la calcolatrice,2
+das,Fenster,la finestra,2
+die,Uhr,l'orologio,2
+das,Regal,lo scaffale,6
+die,Regel,la regola,2
+der,Schrank,l'armadio,2
+die,Ablage,l'archivio,1
+der,Teppich,il tappeto,2
+die,Zeitschrift,la rivista,1
+die,Nachricht,la notizia,3
+der,Krimi,il giallo poliziesco,2
+die,Reportage,il reportage,3
+die,Sportsendung,la trasmissione sportiva,2
+der,Sender,emittente/trasmettitore,2
+der,Spielfilm,il lungometraggio,2
+die,Komodie,la commedia,2
+der,Stau,ingorgo/traffico,1
+die,Verkehrsnachrichten,le notizie sul traffico,3
+die,Verfügung,la disposizione,2
+der,Internetanschluss,l'accesso a internet,3
+der,Internetanbieter,il provider internet,3
+der,Preisvorteil,il prezzo più conveniente/vantaggioso,2
+der,Ansprechpartner,la persona a cui rivolgersi,2
+der,Dienst,il servizio,3
+die,Umkleidekabine,lo spogliatoio,2
+die,Grösse,la taglia/grandezza,3
+der,Sohn,il figlio,2
+die,Tochter,la figlia,1
+der,Onkel,lo zio,2
+der,Opa,il nonno,3
+die,Tante,la zia,2
+die,Oma,la nonna,1
+die,Grosseltern,i nonni,1
+die,Eltern,i genitori,3
+die,Geschwister,i fratelli,3
+das,Viertel,il quarto (d'ora),3
+der,Hof,il giardino,2
+der,Nachbar,il vicino,1
+die,Wohnung,l'appartamento,2
+der,Name,il nome,2
+der,Tag,il giorno,3
+das,Enkelkind,il nipote,1
+das,Wetter,il tempo/meteo,3
+das,Gemüse,la verdura,2
+der,Kopf,la testa,3
+das,Mitglied,il membro,2
+die,Leute,la gente/le persone,1
+der,Schlager,la canzone,2
+die,Weltmeisterschaft,il campionato mondiale,2
+die,Lachen,le risate,3
+der,Keller,la cantina,5
+der,Erfolg,il successo,3
+die,Mannschaft,la squadra,2
+die,Endrunde,il girone finale,2
+der,Balkon,il balcone,3
+die,Fahne,la bandiera,2
+der,Titel,il titolo,2
+der,Weltmeister,il campione del mondo,2
+das,Herz,il cuore,2
+das,Märchen,la fiaba,2
+der,Fan,il fan,2
+der,Immobiliemakler,l'agente immobiliare,2
+der,Neubau,(nuova) costruzione,3
+der,Zustand,lo stato/la condizione,2
+der,Stellplatz,il posto auto,2
+die,Tiefgarage,il garage sotterraneo,1
+die,Nebenkosten,le spese accessorie,2
+das,Erstbezug,la prima occupazione,4
+die,Renovierung,il restauro,1
+die,Immobilienfirma,l'agenzia immobiliare,1
+die,Kaution,la cauzione,2
+die,Provision,la provvigione,2
+die,Anzeige,la denuncia/l'annuncio,2
+das,Gelingen,la riuscita,2
+der,Weg,la strada/via,2
+die,Medaille,la medaglia,1
+der,Mietvertrag,il contratto d'affitto,3
+der,Herd,la cucina/i fornelli,1
+die,Waschmaschine,la lavatrice,1
+die,Fläche,la superficie,1
+der,Holzboden/das Parkett,il parquet,2
+der,Schaden,il danno/lo svantaggio,2
+das,Kellergeschoss,lo scantinato,1
+das,Erdgeschoss,il piano terra,2
+das,Verkehrsmittel,il mezzo di comunicazione,2
+die,Apotheke,la farmacia,3
+das,Hochhaus,il palazzo,3
+das,Gebäude,l'edificio,1
+das,Sozialleben,la vita sociale,2
+das,Leben,la vita,2
+der,Verkehr,il traffico,2
+der,Aufzug,l'ascensore,3
+der,Dübel,il tassello,2
+das,Werkzeug,lo strumento,2
+der,Hammer,il martello,2
+das,Bild,l'immagine/il quadro,2
+das,Messer,il coltello,2
+das,Steak,la bistecca,2
+die,Schere,le forbici,3
+die,Zange,le pinze,2
+der,Lappen,lo straccio,2
+der,Kochtopf,la pentola,2
+die,Pfanne,la padella,3
+der,Kochlöffel,il cucchiaio di legno,1
+die,Gabel,la forchetta,2
+das,Subjekt,il soggetto,2
+die,Zähne,i denti,1
+die,Seife,il sapone,2
+der,Elektriker,l'elettricista,2
+der,Maler,l'imbianchino,2
+der,Arzt,il medico curante,3
+der,Stöpsel,il tappo,2
+der,Strom,la corrente elettrica,2
+die,Wand,la parete,2
+der,Pinsel,il pennello,2
+die,Schale,la buccia,2
+der,Eimer,il secchio,2
+der,Nagel,il chiodo,1
+die,Leiter,la scala,2
+der,Schraubenzieher,il cacciavite,2
+der,Schwamm,la spugna,1
+die,Bohrmaschine,il trapano,2
+der,Baumarkt,il ferramenta,1
+die,Halsschmerzen,il mal di gola,1
+der,Schal,la sciarpa,1
+der,Staubsauger,l'aspirapolvere,1
+die,Schössel,la scodella,1
+der,Gegenstand,l'oggetto,2
+das,Loch,il buco/foro,2
+der,Kamm,il pettine,2
+der,Personalausweis,il documento di identità,2
+der,Schlüssel,la chiave,2
+die,Geburtsukunde,il certificato di nascita,1
+der,Strafzettel,la multa,2
+das,Einschreiben,la lettera raccomandata,2
+die,Postbote,il postino,2
+der,Briefumschlag,la busta,1
+der,Brief,la lettera,3
+die,Postkarte,la cartolina,2
+die,Briefmarke,il francobollo,2
+der,Postschalter,lo sportello dell'ufficio postale,2
+das,Paket,il pacco,2
+der,Standesbeamte,l'impiegato dell'anagrafe,1
+der,Kontostand,il saldo,2
+der,Stock,il bastone,1
+das,Stockwerk,il piano,2
+der,Rentner,il pensionato,1
+der,Gärtner,il giardiniere,2
+der,Sänger,il cantante,2
+der,Studierende,lo studente,2
+das,Einwohnermeldeamt,l'ufficio anagrafe,4
+das,Standesamt,l'ufficio anagrafe,2
+das,Fundbüro,l'ufficio oggetti smarriti,2
+das,Binde,la fasciatura,2
+die,Geheimzahl,il codice segreto,2
+der,Kontoauszug,l'estratto conto,3
+die,Überweisung,il bonifico,1
+der,Dauerauftrag,l' ordine di pagamento,2
+der,Absender,il mittente,3
+der,Empfänger,il ricevente,2
+das,Gebirge,le montagne,2
+die,Hauptstadt,la capitale,1
+der,Bauer,il contadino,2
+die,Milch,il latte,2
+das,Fell,la pelle,3
+der,Geschmack,il gusto/sapore,2

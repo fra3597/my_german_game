@@ -1,6 +1,7 @@
 from PyQt5.uic import loadUi
 from PyQt5.QtWidgets import QWidget, QTableWidget, QTableWidgetItem
 from random import randint
+from PyQt5.QtCore import Qt
 
 NUMBER_OF_COLUMNS = 4
 NUMBER_OF_ROWS = 1
@@ -16,7 +17,8 @@ class VerbParadigmMode(QWidget):
     def __init__(self):
         super().__init__()
         loadUi("game_view/frontend/verb_paradigm_mode.ui", self)
-        self.go_to_summary_button.setVisible(False)
+
+        self.check_page_index = self.stacked_buttons.currentIndex()
 
     def set_row_in_table(self, current_paradigm):
         given_entry_index = randint(0, 2)
@@ -57,8 +59,7 @@ class VerbParadigmMode(QWidget):
 
     def enable_go_to_summary_button(self):
         self.clear_entry_row()
-        self.check_button.setVisible(False)
-        self.go_to_summary_button.setVisible(True)
+        self.stacked_buttons.setCurrentWidget(self.summary_page)
 
     def clear_entry_row(self):
         for col in range(self.paradigm_table.columnCount()):
@@ -67,10 +68,21 @@ class VerbParadigmMode(QWidget):
                 del item
 
     def connect_add_character_button(self, function):
-        self.add_character_button.clicked.connect(function)
+        self.add_character_button_3.clicked.connect(function)
 
     def connect_check_button(self, function):
         self.check_button.clicked.connect(function)
 
     def connect_go_to_summary_button(self, function):
         self.go_to_summary_button.clicked.connect(function)
+
+    def connect_open_database_button(self,function):
+        self.open_database_button.clicked.connect(function)
+
+    #TO DO: this function has to be fixed. The currentIndex set at the init depends on th efirst page available when you save the .ui file
+    def keyPressEvent(self, event):
+        if event.key() in [Qt.Key_Return, Qt.Key_Enter]:
+            if self.stacked_buttons.currentIndex() == self.check_page_index:
+                self.check_button.click()
+            else:
+                self.go_to_summary_button.click()

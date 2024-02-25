@@ -1,15 +1,15 @@
 from PyQt5.uic import loadUi
 from PyQt5 import QtWidgets
+from PyQt5.QtCore import Qt
 
 
 class TranslateMode(QtWidgets.QWidget):
     def __init__(self):
         super().__init__()
         loadUi("game_view/frontend/translate_mode.ui", self)
-
+        
+        self.check_page_index = self.stacked_buttons.currentIndex()
         self.letters_shown = 0
-
-        self.go_to_summary_button.setVisible(False)
 
     def connect_add_character_button(self, function):
         self.add_character_button.clicked.connect(function)
@@ -23,11 +23,12 @@ class TranslateMode(QtWidgets.QWidget):
     def connect_go_to_summary_button(self, function):
         self.go_to_summary_button.clicked.connect(function)
 
+    def connect_open_database_button(self, function):
+        self.open_database_button.clicked.connect(function)
+
     def enable_go_to_summary_button(self):
         self.question_label.setText("")
-        self.check_button.setVisible(False)
-        self.give_me_a_hint_button.setVisible(False)
-        self.go_to_summary_button.setVisible(True)
+        self.stacked_buttons.setCurrentWidget(self.summary_page)
 
     def give_me_a_hint(self, answers):
         if self.letters_shown < 3:
@@ -46,6 +47,13 @@ class TranslateMode(QtWidgets.QWidget):
         character_to_add = self.character_combo_box.currentText()
         new_text = current_text + f"{character_to_add}"
         self.input_line_edit.setText(new_text)
+
+    def keyPressEvent(self, event):
+        if  event.key() in [Qt.Key_Return, Qt.Key_Enter]:
+            if self.stacked_buttons.currentIndex() == self.check_page_index:
+                self.check_button.click()
+            else:
+                self.go_to_summary_button.click()
 
     def reset_give_me_a_hint_button(self):
         self.letters_shown = 0

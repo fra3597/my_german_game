@@ -1,8 +1,8 @@
-Present,Präteritum,Perfekt,Italian,PresentScore,PräteritumScore,PerfektScore
+Present,Praeteritum,Perfekt,Italian,PresentScore,PraeteritumScore,PerfektScore
 finden,fand,hat gefunden,trovare,2,2,1
 gelingen,gelang,ist gelungen,riuscire,1,1,1
 singen,sang,hat gesungen,cantare,1,1,1
-sinken,sank,ist gesunken,scendere,3,3,1
+sinken,sank,ist gesunken,scendere,3,3,2
 springen,sprang,ist gesprungen,saltare,1,2,1
 stinken,stank,hat gestunken,puzzare,1,1,1
 trinken,trank,hat getrunken,bere,1,1,1
@@ -14,14 +14,14 @@ frieren,fror,hat gefroren,avere freddo,1,1,1
 riechen,roch,hat gerochen,sentire l'odore di,2,1,1
 schieben,schob,hat geschoben,spingere,1,1,1
 schließen,schloss,hat geschlossen,chiudere,1,1,1
-verlieren,verlor,hat verloren,perdere,4,2,3
+verlieren,verlor,hat verloren,perdere,4,3,4
 wiegen,wog,hat gewogen,pesare,1,1,1
 ziehen,zog,hat gezogen,tirare,1,1,2
 beweisen,bewies,hat bewiesen,dimostrare,1,1,1
-bleiben,blieb,ist geblieben,rimanere,2,2,1
+bleiben,blieb,ist geblieben,rimanere,2,2,2
 entscheiden,entschied,hat entschieden,decidere,2,1,2
 leihen,lieh,hat geliehen,prendere/dare in prestito,3,3,3
-scheinen,schien,hat geschienen,sembrare/splendere,1,1,1
+scheinen,schien,hat geschienen,sembrare/splendere,2,1,1
 schreiben,schrieb,hat geschrieben,scrivere,1,1,1
 schreien,schrie,hat geschrien,urlare,1,2,1
 schweigen,schwieg,hat geschwiegen,tacere,3,2,3
@@ -34,53 +34,53 @@ schneiden,schnitt,hat geschnitten,nevicare,1,2,2
 streiten,stritt,hat gestritten,litigare,1,1,1
 vergleichen,verglich,hat verglichen,comparare,2,1,1
 bewerben,bewarb,hat beworben,candidarsi,2,2,1
-brechen,brach,hat gebrochen,rompere,1,1,2
+brechen,brach,hat gebrochen,rompere,1,1,3
 empfehlen,empfahl,hat empfohlen,consigliare,2,1,2
 erschrecken,erschrak,ist erschrocken,spaventare qn,2,2,1
-gelten,galt,hat gegolten,valere,1,1,1
+gelten,galt,hat gegolten,valere,1,2,1
 helfen,half,hat geholfen,aiutare,3,1,2
 nehmen,nahm,hat genommen,prendere,1,1,1
 sprechen,sprach,hat gesprochen,parlare,2,2,1
-stehlen,stahl,hat gestohlen,rubare,1,2,2
+stehlen,stahl,hat gestohlen,rubare,1,3,3
 sterben,starb,ist gestorben,morire,2,1,1
 treffen,traf,hat getroffen,incontrare,2,2,1
-werfen,warf,hat geworfen,buttare,2,2,3
+werfen,warf,hat geworfen,buttare,3,2,3
 beginnen,begann,hat begonnen,iniziare,1,1,1
-gewinnen,gewann,hat gewonnen,vincere,3,2,1
+gewinnen,gewann,hat gewonnen,vincere,4,2,2
 schwimmen,schwamm,ist geschwommen,nuotare,1,1,1
-essen,aß,hat gegessen,mangiare,2,1,2
-fressen,fraß,hat gefressen,mangiare,2,1,2
+essen,aß,hat gegessen,mangiare,3,1,3
+fressen,fraß,hat gefressen,mangiare,3,2,2
 geben,gab,hat gegeben,dare,1,1,1
 geschehen,geschah,ist geschehen,succedere,1,1,1
 lesen,las,hat gelesen,leggere,1,1,1
 messen,maß,hat gemessen,misurare,2,1,1
 sehen,sah,hat gesehen,vedere,1,1,1
 treten,trat,hat getreten,calciare,3,1,1
-vergessen,vergaß,hat vergessen,dimenticare,1,1,1
+vergessen,vergaß,hat vergessen,dimenticare,2,1,2
 bitten,bat,hat gebeten,pregare,2,1,1
-liegen,lag,ist/hat gelegen,essere sdraiati,1,1,1
+liegen,lag,ist/hat gelegen,essere sdraiati,2,1,1
 sitzen,saß,ist/hat gesessen,essere seduti,2,1,1
 fahren,fuhr,ist/hat gefahren,andare,1,1,1
-laden,lud,hat geladen,caricare,1,1,2
+laden,lud,hat geladen,caricare,2,1,2
 schlagen,schlug,hat geschlagen,colpire,1,1,1
-tragen,trug,hat getragen,portare,1,1,1
+tragen,trug,hat getragen,portare,2,1,1
 wachsen,wuchs,ist gewachsen,crescere,1,1,1
 waschen,wusch,hat gewaschen,lavare,1,1,2
 braten,briet,hat gebraten,arrostire,1,1,1
-fallen,fiel,ist gefallen,cadere,1,1,1
+fallen,fiel,ist gefallen,cadere,1,1,2
 fangen,fing,hat gefangen,afferrare,2,1,1
 hängen,hing,ist/hat gehangen,appendere,1,2,2
 halten,hielt,hat gehalten,fermare,2,2,1
 lassen,ließ,hat gelassen,lasciare,1,1,1
 raten,riet,hat geraten,consigliare qc a qn,2,3,3
 schlafen,schlief,hat geschlafen,dormire,1,1,1
-brennen,brannte,hat gebrannt,bruciare,2,1,1
+brennen,brannte,hat gebrannt,bruciare,2,1,2
 bringen,brachte,hat gebracht,portare,2,1,2
 denken,dachte,hat gedacht,pensare,1,1,1
 kennen,kannte,hat gekannt,conoscere,1,1,1
 nennen,nannte,hat genannt,chiamare,1,1,1
 rennen,rannte,ist gerannt,correre,1,1,1
-senden,sandte,hat gesandt,mandare,1,1,1
+senden,sandte,hat gesandt,mandare,2,1,1
 stehen,stand,ist/hat gestanden,stare,1,1,1
 dürfen,durfte,hat gedurft/dürfen,potere,1,1,1
 müssen,musste,hat gemusst/müssen,dovere,1,1,1
@@ -88,7 +88,7 @@ können,konnte,hat gekonnt/können,potere,1,1,1
 mögen,mochte,hat gemocht/mögen,volere,1,2,1
 backen,backte,hat gebacken,cucinare,2,1,1
 betrügen,betrog,hat betrogen,ingannare,1,1,1
-gehen,ging,ist gegangen,andare,2,4,3
+gehen,ging,ist gegangen,andare,3,4,4
 haben,hatte,hat gehabt,avare,2,2,1
 heben,hob,hat gehoben,alzare,2,1,2
 heißen,hieß,hat geheißen,chiamarsi,1,1,1
@@ -98,5 +98,5 @@ lügen,log,hat gelogen,sbirciare,1,2,3
 rufen,rief,hat gerufen,chiamare,1,1,1
 sein,war,ist gewesen,essere,1,4,4
 tun,tat,hat getan,fare,1,1,1
-werden,wurde,ist geworden,diventare,3,1,3
+werden,wurde,ist geworden,diventare,4,1,4
 wissen,wusste,hat gewusst,sapere,2,1,2

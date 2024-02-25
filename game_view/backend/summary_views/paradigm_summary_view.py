@@ -67,5 +67,25 @@ class ParadigmSummary(QtWidgets.QWidget):
 
             self.summary_table.setColumnWidth(col, max_width)
 
+    def adjust_table_height(self):
+        new_table_height = 0
+        bottom_margin = 0
+        EXTRA_HEIGHT = 20
+
+        initial_layout_geometry = self.table_layout.geometry()
+        initial_height = initial_layout_geometry.height()
+
+        num_of_rows = self.model.rowCount()
+
+        for row in range(num_of_rows):
+            new_table_height += self.summary_table.rowHeight(row)
+
+        new_table_height += self.summary_table.horizontalHeader().height()
+
+        if initial_height > new_table_height:
+            bottom_margin = abs(new_table_height - initial_height) - EXTRA_HEIGHT
+
+        self.table_layout.setContentsMargins(0, 0, 0, bottom_margin)
+
     def quit_game(self):
         QtWidgets.qApp.quit()

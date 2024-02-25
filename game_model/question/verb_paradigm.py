@@ -1,9 +1,18 @@
+PRESENT = 1
+PRAETERITUM = 2
+PERFEKT = 3
+ITALIAN = 4
+PRESENT_SCORE = 5
+PRAETERITUM_SCORE = 6
+PERFEKT_SCORE = 7
+
+
 class VerbParadigm:
     def __init__(self, row):
-        self.present = row["Present"]
-        self.präteritum = row["Präteritum"]
-        self.perfekt = row["Perfekt"]
-        self.italian = row["Italian"]
-        self.present_score = row["PresentScore"]
-        self.präteritum_score = row["PräteritumScore"]
-        self.perfekt_score = row["PerfektScore"]
+        self.present: str = row[PRESENT]
+        self.praeteritum: str = row[PRAETERITUM]
+        self.perfekt: str = row[PERFEKT]
+        self.italian: str = row[ITALIAN]
+        self.present_score: int = row[PRESENT_SCORE]
+        self.praeteritum_score: int = row[PRAETERITUM_SCORE]
+        self.perfekt_score: int = row[PERFEKT_SCORE]

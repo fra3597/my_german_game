@@ -6,92 +6,122 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>994</width>
+    <width>981</width>
     <height>781</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Article Mode</string>
   </property>
-  <widget class="QWidget" name="widget" native="true">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>1000</width>
-     <height>800</height>
-    </rect>
-   </property>
-   <property name="sizePolicy">
-    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-     <horstretch>0</horstretch>
-     <verstretch>0</verstretch>
-    </sizepolicy>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QWidget#widget {
+  <property name="styleSheet">
+   <string notr="true">QWidget {
 	background-color: #83A2FF;
 	color: #FFFFFF;
 }</string>
-   </property>
-   <widget class="QLabel" name="title_label">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>40</y>
-      <width>991</width>
-      <height>161</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>16</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius: 50%; /* Makes the label circular */
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout" stretch="3,1,1,2">
+     <property name="spacing">
+      <number>40</number>
+     </property>
+     <property name="leftMargin">
+      <number>50</number>
+     </property>
+     <property name="topMargin">
+      <number>100</number>
+     </property>
+     <property name="rightMargin">
+      <number>50</number>
+     </property>
+     <property name="bottomMargin">
+      <number>100</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="title_label">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>1</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 50%; /* Makes the label circular */
 border: 2px solid #000000; /* Border color and width */
 padding: 10px; /* Adjust padding as needed */
 background-color: #83A2FF;
 color: #FFD28F;
 border: none;
 </string>
-    </property>
-    <property name="text">
-     <string>The word is:</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="wordWrap">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="die_button">
-    <property name="geometry">
-     <rect>
-      <x>420</x>
-      <y>260</y>
-      <width>141</width>
-      <height>111</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton {
+       </property>
+       <property name="text">
+        <string>The word is:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QStackedWidget" name="stacked_buttons">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>1</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="currentIndex">
+        <number>1</number>
+       </property>
+       <widget class="QWidget" name="article_page">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>1</horstretch>
+          <verstretch>1</verstretch>
+         </sizepolicy>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <property name="spacing">
+            <number>30</number>
+           </property>
+           <property name="leftMargin">
+            <number>200</number>
+           </property>
+           <property name="rightMargin">
+            <number>200</number>
+           </property>
+           <item>
+            <widget class="QPushButton" name="der_button">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>1</horstretch>
+               <verstretch>1</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
 	border-radius: 20px; /* Adjust the radius as needed */
 	background-color: #FFE3BB;
 }
@@ -101,149 +131,214 @@ QPushButton:hover {
 QPushButton:pressed {
 	background-color: #B4BDFF;
 }</string>
-    </property>
-    <property name="text">
-     <string>Die</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="comparison_result_label">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>470</y>
-      <width>991</width>
-      <height>171</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>12</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius: 50%; /* Makes the label circular */
+             </property>
+             <property name="text">
+              <string>Der</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="die_button">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>1</horstretch>
+               <verstretch>1</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+	border-radius: 20px; /* Adjust the radius as needed */
+	background-color: #FFE3BB;
+}
+QPushButton:hover {
+	background-color: #FFD28F;
+	}
+QPushButton:pressed {
+	background-color: #B4BDFF;
+}</string>
+             </property>
+             <property name="text">
+              <string>Die</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="das_button">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>1</horstretch>
+               <verstretch>1</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+	border-radius: 20px; /* Adjust the radius as needed */
+	background-color: #FFE3BB;
+}
+QPushButton:hover {
+	background-color: #FFD28F;
+	}
+QPushButton:pressed {
+	background-color: #B4BDFF;
+}</string>
+             </property>
+             <property name="text">
+              <string>Das</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="summary_page">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>1</horstretch>
+          <verstretch>1</verstretch>
+         </sizepolicy>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <property name="leftMargin">
+            <number>350</number>
+           </property>
+           <property name="rightMargin">
+            <number>350</number>
+           </property>
+           <item>
+            <widget class="QPushButton" name="go_to_summary_button">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>1</horstretch>
+               <verstretch>1</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+	border-radius: 20px;
+	background-color: #FFE3BB;
+}
+QPushButton:hover {
+	background-color: #FFD28F;
+	}
+QPushButton:pressed {
+	background-color: #B4BDFF;
+}</string>
+             </property>
+             <property name="text">
+              <string>Go to Summary</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <property name="leftMargin">
+        <number>350</number>
+       </property>
+       <property name="rightMargin">
+        <number>350</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="open_database_button">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>1</horstretch>
+           <verstretch>1</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	border-radius: 20px;
+	background-color: #FFE3BB;
+}
+QPushButton:hover {
+	background-color: #FFD28F;
+	}
+QPushButton:pressed {
+	background-color: #B4BDFF;
+}</string>
+         </property>
+         <property name="text">
+          <string>Open Database</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QLabel" name="comparison_result_label">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>1</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 50%; /* Makes the label circular */
 border: 2px solid #000000; /* Border color and width */
 padding: 10px; /* Adjust padding as needed */
 background-color: #83A2FF;
 color: #FFD28F;
 border: none;
 </string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="der_button">
-    <property name="enabled">
-     <bool>true</bool>
-    </property>
-    <property name="geometry">
-     <rect>
-      <x>260</x>
-      <y>260</y>
-      <width>141</width>
-      <height>111</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton {
-	border-radius: 20px; /* Adjust the radius as needed */
-	background-color: #FFE3BB;
-}
-QPushButton:hover {
-	background-color: #FFD28F;
-	}
-QPushButton:pressed {
-	background-color: #B4BDFF;
-}</string>
-    </property>
-    <property name="text">
-     <string>Der</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="das_button">
-    <property name="geometry">
-     <rect>
-      <x>580</x>
-      <y>260</y>
-      <width>141</width>
-      <height>111</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton {
-	border-radius: 20px; /* Adjust the radius as needed */
-	background-color: #FFE3BB;
-}
-QPushButton:hover {
-	background-color: #FFD28F;
-	}
-QPushButton:pressed {
-	background-color: #B4BDFF;
-}</string>
-    </property>
-    <property name="text">
-     <string>Das</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="go_to_summary_button">
-    <property name="enabled">
-     <bool>true</bool>
-    </property>
-    <property name="geometry">
-     <rect>
-      <x>330</x>
-      <y>260</y>
-      <width>321</width>
-      <height>111</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton {
-	border-radius: 20px; /* Adjust the radius as needed */
-	background-color: #FFE3BB;
-}
-QPushButton:hover {
-	background-color: #FFD28F;
-	}
-QPushButton:pressed {
-	background-color: #B4BDFF;
-}</string>
-    </property>
-    <property name="text">
-     <string>Go to Summary</string>
-    </property>
-   </widget>
-   <zorder>go_to_summary_button</zorder>
-   <zorder>title_label</zorder>
-   <zorder>die_button</zorder>
-   <zorder>comparison_result_label</zorder>
-   <zorder>der_button</zorder>
-   <zorder>das_button</zorder>
-  </widget>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
  </widget>
  <resources/>
  <connections/>
