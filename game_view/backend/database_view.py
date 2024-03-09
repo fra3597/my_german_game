@@ -25,6 +25,9 @@ class DatabaseView(QtWidgets.QWidget):
         loadUi("game_view/frontend/database.ui", self)
         self.model = QtGui.QStandardItemModel(self)
 
+        self.legend.horizontalHeader().setSectionResizeMode(QtWidgets.QHeaderView.Stretch)
+        self.legend.verticalHeader().setSectionResizeMode(QtWidgets.QHeaderView.Stretch)
+
     def connect_go_back_button(self, function):
         self.go_back_button.clicked.connect(function)
 
