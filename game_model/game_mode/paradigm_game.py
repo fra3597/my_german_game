@@ -43,7 +43,7 @@ class ParadigmGame(Game):
                 if entry == self.list_of_paradigms[self.current_word].present:
                     self.score.present_partial_score += 1
                     is_correct[0] = True
-                elif entry == self.list_of_paradigms[self.current_word].praeteritum_item :
+                elif entry == self.list_of_paradigms[self.current_word].praeteritum:
                     self.score.praeteritum_partial_score += 1
                     is_correct[1] = True
                 elif entry == self.list_of_paradigms[self.current_word].perfekt:

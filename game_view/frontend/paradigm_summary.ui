@@ -239,6 +239,9 @@ QHeaderView::section {
          <property name="cornerButtonEnabled">
           <bool>false</bool>
          </property>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
          <attribute name="verticalHeaderDefaultSectionSize">
           <number>45</number>
          </attribute>

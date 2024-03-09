@@ -19,313 +19,330 @@
 	color: #FFFFFF;
 }</string>
   </property>
-  <widget class="QWidget" name="verticalLayoutWidget">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>25</y>
-     <width>921</width>
-     <height>691</height>
-    </rect>
-   </property>
-   <layout class="QVBoxLayout" name="verticalLayout" stretch="1,4">
-    <item>
-     <layout class="QHBoxLayout" name="horizontalLayout" stretch="3,2,2">
-      <item>
-       <widget class="QLabel" name="title_label">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-          <horstretch>1</horstretch>
-          <verstretch>1</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="font">
-         <font>
-          <pointsize>12</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">border-radius: 50%; /* Makes the label circular */
+  <layout class="QHBoxLayout" name="horizontalLayout_5">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout" stretch="1,7">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0,0">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="title_label">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>1</horstretch>
+           <verstretch>1</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-radius: 50%; /* Makes the label circular */
 border: 2px solid #000000; /* Border color and width */
 padding: 10px; /* Adjust padding as needed */
 background-color: #83A2FF;
 color: #FFD28F;
 border: none;
 </string>
-        </property>
-        <property name="text">
-         <string>Database</string>
-        </property>
-        <property name="wordWrap">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_Legend">
-        <property name="leftMargin">
-         <number>50</number>
-        </property>
-        <property name="topMargin">
-         <number>50</number>
-        </property>
-        <property name="rightMargin">
-         <number>50</number>
-        </property>
-        <property name="bottomMargin">
-         <number>50</number>
-        </property>
-        <item>
-         <widget class="QTableWidget" name="tableWidget">
-          <property name="font">
-           <font>
-            <weight>75</weight>
-            <bold>true</bold>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background-color: #FFE3BB;</string>
-          </property>
-          <attribute name="horizontalHeaderDefaultSectionSize">
-           <number>138</number>
-          </attribute>
-          <attribute name="horizontalHeaderHighlightSections">
-           <bool>true</bool>
-          </attribute>
-          <attribute name="horizontalHeaderMinimumSectionSize">
-           <number>24</number>
-          </attribute>
-          <attribute name="verticalHeaderVisible">
-           <bool>false</bool>
-          </attribute>
-          <attribute name="verticalHeaderDefaultSectionSize">
-           <number>34</number>
-          </attribute>
-          <row>
-           <property name="text">
-            <string>Beginner</string>
-           </property>
-          </row>
-          <row>
-           <property name="text">
-            <string>New Row</string>
-           </property>
-          </row>
-          <row>
-           <property name="text">
-            <string>Advanced</string>
-           </property>
-          </row>
-          <row>
-           <property name="text">
-            <string>Expert</string>
-           </property>
-          </row>
-          <row>
-           <property name="text">
-            <string>Master</string>
-           </property>
-          </row>
-          <column>
-           <property name="text">
-            <string>Level</string>
-           </property>
+         </property>
+         <property name="text">
+          <string>Database</string>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_Legend">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QTableWidget" name="legend">
            <property name="font">
             <font>
              <weight>75</weight>
              <bold>true</bold>
             </font>
            </property>
-           <property name="background">
-            <color>
-             <red>255</red>
-             <green>210</green>
-             <blue>143</blue>
-            </color>
+           <property name="styleSheet">
+            <string notr="true">background-color: #FFE3BB;</string>
            </property>
-          </column>
-          <column>
-           <property name="text">
-            <string>Color</string>
-           </property>
-           <property name="font">
-            <font>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="foreground">
-            <brush brushstyle="SolidPattern">
-             <color alpha="255">
-              <red>255</red>
-              <green>210</green>
-              <blue>143</blue>
-             </color>
-            </brush>
-           </property>
-          </column>
-          <item row="0" column="0">
-           <property name="text">
-            <string>Beginner</string>
-           </property>
-           <property name="font">
-            <font>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-          </item>
-          <item row="0" column="1">
-           <property name="text">
-            <string/>
-           </property>
-           <property name="background">
-            <brush brushstyle="SolidPattern">
-             <color alpha="255">
-              <red>255</red>
-              <green>0</green>
-              <blue>0</blue>
-             </color>
-            </brush>
-           </property>
-          </item>
-          <item row="1" column="0">
-           <property name="text">
-            <string>Intermediate</string>
-           </property>
-           <property name="font">
-            <font>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-          </item>
-          <item row="1" column="1">
-           <property name="text">
-            <string/>
-           </property>
-           <property name="background">
-            <brush brushstyle="SolidPattern">
-             <color alpha="255">
-              <red>255</red>
-              <green>165</green>
-              <blue>0</blue>
-             </color>
-            </brush>
-           </property>
-          </item>
-          <item row="2" column="0">
-           <property name="text">
-            <string>Advanced</string>
-           </property>
-           <property name="font">
-            <font>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-          </item>
-          <item row="2" column="1">
-           <property name="text">
-            <string/>
-           </property>
-           <property name="background">
-            <brush brushstyle="SolidPattern">
-             <color alpha="255">
+           <attribute name="horizontalHeaderDefaultSectionSize">
+            <number>67</number>
+           </attribute>
+           <attribute name="horizontalHeaderHighlightSections">
+            <bool>true</bool>
+           </attribute>
+           <attribute name="horizontalHeaderMinimumSectionSize">
+            <number>0</number>
+           </attribute>
+           <attribute name="verticalHeaderVisible">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="verticalHeaderDefaultSectionSize">
+            <number>34</number>
+           </attribute>
+           <attribute name="verticalHeaderMinimumSectionSize">
+            <number>0</number>
+           </attribute>
+           <row>
+            <property name="text">
+             <string>Beginner</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>New Row</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Advanced</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Expert</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Master</string>
+            </property>
+           </row>
+           <column>
+            <property name="text">
+             <string>Level</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="background">
+             <color>
               <red>255</red>
               <green>255</green>
-              <blue>0</blue>
+              <blue>255</blue>
              </color>
-            </brush>
-           </property>
-          </item>
-          <item row="3" column="0">
-           <property name="text">
-            <string>Expert</string>
+            </property>
+            <property name="foreground">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>255</red>
+               <green>210</green>
+               <blue>143</blue>
+              </color>
+             </brush>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Color</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="foreground">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>255</red>
+               <green>210</green>
+               <blue>143</blue>
+              </color>
+             </brush>
+            </property>
+           </column>
+           <item row="0" column="0">
+            <property name="text">
+             <string>Beginner</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </item>
+           <item row="0" column="1">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="background">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>255</red>
+               <green>0</green>
+               <blue>0</blue>
+              </color>
+             </brush>
+            </property>
+           </item>
+           <item row="1" column="0">
+            <property name="text">
+             <string>Intermediate</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </item>
+           <item row="1" column="1">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="background">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>255</red>
+               <green>165</green>
+               <blue>0</blue>
+              </color>
+             </brush>
+            </property>
+           </item>
+           <item row="2" column="0">
+            <property name="text">
+             <string>Advanced</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </item>
+           <item row="2" column="1">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="background">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>255</red>
+               <green>255</green>
+               <blue>0</blue>
+              </color>
+             </brush>
+            </property>
+           </item>
+           <item row="3" column="0">
+            <property name="text">
+             <string>Expert</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </item>
+           <item row="3" column="1">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="background">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>144</red>
+               <green>238</green>
+               <blue>144</blue>
+              </color>
+             </brush>
+            </property>
+           </item>
+           <item row="4" column="0">
+            <property name="text">
+             <string>Master</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </item>
+           <item row="4" column="1">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="background">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>0</red>
+               <green>128</green>
+               <blue>0</blue>
+              </color>
+             </brush>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="go_back_button">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>1</horstretch>
+             <verstretch>1</verstretch>
+            </sizepolicy>
            </property>
            <property name="font">
             <font>
+             <pointsize>14</pointsize>
              <weight>75</weight>
              <bold>true</bold>
             </font>
            </property>
-          </item>
-          <item row="3" column="1">
-           <property name="text">
-            <string/>
-           </property>
-           <property name="background">
-            <brush brushstyle="SolidPattern">
-             <color alpha="255">
-              <red>144</red>
-              <green>238</green>
-              <blue>144</blue>
-             </color>
-            </brush>
-           </property>
-          </item>
-          <item row="4" column="0">
-           <property name="text">
-            <string>Master</string>
-           </property>
-           <property name="font">
-            <font>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-          </item>
-          <item row="4" column="1">
-           <property name="text">
-            <string/>
-           </property>
-           <property name="background">
-            <brush brushstyle="SolidPattern">
-             <color alpha="255">
-              <red>0</red>
-              <green>128</green>
-              <blue>0</blue>
-             </color>
-            </brush>
-           </property>
-          </item>
-         </widget>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_2">
-        <property name="leftMargin">
-         <number>50</number>
-        </property>
-        <property name="topMargin">
-         <number>60</number>
-        </property>
-        <property name="rightMargin">
-         <number>50</number>
-        </property>
-        <property name="bottomMargin">
-         <number>60</number>
-        </property>
-        <item>
-         <widget class="QPushButton" name="go_back_button">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-            <horstretch>1</horstretch>
-            <verstretch>1</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="font">
-           <font>
-            <pointsize>14</pointsize>
-            <weight>75</weight>
-            <bold>true</bold>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QPushButton {
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
 	border-radius: 20px; /* Adjust the radius as needed */
 	background-color: #FFE3BB;
 }
@@ -335,35 +352,35 @@ QPushButton:hover {
 QPushButton:pressed {
 	background-color: #B4BDFF;
 }</string>
-          </property>
-          <property name="text">
-           <string>Go back</string>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-     </layout>
-    </item>
-    <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_3">
-      <item>
-       <widget class="QTableView" name="summary_table">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-          <horstretch>1</horstretch>
-          <verstretch>1</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QTableView {
+           </property>
+           <property name="text">
+            <string>Go back</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QTableView" name="summary_table">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>1</horstretch>
+           <verstretch>1</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTableView {
      color: white;     /* Set text color for cells */
 	border: 2px solid #000000; /* Border color and width */
 	padding: 10px; /* Adjust padding as needed */
@@ -381,16 +398,17 @@ QHeaderView::section {
 	width: 260px;
 	font-weight: bold;
 }</string>
-        </property>
-        <property name="cornerButtonEnabled">
-         <bool>false</bool>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </item>
-   </layout>
-  </widget>
+         </property>
+         <property name="cornerButtonEnabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
  </widget>
  <resources/>
  <connections/>

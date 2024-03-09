@@ -19,12 +19,10 @@ class ParadigmSummary(QtWidgets.QWidget):
     def init_model(self):
         self.model.setColumnCount(NUMBER_OF_COLUMNS)
         #Think about setting the tenses list as an attribute
-        self.model.setHorizontalHeaderLabels(['Present', 'Präteritum', 'Perfekt', 'Italian'])
+        self.model.setHorizontalHeaderLabels(['Option', 'Present', 'Präteritum', 'Perfekt', 'Italian'])
         self.summary_table.setModel(self.model)
 
     def init_table(self):
-        #self.summary_table.verticalHeader().setSectionResizeMode(QtWidgets.QHeaderView.ResizeToContents)
-        self.summary_table.verticalHeader().setMaximumWidth(100)
         self.summary_table.horizontalHeader().setSectionResizeMode(QtWidgets.QHeaderView.Stretch)
 
     def connect_play_again_button(self, function):
@@ -34,8 +32,8 @@ class ParadigmSummary(QtWidgets.QWidget):
         self.quit_button.clicked.connect(function)
 
     def append_row_to_summary_table(self, user_answer, current_paradigm, is_correct, given_entry_index):
-        user_answer_item = []
-        current_paradigm_item = []
+        current_paradigm_item = [QStandardItem("Paradigm")]
+        user_answer_item = [QStandardItem("User Answer")]
 
         for answer in user_answer:
             user_answer_item.append(QStandardItem(answer))
@@ -44,17 +42,14 @@ class ParadigmSummary(QtWidgets.QWidget):
 
         for index, element in enumerate(is_correct):
             if element and index != given_entry_index:
-                user_answer_item[index].setForeground(QColor("green"))
+                user_answer_item[index+1].setForeground(QColor("green"))
             elif not element and index != given_entry_index:
-                user_answer_item[index].setForeground(QColor("red"))
+                user_answer_item[index+1].setForeground(QColor("red"))
 
         new_row = current_paradigm_item
         self.model.appendRow(new_row)
         new_row = user_answer_item
         self.model.appendRow(new_row)
-
-        self.model.setVerticalHeaderItem(self.model.rowCount() - 2, QStandardItem("Paradigm"))
-        self.model.setVerticalHeaderItem(self.model.rowCount() - 1, QStandardItem("User Answer"))
 
     #Is it working?
     def update_columns_width(self):
