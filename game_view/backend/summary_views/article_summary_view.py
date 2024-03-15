@@ -1,15 +1,17 @@
-from PyQt5.uic import loadUi
-# Import only what yuo need, not everything
-from PyQt5 import QtWidgets
+from PyQt5.QtWidgets import QWidget, QHeaderView, qApp
 from PyQt5.QtGui import QStandardItem, QStandardItemModel, QColor
+from game_view.frontend.summary_views.article_summary import Ui_ArticleSummary
+
 
 NUMBER_OF_COLUMNS = 4
 
 
-class ArticleSummary(QtWidgets.QWidget):
+class ArticleSummary(QWidget):
     def __init__(self):
         super().__init__()
-        loadUi("game_view/frontend/article_summary.ui", self)
+
+        self.widget = Ui_ArticleSummary()
+        self.widget.setupUi(self)
 
         self.model = QStandardItemModel(self)
         self.init_model()
@@ -18,18 +20,17 @@ class ArticleSummary(QtWidgets.QWidget):
     def init_model(self):
         self.model.setColumnCount(NUMBER_OF_COLUMNS)
         self.model.setHorizontalHeaderLabels(['User', 'Correct', 'German', 'Italian'])
-        self.summary_table.setModel(self.model)
+        self.widget.summary_table.setModel(self.model)
 
     def init_table(self):
-        #self.summary_table.verticalHeader().setSectionResizeMode(QtWidgets.QHeaderView.ResizeToContents)
-        self.summary_table.horizontalHeader().setSectionResizeMode(QtWidgets.QHeaderView.Stretch)
-        self.summary_table.verticalHeader().hide()
+        self.widget.summary_table.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
+        self.widget.summary_table.verticalHeader().hide()
 
     def connect_play_again_button(self, function):
-        self.play_again_button.clicked.connect(function)
+        self.widget.play_again_button.clicked.connect(function)
 
     def connect_quit_button(self, function):
-        self.quit_button.clicked.connect(function)
+        self.widget.quit_button.clicked.connect(function)
 
     def append_row_to_summary_table(self, user_answer: str, correct_article: str, german_word: str, italian_word: str, is_correct: bool):
         correct_article_item = QStandardItem(correct_article)
@@ -48,27 +49,24 @@ class ArticleSummary(QtWidgets.QWidget):
 
     def show_score(self, partial_score: int, total_score: int, number_of_matches: int):
         text_to_show = f"Your Partial Score: {partial_score}/10\nYour Total Score: {total_score}/{10*number_of_matches}"
-        self.score_label.setText(text_to_show)
+        self.widget.score_label.setText(text_to_show)
 
     def adjust_table_height(self):
         new_table_height = 0
         bottom_margin = 0
         EXTRA_HEIGHT = 20
 
-        initial_layout_geometry = self.table_layout.geometry()
+        initial_layout_geometry = self.widget.table_layout.geometry()
         initial_height = initial_layout_geometry.height()
 
         num_of_rows = self.model.rowCount()
 
         for row in range(num_of_rows):
-            new_table_height += self.summary_table.rowHeight(row)
+            new_table_height += self.widget.summary_table.rowHeight(row)
 
-        new_table_height += self.summary_table.horizontalHeader().height()
+        new_table_height += self.widget.summary_table.horizontalHeader().height()
 
         if initial_height > new_table_height:
             bottom_margin = abs(new_table_height - initial_height) - EXTRA_HEIGHT
 
-        self.table_layout.setContentsMargins(0, 0, 0, bottom_margin)
-
-    def quit_game(self):
-        QtWidgets.qApp.quit()
+        self.widget.table_layout.setContentsMargins(0, 0, 0, bottom_margin)

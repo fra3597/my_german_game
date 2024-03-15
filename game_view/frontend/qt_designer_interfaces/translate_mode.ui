@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>playWindow</class>
- <widget class="QWidget" name="playWindow">
+ <class>TranslationMode</class>
+ <widget class="QWidget" name="TranslationMode">
   <property name="geometry">
    <rect>
     <x>0</x>

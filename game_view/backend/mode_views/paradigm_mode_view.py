@@ -1,7 +1,7 @@
-from PyQt5.uic import loadUi
-from PyQt5.QtWidgets import QWidget, QTableWidget, QTableWidgetItem
+from PyQt5.QtWidgets import QWidget, QTableWidgetItem
 from random import randint
 from PyQt5.QtCore import Qt
+from game_view.frontend.mode_views.verb_paradigm_mode import Ui_VerbParadigmMode
 
 NUMBER_OF_COLUMNS = 4
 NUMBER_OF_ROWS = 1
@@ -16,38 +16,40 @@ ITALIAN = 3
 class VerbParadigmMode(QWidget):
     def __init__(self):
         super().__init__()
-        loadUi("game_view/frontend/verb_paradigm_mode.ui", self)
 
-        self.check_page_index = self.stacked_buttons.currentIndex()
+        self.widget = Ui_VerbParadigmMode()
+        self.widget.setupUi(self)
+
+        self.check_page_index = self.widget.stacked_buttons.currentIndex()
 
     def set_row_in_table(self, current_paradigm):
         given_entry_index = randint(0, 2)
         self.clear_entry_row()
 
         if given_entry_index == 0:
-            self.paradigm_table.setItem(0, 0, QTableWidgetItem(current_paradigm[PRESENT]))
+            self.widget.paradigm_table.setItem(0, 0, QTableWidgetItem(current_paradigm[PRESENT]))
         elif given_entry_index == 1:
-            self.paradigm_table.setItem(0, 1, QTableWidgetItem(current_paradigm[PRÄTERITUM]))
+            self.widget.paradigm_table.setItem(0, 1, QTableWidgetItem(current_paradigm[PRÄTERITUM]))
         else:
-            self.paradigm_table.setItem(0, 2, QTableWidgetItem(current_paradigm[PERFEKT]))
+            self.widget.paradigm_table.setItem(0, 2, QTableWidgetItem(current_paradigm[PERFEKT]))
 
-        self.paradigm_table.setItem(0, 3, QTableWidgetItem(current_paradigm[ITALIAN]))
+        self.widget.paradigm_table.setItem(0, 3, QTableWidgetItem(current_paradigm[ITALIAN]))
 
         return given_entry_index
 
     def add_character(self):
-        current_item = self.paradigm_table.currentItem()
+        current_item = self.widget.paradigm_table.currentItem()
         if current_item is not None:
             current_text = current_item.text()
-            character_to_add = self.character_combo_box.currentText()
+            character_to_add = self.widget.character_combo_box.currentText()
             new_text = current_text + f"{character_to_add}"
             current_item.setText(new_text)
 
     def read_entries_in_table(self):
         row_data = []
 
-        for col in range(self.paradigm_table.columnCount() - 1):
-            item = self.paradigm_table.item(ROW_INDEX, col)
+        for col in range(self.widget.paradigm_table.columnCount() - 1):
+            item = self.widget.paradigm_table.item(ROW_INDEX, col)
             if item is not None:
                 item_text = item.text()
             else:
@@ -59,30 +61,30 @@ class VerbParadigmMode(QWidget):
 
     def enable_go_to_summary_button(self):
         self.clear_entry_row()
-        self.stacked_buttons.setCurrentWidget(self.summary_page)
+        self.widget.stacked_buttons.setCurrentWidget(self.widget.summary_page)
 
     def clear_entry_row(self):
-        for col in range(self.paradigm_table.columnCount()):
-            item = self.paradigm_table.takeItem(ROW_INDEX, col)
+        for col in range(self.widget.paradigm_table.columnCount()):
+            item = self.widget.paradigm_table.takeItem(ROW_INDEX, col)
             if item:
                 del item
 
     def connect_add_character_button(self, function):
-        self.add_character_button_3.clicked.connect(function)
+        self.widget.add_character_button_3.clicked.connect(function)
 
     def connect_check_button(self, function):
-        self.check_button.clicked.connect(function)
+        self.widget.check_button.clicked.connect(function)
 
     def connect_go_to_summary_button(self, function):
-        self.go_to_summary_button.clicked.connect(function)
+        self.widget.go_to_summary_button.clicked.connect(function)
 
     def connect_open_database_button(self,function):
-        self.open_database_button.clicked.connect(function)
+        self.widget.open_database_button.clicked.connect(function)
 
     #TO DO: this function has to be fixed. The currentIndex set at the init depends on th efirst page available when you save the .ui file
     def keyPressEvent(self, event):
         if event.key() in [Qt.Key_Return, Qt.Key_Enter]:
-            if self.stacked_buttons.currentIndex() == self.check_page_index:
-                self.check_button.click()
+            if self.widget.stacked_buttons.currentIndex() == self.check_page_index:
+                self.widget.check_button.click()
             else:
-                self.go_to_summary_button.click()
+                self.widget.go_to_summary_button.click()

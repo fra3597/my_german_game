@@ -14,19 +14,19 @@ class ArticleController(Controller):
 
     def start_game(self):
         self.ui_controller.set_article_mode_window()
-        self.ui_controller.article_mode_window.stacked_buttons.setCurrentWidget(self.ui_controller.article_mode_window.article_page)
+        self.ui_controller.article_mode_window.widget.stacked_buttons.setCurrentWidget(self.ui_controller.article_mode_window.widget.article_page)
 
         self.game_model.load_questions()
 
         text_to_show = f"<html>Select the article<br>German: <i>'{self.game_model.list_of_words[0].german_word}'</i><br>Italian: <i>'{self.game_model.list_of_words[0].italian_word}'</i></html>"
-        self.ui_controller.article_mode_window.title_label.setText(text_to_show)
+        self.ui_controller.article_mode_window.widget.title_label.setText(text_to_show)
 
     def check_answer(self):
         user_answer = self.ui_controller.article_mode_window.read_user_answer()
 
         if user_answer == self.game_model.list_of_words[self.game_model.current_word].article:
             result = "<html><font color='green'>Genau!</font></html>"
-            self.ui_controller.article_mode_window.comparison_result_label.setText(result)
+            self.ui_controller.article_mode_window.widget.comparison_result_label.setText(result)
             self.game_model.score.update_partial_score()
             self.ui_controller.article_summary_window.append_row_to_summary_table(
                 user_answer,
@@ -38,7 +38,7 @@ class ArticleController(Controller):
             self.game_model.guessed_entries.append(True)
         else:
             result = f"<html><font color='red'>Wrong!</font> The word was <i><font color='green'>'{self.game_model.list_of_words[self.game_model.current_word].article}'</font></i> {self.game_model.list_of_words[self.game_model.current_word].german_word}</html>"
-            self.ui_controller.article_mode_window.comparison_result_label.setText(result)
+            self.ui_controller.article_mode_window.widget.comparison_result_label.setText(result)
             self.ui_controller.article_summary_window.append_row_to_summary_table(
                 user_answer,
                 self.game_model.list_of_words[self.game_model.current_word].article,
@@ -57,7 +57,7 @@ class ArticleController(Controller):
         self.game_model.update_current_word()
         if self.game_model.current_word < self.game_model.QUESTIONS_PER_GAME:
             text_to_show = f"<html>Select the article<br>German: <i>'{self.game_model.list_of_words[self.game_model.current_word].german_word}'</i><br>Italian: <i>'{self.game_model.list_of_words[self.game_model.current_word].italian_word}'</i></html>"
-            self.ui_controller.article_mode_window.title_label.setText(text_to_show)
+            self.ui_controller.article_mode_window.widget.title_label.setText(text_to_show)
 
     def show_summary(self):
         self.ui_controller.stacked_widget.setCurrentWidget(self.ui_controller.article_summary_window)
@@ -89,4 +89,4 @@ class ArticleController(Controller):
         self.ui_controller.article_mode_window.connect_open_database_button(self.open_database)
 
         self.ui_controller.article_summary_window.connect_play_again_button(self.play_again)
-        self.ui_controller.article_summary_window.connect_quit_button(self.ui_controller.article_summary_window.quit_game)
+        self.ui_controller.article_summary_window.connect_quit_button(self.ui_controller.quit_game)

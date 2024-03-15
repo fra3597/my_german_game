@@ -14,21 +14,21 @@ class TranslationController(Controller):
         
     def start_game(self):
         self.ui_controller.set_translate_mode_window()
-        self.ui_controller.translate_mode_window.stacked_buttons.setCurrentWidget(self.ui_controller.translate_mode_window.check_page)
+        self.ui_controller.translate_mode_window.widget.stacked_buttons.setCurrentWidget(self.ui_controller.translate_mode_window.widget.check_page)
         self.game_model.set_mode(self.ui_controller.select_language_window.read_selected_language())
 
         self.game_model.load_questions()
 
         text_to_show = f"<html>How do you translate <i>'{self.game_model.questions[0]}'</i> ? </html>"
-        self.ui_controller.translate_mode_window.question_label.setText(text_to_show)
+        self.ui_controller.translate_mode_window.widget.question_label.setText(text_to_show)
         
     def check_answer(self):
-        user_answer = self.ui_controller.translate_mode_window.input_line_edit.text()
+        user_answer = self.ui_controller.translate_mode_window.widget.input_line_edit.text()
         self.ui_controller.translate_mode_window.reset_give_me_a_hint_button()
 
         if user_answer == self.game_model.answers[self.game_model.current_word]:
             result = "<html><font color='green'>Genau!</font></html>"
-            self.ui_controller.translate_mode_window.solution_label.setText(result)
+            self.ui_controller.translate_mode_window.widget.solution_label.setText(result)
             self.game_model.score.update_partial_score()
             self.ui_controller.translation_summary_window.append_row_to_summary_table(
                 self.game_model.questions[self.game_model.current_word],
@@ -39,7 +39,7 @@ class TranslationController(Controller):
             self.game_model.guessed_entries.append(True)
         else:
             result = f"<html><font color='red'>Wrong!</font> The correct answer was <i><font color='green'>'{self.game_model.answers[self.game_model.current_word]}'</font></i></html>"
-            self.ui_controller.translate_mode_window.solution_label.setText(result)
+            self.ui_controller.translate_mode_window.widget.solution_label.setText(result)
             self.ui_controller.translation_summary_window.append_row_to_summary_table(
                 self.game_model.questions[self.game_model.current_word],
                 user_answer,
@@ -57,8 +57,8 @@ class TranslationController(Controller):
         self.game_model.update_current_word()
         if self.game_model.current_word < self.game_model.QUESTIONS_PER_GAME:
             text_to_show = f"<html>How do you translate <i>'{self.game_model.questions[self.game_model.current_word]}'</i> ? </html>"
-            self.ui_controller.translate_mode_window.question_label.setText(text_to_show)
-        self.ui_controller.translate_mode_window.input_line_edit.clear()
+            self.ui_controller.translate_mode_window.widget.question_label.setText(text_to_show)
+        self.ui_controller.translate_mode_window.widget.input_line_edit.clear()
 
     def show_hint(self):
         current_word = self.game_model.answers[self.game_model.current_word]
@@ -75,7 +75,7 @@ class TranslationController(Controller):
         self.ui_controller.translation_summary_window.adjust_table_height()
 
     def play_again(self):
-        self.ui_controller.reset_user_interfaces()
+        self.ui_controller.reset_translate_mode()
         self.game_model.reset_game()
         
     def add_character(self):

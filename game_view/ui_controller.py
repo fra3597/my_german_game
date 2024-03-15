@@ -67,23 +67,23 @@ class UIController(QMainWindow):
     def init_select_game_mode_window_buttons(self):
         self.select_game_mode_window.connect_translate_mode_button(self.set_select_language_window)
 
-    def reset_user_interfaces(self):
+    def reset_translate_mode(self):
         self.stacked_widget.setCurrentWidget(self.select_language_window)
-        self.translate_mode_window.solution_label.setText("")
-        self.translate_mode_window.stacked_buttons.setCurrentWidget(self.translate_mode_window.check_page)
-        self.translation_summary_window.model.removeRows(0, self.summary_window.model.rowCount())
+        self.translate_mode_window.widget.solution_label.setText("")
+        self.translate_mode_window.widget.stacked_buttons.setCurrentWidget(self.translate_mode_window.widget.check_page)
+        self.translation_summary_window.model.removeRows(0, self.translation_summary_window.model.rowCount())
 
     def reset_paradigm_mode_view(self):
         self.stacked_widget.setCurrentWidget(self.verb_paradigm_window)
-        self.verb_paradigm_window.stacked_buttons.setCurrentWidget(self.verb_paradigm_window.check_page)
-        self.verb_paradigm_window.comparison_result_label.setText("")
+        self.verb_paradigm_window.widget.stacked_buttons.setCurrentWidget(self.verb_paradigm_window.widget.check_page)
+        self.verb_paradigm_window.widget.comparison_result_label.setText("")
         self.verb_paradigm_window.clear_entry_row()
         self.paradigm_summary_window.model.removeRows(0, self.paradigm_summary_window.model.rowCount())
 
     def reset_article_mode_view(self):
         self.stacked_widget.setCurrentWidget(self.article_mode_window)
-        self.article_mode_window.stacked_buttons.setCurrentWidget(self.article_mode_window.article_page)
-        self.article_mode_window.comparison_result_label.setText("")
+        self.article_mode_window.widget.stacked_buttons.setCurrentWidget(self.article_mode_window.widget.article_page)
+        self.article_mode_window.widget.comparison_result_label.setText("")
         self.article_summary_window.model.removeRows(0, self.article_summary_window.model.rowCount())
 
     def set_previous_index(self, previous_index):

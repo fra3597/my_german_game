@@ -18,12 +18,12 @@ class ParadigmController(Controller):
         EXTRA_WIDTH = 5
 
         self.ui_controller.set_verb_paradigm_window()
-        self.ui_controller.verb_paradigm_window.stacked_buttons.setCurrentWidget(self.ui_controller.verb_paradigm_window.check_page)
+        self.ui_controller.verb_paradigm_window.widget.stacked_buttons.setCurrentWidget(self.ui_controller.verb_paradigm_window.widget.check_page)
 
         #Add a function to do this and also another that connects the event of chanfing the size of the window
-        total_width = self.ui_controller.verb_paradigm_window.paradigm_table.width()
+        total_width = self.ui_controller.verb_paradigm_window.widget.paradigm_table.width()
         header_width = floor(total_width / 4) - EXTRA_WIDTH
-        self.ui_controller.verb_paradigm_window.paradigm_table.horizontalHeader().setDefaultSectionSize(header_width)
+        self.ui_controller.verb_paradigm_window.widget.paradigm_table.horizontalHeader().setDefaultSectionSize(header_width)
 
         self.game_model.load_questions_paradigm()
         self.game_model.set_current_paradigm()
@@ -56,7 +56,7 @@ class ParadigmController(Controller):
                 current_guesses.append(False)
 
         self.game_model.guessed_entries.append(current_guesses)
-        self.ui_controller.verb_paradigm_window.comparison_result_label.setText(text_to_show)
+        self.ui_controller.verb_paradigm_window.widget.comparison_result_label.setText(text_to_show)
         self.ui_controller.paradigm_summary_window.append_row_to_summary_table(user_answer,
                                                                                self.game_model.current_paradigm,
                                                                                is_correct,
