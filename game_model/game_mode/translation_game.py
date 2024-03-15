@@ -5,15 +5,13 @@ from game_model.question.translate_word import TranslationWord
 from database.database_handler import DatabaseHandler
 
 OCCURRENCE_FACTOR = 5
-TABLE_NAME = "Questions"
-FILENAME_DB = "database/questions.db"
 SCORE_COLUMN = "Score"
 
 CORRECT = True
 
 
 class TranslationGame(Game):
-    def __init__(self) -> None:
+    def __init__(self, database_handler) -> None:
         super().__init__()
         self.score: TranslationScore = TranslationScore()
         self.language_mode = None
@@ -21,7 +19,7 @@ class TranslationGame(Game):
         self.answers: list[str] = []
         self.GERMAN_TO_ITALIAN = 1
         self.ITALIAN_TO_GERMAN = 2
-        self.db_handler = DatabaseHandler(db_path=FILENAME_DB, table_name=TABLE_NAME)
+        self.db_handler = database_handler
 
     def set_mode(self, mode_to_set):
         self.language_mode = mode_to_set

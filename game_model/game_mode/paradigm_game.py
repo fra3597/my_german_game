@@ -5,8 +5,6 @@ from game_model.question.verb_paradigm import VerbParadigm
 from database.database_handler import DatabaseHandler
 
 OCCURRENCE_FACTOR = 5
-TABLE_NAME = "VerbParadigms"
-FILENAME_DB = "database/verb_paradigms.db"
 
 CORRECT = True
 PRESENT = 0
@@ -15,14 +13,14 @@ PERFEKT = 2
 
 
 class ParadigmGame(Game):
-    def __init__(self):
+    def __init__(self, database_handler):
         super().__init__()
         self.list_of_paradigms: list[VerbParadigm] = []
         self.current_paradigm: list[str] = []
         self.given_entry_index: int = 0
         self.guessed_entries: list[list[bool]] = []
         self.score: ParadigmScore = ParadigmScore()
-        self.db_handler = DatabaseHandler(db_path=FILENAME_DB, table_name=TABLE_NAME)
+        self.db_handler = database_handler
 
     def load_questions_paradigm(self):
         weights_list = self.db_handler.get_weights_list()

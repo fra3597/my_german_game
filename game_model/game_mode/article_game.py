@@ -5,19 +5,17 @@ from game_model.question.article_word import ArticleWord
 from database.database_handler import DatabaseHandler
 
 OCCURRENCE_FACTOR = 5
-TABLE_NAME = "WordsWithArticles"
-FILENAME_DB = "database/words_with_articles.db"
 SCORE_COLUMN = "Score"
 
 CORRECT = True
 
 
 class ArticleGame(Game):
-    def __init__(self):
+    def __init__(self, database_handler):
         super().__init__()
         self.score: ArticleScore = ArticleScore()
         self.list_of_words: list[ArticleWord] = []
-        self.db_handler = DatabaseHandler(db_path=FILENAME_DB, table_name=TABLE_NAME)
+        self.db_handler = database_handler
 
     def load_questions(self):
         weights_list = self.db_handler.get_weights_list()

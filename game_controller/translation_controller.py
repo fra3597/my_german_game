@@ -1,14 +1,23 @@
 from game_controller.controller import Controller
+from database.database_handler import DatabaseHandler
 from game_model.game_mode.translation_game import TranslationGame
+from game_view.backend.database_view import DatabaseView
+
+TABLE_NAME = "Questions"
+FILENAME_DB = "database/questions.db"
 
 CORRECT = True
 WRONG = False
 
-
 class TranslationController(Controller):
     def __init__(self, ui_controller):
         super().__init__(ui_controller)
-        self.game_model: TranslationGame = TranslationGame()
+
+        self.db_handler = DatabaseHandler(db_path=FILENAME_DB, table_name=TABLE_NAME)
+
+        self.game_model: TranslationGame = TranslationGame(self.db_handler)
+        self.database_window = DatabaseView(self.db_handler)
+        self.ui_controller.stacked_widget.addWidget(self.database_window)
 
         self.connect_buttons()
         
@@ -83,8 +92,8 @@ class TranslationController(Controller):
 
     def open_database(self):
         self.ui_controller.set_previous_index(self.ui_controller.stacked_widget.currentIndex())
-        self.ui_controller.database_window.show_translation_database()
-        self.ui_controller.stacked_widget.setCurrentWidget(self.ui_controller.database_window)
+        self.database_window.show_translation_database()
+        self.ui_controller.stacked_widget.setCurrentWidget(self.database_window)
 
     def connect_buttons(self):
         self.ui_controller.select_language_window.connect_german_to_italian_button(self.start_game)
@@ -98,4 +107,7 @@ class TranslationController(Controller):
 
         self.ui_controller.translation_summary_window.connect_play_again_button(self.play_again)
         self.ui_controller.translation_summary_window.connect_quit_button(self.ui_controller.quit_game)
+
+        self.database_window.connect_go_back_button(self.ui_controller.set_previous_window)
+
         

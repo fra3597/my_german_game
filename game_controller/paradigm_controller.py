@@ -1,6 +1,11 @@
 from math import floor
 from game_controller.controller import Controller
+from database.database_handler import DatabaseHandler
 from game_model.game_mode.paradigm_game import ParadigmGame
+from game_view.backend.database_view import DatabaseView
+
+FILENAME_DB = "database/verb_paradigms.db"
+TABLE_NAME = "VerbParadigms"
 
 GIVEN = 0
 CORRECT = 1
@@ -10,7 +15,12 @@ WRONG = 2
 class ParadigmController(Controller):
     def __init__(self, ui_controller):
         super().__init__(ui_controller)
-        self.game_model: ParadigmGame = ParadigmGame()
+
+        self.db_handler = DatabaseHandler(db_path=FILENAME_DB, table_name=TABLE_NAME)
+
+        self.game_model: ParadigmGame = ParadigmGame(self.db_handler)
+        self.database_window = DatabaseView(self.db_handler)
+        self.ui_controller.stacked_widget.addWidget(self.database_window)
         
         self.connect_buttons()
      
@@ -99,8 +109,8 @@ class ParadigmController(Controller):
 
     def open_database(self):
         self.ui_controller.set_previous_index(self.ui_controller.stacked_widget.currentIndex())
-        self.ui_controller.database_window.show_paradigm_database()
-        self.ui_controller.stacked_widget.setCurrentWidget(self.ui_controller.database_window)
+        self.database_window.show_paradigm_database()
+        self.ui_controller.stacked_widget.setCurrentWidget(self.database_window)
 
     def play_again(self):
         self.ui_controller.reset_paradigm_mode_view()
@@ -117,4 +127,6 @@ class ParadigmController(Controller):
 
         self.ui_controller.paradigm_summary_window.connect_play_again_button(self.play_again)
         self.ui_controller.paradigm_summary_window.connect_quit_button(self.ui_controller.quit_game)
+
+        self.database_window.connect_go_back_button(self.ui_controller.set_previous_window)
 

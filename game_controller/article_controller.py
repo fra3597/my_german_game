@@ -1,5 +1,10 @@
 from game_controller.controller import Controller
+from database.database_handler import DatabaseHandler
 from game_model.game_mode.article_game import ArticleGame
+from game_view.backend.database_view import DatabaseView
+
+TABLE_NAME = "WordsWithArticles"
+FILENAME_DB = "database/words_with_articles.db"
 
 CORRECT = True
 WRONG = False
@@ -8,7 +13,13 @@ WRONG = False
 class ArticleController(Controller):
     def __init__(self, ui_controller):
         super().__init__(ui_controller)
-        self.game_model: ArticleGame = ArticleGame()
+
+        self.db_handler = DatabaseHandler(db_path=FILENAME_DB, table_name=TABLE_NAME)
+
+        self.game_model: ArticleGame = ArticleGame(self.db_handler)
+        self.database_window = DatabaseView(self.db_handler)
+        self.ui_controller.stacked_widget.addWidget(self.database_window)
+
 
         self.connect_buttons()
 
@@ -71,8 +82,8 @@ class ArticleController(Controller):
 
     def open_database(self):
         self.ui_controller.set_previous_index(self.ui_controller.stacked_widget.currentIndex())
-        self.ui_controller.database_window.show_article_database()
-        self.ui_controller.stacked_widget.setCurrentWidget(self.ui_controller.database_window)
+        self.database_window.show_article_database()
+        self.ui_controller.stacked_widget.setCurrentWidget(self.database_window)
 
     def play_again(self):
         self.ui_controller.reset_article_mode_view()
@@ -90,3 +101,5 @@ class ArticleController(Controller):
 
         self.ui_controller.article_summary_window.connect_play_again_button(self.play_again)
         self.ui_controller.article_summary_window.connect_quit_button(self.ui_controller.quit_game)
+
+        self.database_window.connect_go_back_button(self.ui_controller.set_previous_window)

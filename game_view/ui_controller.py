@@ -26,7 +26,6 @@ class UIController(QMainWindow):
         self.translate_mode_window = TranslateMode()
         self.verb_paradigm_window = VerbParadigmMode()
         self.article_mode_window = ArticleMode()
-        self.database_window = DatabaseView()
         self.translation_summary_window = TranslationSummary()
         self.paradigm_summary_window = ParadigmSummary()
         self.article_summary_window = ArticleSummary()
@@ -34,7 +33,6 @@ class UIController(QMainWindow):
 
         self.init_stacked_widget()
         self.init_select_game_mode_window_buttons()
-        self.connect_go_back_button_database()
 
     def set_translate_mode_window(self):
         self.stacked_widget.setCurrentWidget(self.translate_mode_window)
@@ -56,7 +54,6 @@ class UIController(QMainWindow):
         self.stacked_widget.addWidget(self.translate_mode_window)
         self.stacked_widget.addWidget(self.verb_paradigm_window)
         self.stacked_widget.addWidget(self.article_mode_window)
-        self.stacked_widget.addWidget(self.database_window)
         self.stacked_widget.addWidget(self.translation_summary_window)
         self.stacked_widget.addWidget(self.paradigm_summary_window)
         self.stacked_widget.addWidget(self.article_summary_window)
@@ -93,9 +90,6 @@ class UIController(QMainWindow):
         current_index = self.stacked_widget.currentIndex()
         if current_index > 0:
             self.stacked_widget.setCurrentIndex(self.previous_index)
-
-    def connect_go_back_button_database(self):
-        self.database_window.connect_go_back_button(self.set_previous_window)
 
     @staticmethod
     def quit_game():
