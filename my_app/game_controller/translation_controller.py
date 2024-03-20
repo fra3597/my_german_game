@@ -7,7 +7,7 @@ from game_view.backend.summary_views.translation_summary_view import Translation
 from game_view.backend.database_view import DatabaseView
 
 TABLE_NAME = "Questions"
-FILENAME_DB = "database/questions.db"
+FILENAME_DB = "my_app/database/questions.db"
 
 CORRECT = True
 WRONG = False

@@ -6,7 +6,7 @@ from game_view.backend.summary_views.article_summary_view import ArticleSummary
 from game_view.backend.database_view import DatabaseView
 
 TABLE_NAME = "WordsWithArticles"
-FILENAME_DB = "database/words_with_articles.db"
+FILENAME_DB = "my_app/database/words_with_articles.db"
 
 CORRECT = True
 WRONG = False

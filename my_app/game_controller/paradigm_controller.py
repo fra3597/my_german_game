@@ -6,7 +6,7 @@ from game_view.backend.mode_views.paradigm_mode_view import VerbParadigmMode
 from game_view.backend.summary_views.paradigm_summary_view import ParadigmSummary
 from game_view.backend.database_view import DatabaseView
 
-FILENAME_DB = "database/verb_paradigms.db"
+FILENAME_DB = "my_app/database/verb_paradigms.db"
 TABLE_NAME = "VerbParadigms"
 
 GIVEN = 0
