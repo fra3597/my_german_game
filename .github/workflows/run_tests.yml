@@ -11,12 +11,12 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v5
       with:
-        python-version: '3.x' # Replace 'x' with your Python version
+        python-version: '3.12.1'
 
     - name: Install dependencies
       run: |
@@ -24,4 +24,4 @@ jobs:
         pip install -r requirements.txt # Assuming you have a requirements.txt file
 
     - name: Run pytest
-      run: pytest ./my_app/tests/game_logic/translate_mode_test.py -s -W ignore::DeprecationWarning
+      run: pytest -s -W ignore::DeprecationWarning

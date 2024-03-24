@@ -1,12 +1,9 @@
-import os
 import sys
 import pytest
 from PyQt5.QtWidgets import QApplication
 from my_app.game_view.ui_controller import UIController
 from my_app.game_controller.translation_controller import TranslationController
 
-
-# os.environ["PYTHONWARNINGS"] = "ignore::DeprecationWarning"
 
 @pytest.fixture
 def app():
