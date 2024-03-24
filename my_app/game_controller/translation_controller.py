@@ -86,8 +86,8 @@ class TranslationController(Controller):
         self.translate_mode_window.widget.input_line_edit.clear()
 
     def show_hint(self):
-        current_word = self.game_model.answers[self.game_model.current_word]
-        self.translate_mode_window.give_me_a_hint(current_word)
+        current_answer = self.game_model.answers[self.game_model.current_word]
+        self.translate_mode_window.give_me_a_hint(current_answer)
 
     def show_summary(self):
         self.ui_controller.stacked_widget.setCurrentWidget(self.translation_summary_window)

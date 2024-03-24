@@ -115,7 +115,7 @@ class ParadigmController(Controller):
         perfekt_total_score = f"Total Score: {self.game_model.score.perfekt_total_score}/{self.game_model.score.perfekt_total_counter}\n"
 
         text_to_show = present_total_score + praeteritum_total_score + perfekt_total_score
-        self.paradigm_summary_window.total_score_label.setText(text_to_show)
+        self.paradigm_summary_window.widget.total_score_label.setText(text_to_show)
 
     def open_database(self):
         self.ui_controller.set_previous_index(self.ui_controller.stacked_widget.currentIndex())

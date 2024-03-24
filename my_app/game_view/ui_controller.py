@@ -9,14 +9,14 @@ class UIController(QMainWindow):
     def __init__(self):
         super().__init__()
 
-        self.stacked_widget = QStackedWidget(self)
+        self.stacked_widget: QStackedWidget = QStackedWidget(self)
 
-        self.select_game_mode_window = SelectGameMode()
-        self.previous_index = None
+        self.select_game_mode_window: SelectGameMode = SelectGameMode()
+        self.previous_index: int = None
 
         self.init_stacked_widget()
 
-    def init_stacked_widget(self):
+    def init_stacked_widget(self) -> None:
         self.setCentralWidget(self.stacked_widget)
 
         self.stacked_widget.addWidget(self.select_game_mode_window)
@@ -24,14 +24,14 @@ class UIController(QMainWindow):
         self.stacked_widget.setMinimumSize(MINIMUM_WIDTH, MINIMUM_HEIGHT)
         self.stacked_widget.setStyleSheet("background-color: #83A2FF;")
 
-    def set_previous_index(self, previous_index):
+    def set_previous_index(self, previous_index) -> None:
         self.previous_index = previous_index
 
-    def set_previous_window(self):
-        current_index = self.stacked_widget.currentIndex()
+    def set_previous_window(self) -> None:
+        current_index: int = self.stacked_widget.currentIndex()
         if current_index > 0:
             self.stacked_widget.setCurrentIndex(self.previous_index)
 
     @staticmethod
-    def quit_game():
+    def quit_game() -> None:
         qApp.quit()
