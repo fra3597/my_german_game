@@ -1,6 +1,6 @@
 from PyQt5.QtWidgets import QWidget, QHeaderView, QAbstractItemView
 from PyQt5.QtGui import QStandardItem, QStandardItemModel, QColor
-from PyQt5. QtCore import Qt
+from PyQt5.QtCore import Qt
 from game_model.question.translate_word import TranslationWord
 from game_model.question.verb_paradigm import VerbParadigm
 from game_model.question.article_word import ArticleWord

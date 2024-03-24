@@ -1,6 +1,6 @@
 from PyQt5.QtWidgets import QWidget
-from game_view.frontend.mode_views.select_language import Ui_SelectLanguage
 from PyQt5.QtCore import QObject
+from game_view.frontend.mode_views.select_language import Ui_SelectLanguage
 
 GERMAN_TO_ITALIAN: int = 1
 ITALIAN_TO_GERMAN: int = 2

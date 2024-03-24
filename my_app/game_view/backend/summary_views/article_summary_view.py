@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QWidget, QHeaderView, qApp
+from PyQt5.QtWidgets import QWidget, QHeaderView
 from PyQt5.QtGui import QStandardItem, QStandardItemModel, QColor
 from game_view.frontend.summary_views.article_summary import Ui_ArticleSummary
 

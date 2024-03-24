@@ -1,0 +1,27 @@
+name: Run pytest
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  test:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x' # Replace 'x' with your Python version
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt # Assuming you have a requirements.txt file
+
+    - name: Run pytest
+      run: pytest ./my_app/tests/game_logic/translate_mode_test.py -s -W ignore::DeprecationWarning

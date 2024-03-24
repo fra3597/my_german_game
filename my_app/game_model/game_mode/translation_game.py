@@ -11,7 +11,7 @@ CORRECT = True
 
 
 class TranslationGame(Game):
-    def __init__(self, database_handler) -> None:
+    def __init__(self, database_handler: DatabaseHandler) -> None:
         super().__init__()
         self.score: TranslationScore = TranslationScore()
         self.language_mode = None
@@ -19,7 +19,7 @@ class TranslationGame(Game):
         self.answers: list[str] = []
         self.GERMAN_TO_ITALIAN = 1
         self.ITALIAN_TO_GERMAN = 2
-        self.db_handler = database_handler
+        self.db_handler: DatabaseHandler = database_handler
 
     def set_mode(self, mode_to_set):
         self.language_mode = mode_to_set

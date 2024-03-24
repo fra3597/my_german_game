@@ -11,11 +11,11 @@ CORRECT = True
 
 
 class ArticleGame(Game):
-    def __init__(self, database_handler):
+    def __init__(self, database_handler: DatabaseHandler):
         super().__init__()
         self.score: ArticleScore = ArticleScore()
         self.list_of_words: list[ArticleWord] = []
-        self.db_handler = database_handler
+        self.db_handler: DatabaseHandler = database_handler
 
     def load_questions(self):
         weights_list = self.db_handler.get_weights_list()

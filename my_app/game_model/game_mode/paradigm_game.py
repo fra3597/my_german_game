@@ -13,14 +13,14 @@ PERFEKT = 2
 
 
 class ParadigmGame(Game):
-    def __init__(self, database_handler):
+    def __init__(self, database_handler: DatabaseHandler):
         super().__init__()
         self.list_of_paradigms: list[VerbParadigm] = []
         self.current_paradigm: list[str] = []
         self.given_entry_index: int = 0
         self.guessed_entries: list[list[bool]] = []
         self.score: ParadigmScore = ParadigmScore()
-        self.db_handler = database_handler
+        self.db_handler: DatabaseHandler = database_handler
 
     def load_questions_paradigm(self):
         weights_list = self.db_handler.get_weights_list()

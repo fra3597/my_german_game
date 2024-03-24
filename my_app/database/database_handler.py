@@ -1,4 +1,3 @@
-import pandas
 import sqlite3
 
 OCCURRENCE_FACTOR = 5
